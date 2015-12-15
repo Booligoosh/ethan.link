@@ -1,0 +1,188 @@
+body {
+background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://cloud.githubusercontent.com/assets/14034891/9651604/3d33f276-5256-11e5-97d6-d2de56ddac68.jpg");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin: 0;
+color: white;
+font-family: 'Century Gothic';
+font-weight: 100;
+text-align: center;
+}
+.logo {
+    margin-top: 275px;
+}
+.info {
+    margin-top: 50px;
+}
+.tabs {
+    color: white;
+    margin-top: 400px;
+    background-color: rgba(247, 150, 70, 0.75);
+    padding: 1px;
+}
+.tabs a {
+    padding: 10px;
+    display: inline;
+    border-left: 1px solid rgb(250, 192, 144);
+    border-right: 1px solid rgb(250, 192, 144);
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.tabs span {
+    color: rgb(1, 255, 174);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content {
+    background-color: rgba(228, 108, 10, 0.5);
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.content a {
+    color: white;
+}
+body {
+background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://cloud.githubusercontent.com/assets/14034891/9651604/3d33f276-5256-11e5-97d6-d2de56ddac68.jpg");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin: 0;
+color: white;
+font-family: 'Century Gothic';
+font-weight: 100;
+text-align: center;
+}
+.logo {
+    margin-top: 275px;
+}
+.info {
+    margin-top: 50px;
+}
+.tabs {
+    color: white;
+    margin-top: 400px;
+    background-color: rgba(247, 150, 70, 0.75);
+    padding: 1px;
+}
+.tabs a {
+    padding: 10px;
+    display: inline;
+    border-left: 1px solid rgb(250, 192, 144);
+    border-right: 1px solid rgb(250, 192, 144);
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.tabs span {
+    color: rgb(1, 255, 174);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content {
+    background-color: rgba(228, 108, 10, 0.5);
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.content a {
+    color: white;
+    text-decoration: none;
+}
+#extlink {
+    text-decoration: underline;
+}
+.websites div {
+    margin-top: 100px;
+}
+#backtotop {
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    background-color: rgb(247, 150, 70);
+    padding: 3px;
+    text-decoration: none;
+}
+body {
+background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("https://cloud.githubusercontent.com/assets/14034891/9651604/3d33f276-5256-11e5-97d6-d2de56ddac68.jpg");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin: 0;
+color: white;
+font-family: 'Century Gothic';
+font-weight: 100;
+text-align: center;
+}
+.logo {
+    margin-top: 275px;
+}
+.info {
+    margin-top: 50px;
+}
+.tabs {
+    color: white;
+    margin-top: 400px;
+    background-color: rgba(247, 150, 70, 0.75);
+    padding: 1px;
+}
+.tabs a {
+    padding: 10px;
+    display: inline;
+    border-left: 1px solid rgb(250, 192, 144);
+    border-right: 1px solid rgb(250, 192, 144);
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.tabs span {
+    color: rgb(1, 255, 174);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content {
+    background-color: rgba(228, 108, 10, 0.5);
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.content a {
+    color: white;
+}
+#warning {
+  background-color: red;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 2px;
+}
+#backtotop {
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    background-color: rgb(247, 150, 70);
+    padding: 3px;
+    text-decoration: none;
+}
+#quicklinks {
+  text-decoration: none;
+}
