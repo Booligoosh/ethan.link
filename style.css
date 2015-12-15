@@ -18,6 +18,10 @@ text-align: center;
 .logo {
     margin-top: 275px;
 }
+.logo img {
+    width: 250;
+    height: 250;
+}
 .info {
     margin-top: 50px;
 }
