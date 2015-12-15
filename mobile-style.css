@@ -1,0 +1,74 @@
+body {
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+}
+.logo {
+    background-color: #F4B183;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+
+}
+.info {
+    margin-top: 50px;
+}
+.tabs {
+    color: white;
+    background-color: rgb(247, 150, 70);
+    line-height: 130px;
+}
+.tabs a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.tabs a:hover {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.tabs h3 {
+    margin: 0;
+    font-size: 100px;
+}
+.tabs span {
+    color: rgb(1, 255, 174);
+}
+.content {
+    background-color: rgb(228, 108, 10);
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.content a {
+    color: white;
+    text-decoration: none;
+}
+#extlink {
+    text-decoration: underline;
+}
+.websites div {
+    margin-top: 100px;
+}
+.iframe {
+    width: 95%;
+    height: auto;
+}
+#backtotop {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    background-color: rgb(247, 150, 70);
+    padding: 3px;
+    text-decoration: none;
+}
