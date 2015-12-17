@@ -1,10 +1,5 @@
 body {
-background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("https://cloud.githubusercontent.com/assets/14034891/9651604/3d33f276-5256-11e5-97d6-d2de56ddac68.jpg");
+background-image: url('http://i.imgur.com/hEmXxhw.jpg');
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -53,23 +48,6 @@ text-align: center;
 }
 .content a {
     color: white;
-}
-body {
-background-image: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("https://cloud.githubusercontent.com/assets/14034891/9651604/3d33f276-5256-11e5-97d6-d2de56ddac68.jpg");
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-margin: 0;
-color: white;
-font-family: 'Century Gothic';
-font-weight: 100;
-text-align: center;
 }
 .logo {
     margin-top: 275px;
@@ -120,23 +98,6 @@ text-align: center;
     background-color: rgb(247, 150, 70);
     padding: 3px;
     text-decoration: none;
-}
-body {
-background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url("https://cloud.githubusercontent.com/assets/14034891/9651604/3d33f276-5256-11e5-97d6-d2de56ddac68.jpg");
-background-size: cover;
-background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-margin: 0;
-color: white;
-font-family: 'Century Gothic';
-font-weight: 100;
-text-align: center;
 }
 .logo {
     margin-top: 275px;
