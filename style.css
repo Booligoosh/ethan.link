@@ -151,7 +151,16 @@ text-align: center;
 #quicklinks {
   text-decoration: none;
 }
+table {
+    width: 100%;
+}
 td {
     width: 50%;
+    padding: 15px;
 }
+#left {
+    text-align: right;
+}
+#right {
+    text-align: left;
 }
