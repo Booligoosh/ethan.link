@@ -46,9 +46,6 @@ text-align: center;
     padding-top: 10px;
     padding-bottom: 50px;
 }
-.content a {
-    color: white;
-}
 .logo {
     margin-top: 275px;
 }
@@ -83,7 +80,6 @@ text-align: center;
 }
 .content a {
     color: white;
-    text-decoration: none;
 }
 #extlink {
     text-decoration: underline;
@@ -130,9 +126,6 @@ text-align: center;
     margin-top: 0;
     padding-top: 10px;
     padding-bottom: 50px;
-}
-.content a {
-    color: white;
 }
 #warning {
   background-color: red;
