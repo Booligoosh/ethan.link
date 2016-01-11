@@ -159,6 +159,7 @@ td {
     padding: 15px;
 }
 #table {
+    display: inline;
     text-align: center;
     width: 100%;
 }
