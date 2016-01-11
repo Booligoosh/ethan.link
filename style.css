@@ -158,9 +158,19 @@ td {
     width: 50%;
     padding: 15px;
 }
+#table {
+    text-align: center;
+    width: 100%;
+}
 #left {
+    display: inline;
+    left: 50px;
+    width: 50%;
     text-align: right;
 }
 #right {
+    display: inline;
+    right: 50px;
+    width: 50%;
     text-align: left;
 }
