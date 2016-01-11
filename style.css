@@ -160,3 +160,6 @@ td {
 #right {
     text-align: left;
 }
+.projects-mobile {
+    display: none;
+}
