@@ -86,6 +86,8 @@ text-align: center;
 }
 .websites div {
     margin-top: 100px;
+}
+.websites a {
     text-decoration: none;
 }
 #backtotop {
