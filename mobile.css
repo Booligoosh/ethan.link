@@ -75,3 +75,6 @@ body {
 .projects-desktop {
     display: none;
 }
+#quicklinks-desktop {
+  display: none;
+}
