@@ -144,7 +144,9 @@ text-align: center;
     padding: 3px;
     text-decoration: none;
 }
-
+#backtotop a {
+    text-decoration: none;
+}
 #quicklinks-mobile {
   display: none;
 }
