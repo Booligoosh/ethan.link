@@ -144,7 +144,11 @@ text-align: center;
     padding: 3px;
     text-decoration: none;
 }
-#quicklinks a {
+
+#quicklinks-mobile {
+  display: none;
+}
+#quicklinks-desktop a {
   text-decoration: none;
 }
 table {
