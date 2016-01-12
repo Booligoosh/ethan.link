@@ -78,3 +78,6 @@ body {
 #quicklinks-desktop {
   display: none;
 }
+#projects-mobile a {
+    text-decoration: underline;
+}
