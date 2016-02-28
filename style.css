@@ -23,17 +23,20 @@ text-align: center;
 .tabs {
     color: white;
     margin-top: 400px;
-    background-color: rgba(247, 150, 70, 0.75);
+    background: linear-gradient( rgba(228, 108, 10, 0), rgba(228, 108, 10, 0.5) ),;
     padding: 1px;
 }
 .tabs a {
     padding: 10px;
     display: inline;
-    border-left: 1px solid rgb(250, 192, 144);
-    border-right: 1px solid rgb(250, 192, 144);
+    /*
+    border-left: 0px solid rgb(250, 192, 144);
+    border-right: 0px solid rgb(250, 192, 144);
+    */
     color: white;
     padding-bottom: 20px;
     padding-top: 20px;
+    text-decoration: none;
 }
 .tabs span {
     color: rgb(1, 255, 174);
