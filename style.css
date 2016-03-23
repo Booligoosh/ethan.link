@@ -13,7 +13,7 @@ text-align: center;
 .logo {
     margin-top: 275px;
 }
-.logo img {
+.logo svg {
     width: 500px;
     height: 500px;
 }
