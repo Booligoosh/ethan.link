@@ -8,7 +8,7 @@ body {
 .logo {
     background-color: #F4B183;
 }
-.logo img {
+.logo svg {
     width: 100%;
     height: auto;
     margin-top: 50px;
