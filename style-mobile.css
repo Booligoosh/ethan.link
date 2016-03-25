@@ -21,6 +21,8 @@ body {
     margin-right: 2.5px;
 
 }
+.logo a {
+text-decoration: none;
 .info {
     margin-top: 50px;
 }
