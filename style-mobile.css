@@ -90,7 +90,7 @@ text-decoration: none;
 }
 ul {
     list-style: none;
-    margin-bottom: none;
+    margin-bottom: 100px;
     width: 100%;
-    background: background: linear-gradient( rgba(228, 108, 10, 1), rgba(228, 108, 10, 0) ),;;
+    background: linear-gradient( rgba(228, 108, 10, 1), rgba(228, 108, 10, 0) );
 }
