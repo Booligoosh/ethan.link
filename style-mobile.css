@@ -92,5 +92,6 @@ ul {
     list-style: none;
     margin-bottom: 100px;
     width: 100%;
-    background: linear-gradient( rgba(228, 108, 10, 1), rgba(228, 108, 10, 0) );
+    background: linear-gradient( rgba(247,150,70,0), rgba(247,150,70,1) )
+    padding: 40px;
 }
