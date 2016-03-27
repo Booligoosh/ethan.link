@@ -92,9 +92,10 @@ ul {
     list-style: none;
     margin-bottom: 100px;
     width: auto;
-    background: linear-gradient( rgba(247,150,70,0), rgba(247,150,70,1) );
+    background: linear-gradient( rgba(247,150,70,0.1), rgba(247,150,70,1) );
     padding: 40px;
     border-bottom: 1.5px #797979 solid;
+    border-top: 1.5px #797979 solid;
 }
 h4 {
     padding-left: 50px;
