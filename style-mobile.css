@@ -94,4 +94,5 @@ ul {
     width: auto;
     background: linear-gradient( rgba(247,150,70,0), rgba(247,150,70,1) );
     padding: 40px;
+    border-bottom: 1.5px #797979 solid;
 }
