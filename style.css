@@ -133,3 +133,7 @@ td {
 .projects-mobile {
     display: none;
 }
+.designs-desktop img {
+    height: 402px;
+    width: auto;
+}
