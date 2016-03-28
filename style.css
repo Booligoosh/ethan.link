@@ -140,3 +140,15 @@ td {
     height: 402px;
     width: auto;
 }
+#skillscoder11 {
+    background: url('http://booligoosh.github.io/zz-skillscoder11.svg');
+    background-size: cover;
+    height: 402px;
+    width: 402px;
+}
+#skillscoder11:hover {
+    background: url('http://booligoosh.github.io/zz-skillscoder11.gif');
+    background-size: cover;
+    height: 402px;
+    width: 402px;
+}
