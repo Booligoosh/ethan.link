@@ -145,7 +145,7 @@
        fy="469.36221"
        r="164.62329"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.6222455,0,0,1.6222455,-369.76233,-278.43901)" />
+       gradientTransform="matrix(1.15329,0,0,1.15329,-126.11121,-144.03002)" />
     <radialGradient
        inkscape:collect="always"
        xlink:href="#linearGradient4179"
@@ -155,7 +155,7 @@
        fx="645.65394"
        fy="776.42321"
        r="388.48977"
-       gradientTransform="matrix(1,0,0,1.3359605,0,-260.84756)"
+       gradientTransform="matrix(0.71092199,0,0,0.94976369,136.76096,-131.52387)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
@@ -166,7 +166,7 @@
        fx="445.25632"
        fy="609.31561"
        r="664.01748"
-       gradientTransform="matrix(1,0,0,0.54409316,0,277.79115)"
+       gradientTransform="matrix(0.71092199,0,0,0.38680779,136.76096,251.40624)"
        gradientUnits="userSpaceOnUse" />
     <radialGradient
        inkscape:collect="always"
@@ -177,7 +177,7 @@
        fx="332.56116"
        fy="675.60686"
        r="257.43106"
-       gradientTransform="matrix(1,0,0,1.3776824,0,-255.16479)"
+       gradientTransform="matrix(0.71092199,0,0,0.97942471,136.76096,-127.48386)"
        gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
@@ -188,16 +188,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.16"
-     inkscape:cx="2696.5918"
+     inkscape:cx="40.3418"
      inkscape:cy="593.81936"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="mm"
-     inkscape:window-width="1280"
-     inkscape:window-height="972"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1366"
+     inkscape:window-height="670"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
      inkscape:window-maximized="1"
      inkscape:snap-midpoints="true"
      inkscape:snap-smooth-nodes="true"
@@ -223,26 +223,26 @@
      id="layer1"
      transform="translate(0,-131.10236)">
     <path
-       style="fill:url(#radialGradient4201);fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="M 589.99222,641.35639 437.52232,1030.2651 75.130091,320.94863 448.57086,389.4496"
+       style="fill:url(#radialGradient4201);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 556.1994,509.87276 447.8052,786.35651 190.17259,282.08783 455.65985,330.78668"
        id="path4149"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:url(#radialGradient4185);fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="M 257.16417,257.41621 298.31067,1295.4302 1034.1437,601.58163 Z"
+       style="fill:url(#radialGradient4185);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 319.58462,236.92124 29.25195,737.94697 523.11989,-493.2722 z"
        id="path4164"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:url(#radialGradient4193);fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
-       d="M -218.76116,667.87289 985.53008,250.23795 1109.2738,248.02824 1049.6116,327.57775 -209.92233,970.60298 Z"
+       style="fill:url(#radialGradient4193);fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -18.76116,528.72392 856.15712,-296.90586 87.97213,-1.57094 -42.41517,56.5535 -895.430367,457.14078 z"
        id="path4166"
        inkscape:connector-curvature="0" />
     <circle
        style="opacity:1;fill:url(#radialGradient4176);fill-opacity:1;stroke:none;stroke-width:3.54330707;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path4151"
-       cx="581.44995"
-       cy="482.98172"
-       r="267.05939" />
+       cx="550.12659"
+       cy="397.28073"
+       r="189.85838" />
     <flowRoot
        xml:space="preserve"
        id="flowRoot4178"
@@ -257,7 +257,7 @@
          id="flowPara4184">W</flowPara></flowRoot>    <g
        style="font-style:normal;font-weight:normal;font-size:508.14868164px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text4186"
-       transform="translate(0,-6)">
+       transform="matrix(0.71092199,0,0,0.71092199,136.76096,49.652867)">
       <path
          d="m 122.7588,334.30721 37.46604,0 74.18772,263.00664 104.70642,-263.00664 7.44359,0 103.46582,263.00664 75.67644,-263.00664 37.21792,0 -104.70642,364.98374 -6.94735,0 -108.18009,-276.15697 -110.41316,276.15697 -6.94735,0 L 122.7588,334.30721 Z"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic';fill:#ffffff;fill-opacity:1"
@@ -267,7 +267,7 @@
     <g
        style="font-style:normal;font-weight:normal;font-size:508.14868164px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="text4190"
-       transform="translate(0,-6)">
+       transform="matrix(0.71092199,0,0,0.71092199,136.76096,49.652867)">
       <path
          d="m 495.28393,438.02376 36.72168,0 0,329.75078 140.1875,0 0,35.23297 -176.90918,0 0,-364.98375 z"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic';fill:#ffffff;fill-opacity:1"
