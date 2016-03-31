@@ -1,3 +1,3 @@
-![Welcome](http://booligoosh.github.io/Screenshot1.png)
+![screenshot](http://booligoosh.github.io/x-screenshot.png)
 # booligoosh.github.io
 My Portfolio / Website
