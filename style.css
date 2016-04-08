@@ -155,9 +155,6 @@ td {
 .accounts {
     text-align: center;
 }
-.accounts li {
-    display: inline;
-}
 .accounts a {
     color: white;
     text-decoration: none;
