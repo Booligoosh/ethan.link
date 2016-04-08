@@ -154,6 +154,8 @@ td {
 }
 .accounts {
     text-align: center;
+    background-color: rgba(228, 108, 10, 0.75);
+    padding: 1px;
 }
 .accounts a {
     color: white;
