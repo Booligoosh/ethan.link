@@ -152,6 +152,9 @@ td {
     height: 402px;
     width: 402px;
 }
+.accounts {
+    text-align: center;
+}
 .accounts li {
     display: inline;
 }
