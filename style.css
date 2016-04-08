@@ -152,3 +152,10 @@ td {
     height: 402px;
     width: 402px;
 }
+.accounts li {
+    display: inline;
+}
+.accounts a {
+    color: white;
+    text-decoration: none;
+}
