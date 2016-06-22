@@ -24,7 +24,7 @@ text-align: center;
 .tabs {
     color: white;
     margin-top: 400px;
-    background: linear-gradient( rgba(228, 108, 10, 0), rgba(228, 108, 10, 0.5) ),;
+    background: linear-gradient( rgba(228, 108, 10, 0), rgba(228, 108, 10, 0.5) );
     padding: 1px;
 }
 .tabs a {
