@@ -68,11 +68,20 @@ text-align: center;
 #extlink {
     text-decoration: underline;
 }
-.websites div {
+.websites-mobile div {
     margin-top: 100px;
 }
-.websites a {
+.websites-desktop a {
     text-decoration: none;
+}
+.websites-mobile a {
+    text-decoration: none;
+}
+.websites-desktop img {
+    width: 100%;
+}
+.websites-mobile img {
+    width: 100%;
 }
 #backtotop {
     position: fixed;
@@ -131,6 +140,9 @@ td {
     text-align: left;
 }
 .projects-mobile {
+    display: none;
+}
+.websites-mobile {
     display: none;
 }
 .designs-mobile {
