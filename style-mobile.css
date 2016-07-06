@@ -66,6 +66,9 @@ text-decoration: none;
 .websites-mobile div {
     margin-top: 100px;
 }
+.websites-mobile img {
+    width: 100%;
+}
 .iframe {
     width: 95%;
     height: auto;
