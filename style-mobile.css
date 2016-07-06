@@ -63,7 +63,7 @@ text-decoration: none;
 #extlink {
     text-decoration: underline;
 }
-.websites div {
+.websites-mobile div {
     margin-top: 100px;
 }
 .iframe {
@@ -82,10 +82,16 @@ text-decoration: none;
 .projects-desktop {
     display: none;
 }
+.websites-desktop {
+    display: none;
+}
 #quicklinks-desktop {
   display: none;
 }
 #projects-mobile a {
+    text-decoration: underline;
+}
+#websites-mobile a {
     text-decoration: underline;
 }
 ul {
