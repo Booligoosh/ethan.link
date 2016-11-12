@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
 body {
-background-image: url('http://booligoosh.github.io/w-background.jpg');
+background-image: url('/w-background.jpg');
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
@@ -153,13 +153,13 @@ td {
     width: auto;
 }
 #skillscoder11 {
-    background: url('http://booligoosh.github.io/zz-skillscoder11.svg');
+    background: url('/zz-skillscoder11.svg');
     background-size: cover;
     height: 402px;
     width: 402px;
 }
 #skillscoder11:hover {
-    background: url('http://booligoosh.github.io/zz-skillscoder11.gif');
+    background: url('/zz-skillscoder11.gif');
     background-size: cover;
     height: 402px;
     width: 402px;
