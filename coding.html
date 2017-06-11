@@ -19,6 +19,11 @@ https://github.com/Booligoosh/booligoosh.github.io
 <meta property="og:description" content="This a portfolio website for Booligoosh, an amateur graphic designer & programmer. With stunning graphics & exciting projects, this website is a pleasure to look around. On this website you can view projects I've worked on, and sign up to my newsletter." />
 <meta property="og:url" content="/coding.html" />
 <meta property="og:image" content="/y-og-image.png" />
+<stuff>
+  {% for post in site.coding %}
+    {{ post.content }}
+  {% endfor %}
+</stuff>
 </head>
 <body>
 <div class="header">
