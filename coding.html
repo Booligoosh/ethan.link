@@ -65,7 +65,7 @@ https://github.com/Booligoosh/booligoosh.github.io
             <table>
                 <tbody>
                     {% for post in site.coding %} 
-                    <tr id="{{post}}-desktop">
+                    <tr id="{{ post.id }}-desktop">
                         <td id="left">
                             <a href="{{ post.link }}" target="blank" id="{{ post.id }}-desktop-a">
                                 <img src="{{ post.image }}">
