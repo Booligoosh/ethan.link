@@ -1,0 +1,25 @@
+title:            Booligoosh
+tagline:          ''
+description:      ''
+url:              
+baseurl:          
+
+email:            booligoosh@optusnet.com.au
+
+
+author:
+  name:           'Booligoosh'
+  url:            https://booligoosh.github.io/
+
+paginate:         5
+
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-feed
+  - github-pages
+  - jekyll-sitemap # leave at the end
+
+collections:
+  scratch:
+    output: true
