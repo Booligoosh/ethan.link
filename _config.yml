@@ -21,5 +21,5 @@ gems:
   - jekyll-sitemap # leave at the end
 
 collections:
-  scratch:
-    output: true
+  coding:
+    output: false
