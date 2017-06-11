@@ -13,6 +13,8 @@ author:
 
 paginate:         5
 
+img: ''
+
 gems:
   - jekyll-paginate
   - jekyll-gist
