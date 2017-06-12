@@ -13,7 +13,7 @@ author:
 
 paginate:         5
 
-img: ''
+img: '/' # always end in /
 
 gems:
   - jekyll-paginate

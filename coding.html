@@ -49,14 +49,22 @@ https://github.com/Booligoosh/booligoosh.github.io
                 <h4><a href="https://github.com/Booligoosh" target="blank">GitHub</a> - <a href="https://www.codingame.com/profile/1f7c0a954e65b4c68398cdf59a5fb7b56803941" target="blank">CodinGame</a> - <a href="https://www.codecademy.com/Booligoosh" target="blank">Codecademy</a></h4>
             </div>
             <h2>Here are some websites I have made:</h2>
-            <h4 id="quicklinks-desktop"><a href="#iconmagic-desktop-a">IconMagic</a> | <a href="#rubiks-desktop-a">Rubik's Time</a> | <a href="#resistorfind-desktop-a">Resistorfind</a> | <a href="#technetium-desktop-a">TechnetiumPrime</a> | <a href="#booligoosh-desktop-a">Booligoosh</a> | <a href="#orange_css-desktop-a">Orange CSS</a> | <a href="#blueprint-desktop-a">Blueprint</a></h4>
+            <h4 id="quicklinks-desktop">
+                <!--BEGIN AUTO CONTENT-->
+                {% assign codingposts = site.coding | reverse %}
+                {% for post in codingposts %}
+                <a href="#{{post.rawname}}-desktop-a">{{post.title}}</a>
+                {% if post != codingposts.last %} | {% endif %}
+                {% endfor %}
+                <!--END AUTO CONTENT-->
+            </h4>
             <ul id="quicklinks-mobile">
-                <li><a href="#rubiks-mobile">Rubik's Time</a></li>
-                <li><a href="#resistorfind-mobile">Resistorfind</a></li>
-                <li><a href="#technetium-mobile">TechnetiumPrime</a></li>
-                <li><a href="#booligoosh-mobile">Booligoosh</a></li>
-                <li><a href="#orange_css-mobile">Orange CSS</a></li>
-                <li><a href="#blueprint-mobile">Blueprint</a></li>
+                <!--BEGIN AUTO CONTENT-->
+                {% assign codingposts = site.coding | reverse %}
+                {% for post in codingposts %}
+                <li><a href="#{{post.rawname}}-mobile">{{post.title}}</a></li>
+                {% endfor %}
+                <!--END AUTO CONTENT-->
             </ul>
             <h3 id="backtotop"><a href="#top">Back to top &#10177;</a></h3>
         </div>
@@ -83,6 +91,17 @@ https://github.com/Booligoosh/booligoosh.github.io
             </table>
         </div>
         <div class="websites-mobile">
+            <!--BEGIN AUTO CONTENT-->
+            {% assign codingposts = site.coding | reverse %}
+            {% for post in codingposts %}
+            <div id="{{post.rawname}}-mobile">
+                <a name="{{post.rawname}}-mobile"></a>
+                <img src="{{ post.image | prepend: site.img }}">
+                <h2>{{post.title}}</h2>
+                <h4>{{ post.content }}</h4>
+            </div>
+            {% endfor %}
+            <!--END AUTO CONTENT-->
             <div id="rubiks-mobile">
                 <a name="rubiks-mobile"></a>
                 <img src="/z-rubiks.png">
