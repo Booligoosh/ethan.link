@@ -11,19 +11,15 @@ font-family: 'Quicksand', sans-serif;
 font-weight: 400;
 text-align: center;
 }
-.logo {
-    margin-top: 275px;
-}
 .logo img {
     width: 500px;
-    height: 500px;
+    height: 100vh;
 }
 .info {
     margin-top: 50px;
 }
 .tabs {
     color: white;
-    margin-top: 400px;
     background: linear-gradient( rgba(228, 108, 10, 0), rgba(228, 108, 10, 0.5) );
     padding: 1px;
 }
@@ -49,9 +45,6 @@ text-align: center;
     margin-top: 0;
     padding-top: 10px;
     padding-bottom: 50px;
-}
-.logo {
-    margin-top: 275px;
 }
 .info {
     margin-top: 50px;
@@ -90,9 +83,6 @@ text-align: center;
     background-color: rgb(247, 150, 70);
     padding: 3px;
     text-decoration: none;
-}
-.logo {
-    margin-top: 275px;
 }
 .info {
     margin-top: 50px;
