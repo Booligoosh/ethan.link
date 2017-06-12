@@ -10,9 +10,9 @@
 <div class="tabs">
     <h3>
         <a href="/">Home</a>
-        <a href="/coding#top">Coding</a>
-        <a href="/scratch#top">Scratch</a>
-        <a href="/design#top"><span>Graphic Design</span></a>
+        <a href="/coding#top">{% if page.tabname == "Coding" %}<span>{% endif %}Coding{% if page.tabname == "Coding" %}</span>{% endif %}</a>
+        <a href="/scratch#top">{% if page.tabname == "Scratch" %}<span>{% endif %}Scratch{% if page.tabname == "Scratch" %}</span>{% endif %}</a>
+        <a href="/design#top">{% if page.tabname == "Graphic Design" %}<span>{% endif %}Graphic Design{% if page.tabname == "Graphic Design" %}</span>{% endif %}</a>
         <a href="http://eepurl.com/bz0PTD">Newsletter</a>
     </h3>
 </div>
