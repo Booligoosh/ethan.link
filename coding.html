@@ -20,9 +20,6 @@ https://github.com/Booligoosh/booligoosh.github.io
     <meta property="og:description" content="This a portfolio website for Booligoosh, an amateur graphic designer & programmer. With stunning graphics & exciting projects, this website is a pleasure to look around. On this website you can view projects I've worked on, and sign up to my newsletter." />
     <meta property="og:url" content="/coding.html" />
     <meta property="og:image" content="/y-og-image.png" />
-    <stuff>
-        {% for post in site.coding %} {{ post.content }} {% endfor %}
-    </stuff>
 </head>
 
 <body>
@@ -66,11 +63,13 @@ https://github.com/Booligoosh/booligoosh.github.io
         <div class="websites-desktop">
             <table>
                 <tbody>
-                    {% for post in site.coding %} 
-                    <tr id="{{ post.id }}-desktop">
+                <!--BEGIN AUTO CONTENT-->
+                    {% assign codingposts = site.coding | reverse %}
+                    {% for post in codingposts %}
+                    <tr id="{{ post.rawname }}-desktop">
                         <td id="left">
-                            <a href="{{ post.link }}" target="blank" id="{{ post.id }}-desktop-a">
-                                <img src="{{ post.image }}">
+                            <a href="{{ post.link }}" target="blank" id="{{ post.rawname }}-desktop-a">
+                                <img src="{{ post.image | prepend: site.img }}">
                             </a>
                         </td>
                         <td id="right">
@@ -79,83 +78,7 @@ https://github.com/Booligoosh/booligoosh.github.io
                         </td>
                     </tr>
                     {% endfor %}
-                    <tr id="iconmagic-desktop">
-                        <td id="left">
-                            <a href="/iconmagic" target="blank" id="iconmagic-desktop-a">
-                                <img src="/z-iconmagic.png">
-                            </a>
-                        </td>
-                        <td id="right">
-                            <h2>IconMagic</h2>
-                            <h4>This is a service I made for adding websites to the home screen on Apple devices. When websites don't specify an icon and you add them to the home screen you get an ugly and badly sized screenshot. But not anymore! With IconMagic, simply specify an icon image and Wallah - your home screen doesn't look ugly anymore. I made this using Javascript. I had to make a script which took all the variable parameters from a url. I thought I would share it with the public so if you want to utilise it in your projects you can <a href="/urlParams/index.html?name=you&string=%21%40%23%24%25%5e%26%2a%28%29" target="blank">here</a>. At the moment I am workng on making IconMagic more user-friendly.</h4>
-                        </td>
-                    </tr>
-                    <tr id="rubiks-desktop">
-                        <td id="left">
-                            <a href="/rubiks-time" target="blank" id="rubiks-desktop-a">
-                                <img src="/z-rubiks.png">
-                            </a>
-                        </td>
-                        <td id="right">
-                            <h2>Rubik's Time</h2>
-                            <h4>This is a clean, flat design Rubik's cube timer I made. I made it because I got fed up with the ugly/cluttered look of other timers. I also made it so I could include unique features, such as a line graph of all solves over time. It took a long time to make, and is definitely the hardest & most complicated thing I have done. The mobile version is not completely working yet. I have started work on a <a href="https://booligoosh.github.io/rubiks-time-multi/" target="blank">multiplayer version</a>, where you can time people simultaneously and see the winner.</h4>
-                        </td>
-                    </tr>
-                    <tr id="resistorfind-desktop">
-                        <td id="left">
-                            <a href="/resistorfind" target="blank" id="resistorfind-desktop-a">
-                                <img src="/z-resistorfind.png">
-                            </a>
-                        </td>
-                        <td id="right">
-                            <h2>ResistorFind</h2>
-                            <h4>This program shows you what a resistor with a specific ohm's and tolerance looks like. It is great for electronics/hobby projects. To make it, I had to actually edit SVG's with JavaScript (a new experience for me!). I also had to work out a complex algorithm for finding the multiplier band.</h4>
-                        </td>
-                    </tr>
-                    <tr id="technetium-desktop">
-                        <td id="left">
-                            <a href="/technetiumprime" target="blank" id="technetium-desktop-a">
-                                <img src="/z-technetium.png">
-                            </a>
-                        </td>
-                        <td id="right">
-                            <h2>TechnetiumPrime</h2>
-                            <h4>This is a prime generator I made using JavaScript. I used arrays, for loops and many other things to develop a quick and efficient algorithm for finding primes. This is one of my first expreiments with JavaScript.</h4>
-                        </td>
-                    </tr>
-                    <tr id="booligoosh-desktop">
-                        <td id="left">
-                            <a href="/" target="blank" id="booligoosh-desktop-a">
-                                <img src="/z-booligoosh.png">
-                            </a>
-                        </td>
-                        <td id="right">
-                            <h2>Booligoosh</h2>
-                            <h4>My Website (you are on it right now). I made this website as a portfolio for my work.</h4>
-                        </td>
-                    </tr>
-                    <tr id="orange_css-desktop">
-                        <td id="left">
-                            <a href="/csszen" target="blank" id="orange_css-desktop-a">
-                                <img src="/z-orange_css.png">
-                            </a>
-                        </td>
-                        <td id="right">
-                            <h2>Orange CSS</h2>
-                            <h4>This is my contribution to the <a href="http://www.csszengarden.com/" target="blank" id="extlink">CSS Zen Garden</a><a href="http://booligoosh.github.io/csszen" target="blank">. The HTML was created by </a><a href="https://github.com/mezzoblue" target="blank" id="extlink">Dave Shea</a><a href="http://booligoosh.github.io/csszen" target="blank">, and so was some of the CSS.</a></h4>
-                        </td>
-                    </tr>
-                    <tr id="blueprint-desktop">
-                        <td id="left">
-                            <a href="/blueprint" target="blank" id="blueprint-desktop-a">
-                                <img src="/z-blueprint.png">
-                            </a>
-                        </td>
-                        <td id="right">
-                            <h2>Blueprint</h2>
-                            <h4>This is a website I made with no particular purpose, other than to look cool.</h4>
-                        </td>
-                    </tr>
+                <!--END AUTO CONTENT-->
                 </tbody>
             </table>
         </div>

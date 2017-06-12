@@ -1,0 +1,175 @@
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+body {
+background-image: url('/w-background.jpg');
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+margin: 0;
+color: white;
+font-family: 'Quicksand', sans-serif;
+font-weight: 400;
+text-align: center;
+}
+.logo {
+    margin-top: 275px;
+}
+.logo img {
+    width: 500px;
+    height: 500px;
+}
+.info {
+    margin-top: 50px;
+}
+.tabs {
+    color: white;
+    margin-top: 400px;
+    background: linear-gradient( rgba(228, 108, 10, 0), rgba(228, 108, 10, 0.5) );
+    padding: 1px;
+}
+.tabs a {
+    padding: 10px;
+    display: inline;
+    /*
+    border-left: 0px solid rgb(250, 192, 144);
+    border-right: 0px solid rgb(250, 192, 144);
+    */
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-decoration: none;
+}
+.tabs span {
+    color: rgb(1, 255, 174);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content {
+    background-color: rgba(228, 108, 10, 0.5);
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.logo {
+    margin-top: 275px;
+}
+.info {
+    margin-top: 50px;
+}
+.content {
+    background-color: rgba(228, 108, 10, 0.5);
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.content a {
+    color: white;
+}
+#extlink {
+    text-decoration: underline;
+}
+.websites-mobile div {
+    margin-top: 100px;
+}
+.websites-desktop a {
+    text-decoration: none;
+}
+.websites-mobile a {
+    text-decoration: none;
+}
+.websites-desktop img {
+    width: 100%;
+}
+.websites-mobile img {
+    width: 100%;
+}
+#backtotop {
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    background-color: rgb(247, 150, 70);
+    padding: 3px;
+    text-decoration: none;
+}
+.logo {
+    margin-top: 275px;
+}
+.info {
+    margin-top: 50px;
+}
+.content {
+    background-color: rgba(228, 108, 10, 0.5);
+    margin-top: 0;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+#warning {
+  background-color: red;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 2px;
+}
+#backtotop {
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    background-color: rgb(247, 150, 70);
+    padding: 3px;
+    text-decoration: none;
+}
+#backtotop a {
+    text-decoration: none;
+}
+#quicklinks-mobile {
+  display: none;
+}
+#quicklinks-desktop a {
+  text-decoration: none;
+}
+table {
+    width: 100%;
+}
+td {
+    width: 50%;
+    padding: 15px;
+}
+#left {
+    text-align: right;
+}
+#right {
+    text-align: left;
+}
+.projects-mobile {
+    display: none;
+}
+.websites-mobile {
+    display: none;
+}
+.designs-mobile {
+    display: none;
+}
+.designs-desktop img {
+    height: 402px;
+    width: auto;
+}
+#skillscoder11 {
+    background: url('/zz-skillscoder11.svg');
+    background-size: cover;
+    height: 402px;
+    width: 402px;
+}
+#skillscoder11:hover {
+    background: url('/zz-skillscoder11.gif');
+    background-size: cover;
+    height: 402px;
+    width: 402px;
+}
+.accounts {
+    text-align: center;
+    background-color: rgba(228, 108, 10, 0.75);
+    padding: 1px;
+}
+.accounts a {
+    color: white;
+    text-decoration: none;
+}
