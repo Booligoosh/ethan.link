@@ -9,7 +9,7 @@
 <a name="top"></a>
 <div class="tabs">
     <h3>
-        <a href="/">Home</a>
+        <a href="/">{% if page.tabname == "Home" %}<span>{% endif %}Home{% if page.tabname == "Home" %}</span>{% endif %}</a>
         <a href="/coding#top">{% if page.tabname == "Coding" %}<span>{% endif %}Coding{% if page.tabname == "Coding" %}</span>{% endif %}</a>
         <a href="/scratch#top">{% if page.tabname == "Scratch" %}<span>{% endif %}Scratch{% if page.tabname == "Scratch" %}</span>{% endif %}</a>
         <a href="/design#top">{% if page.tabname == "Graphic Design" %}<span>{% endif %}Graphic Design{% if page.tabname == "Graphic Design" %}</span>{% endif %}</a>
