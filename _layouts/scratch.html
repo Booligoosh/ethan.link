@@ -31,13 +31,13 @@ https://github.com/Booligoosh/booligoosh.github.io
                 <h4>Here is my profile:</h4>
                 <h4><a href="https://scratch.mit.edu/" target="blank">Scratch</a></h4>
             </div>
-            <h2>These are projects I have created using <a href="https://scratch.mit.edu/about/" target="blank">Scratch</a>:</h2>
+            <h2>{{content}}</h2>
             <h4 id="quicklinks-desktop">
                 <!--BEGIN AUTO CONTENT-->
                 {% assign scratchposts = site.scratch | reverse %}
                 {% for post in scratchposts %}
-                <a href="#{{post.rawname}}-desktop-a">{{post.title}}</a>
-                {% if post != codingposts.last %} | {% endif %}
+                <a href="#{{post.rawname}}-desktop">{{post.title}}</a>
+                {% if post != scratchposts.last %} | {% endif %}
                 {% endfor %}
                 <!--END AUTO CONTENT-->
             </h4>
@@ -56,8 +56,8 @@ https://github.com/Booligoosh/booligoosh.github.io
                 {% assign scratchposts = site.scratch | reverse %}
                 {% for post in scratchposts %}
                 <tr id="{{post.rawname}}-desktop">
+                    <a name="{{post.rawname}}-desktop"></a>
                     <td id="left">
-                        <a name="{{post.rawname}}-desktop"></a>
                         <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/{{post.projectid}}/?autostart=false" frameborder="0" allowfullscreen></iframe>
                         <td id="right">
                             <h2>{{post.title}}</h2>

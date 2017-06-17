@@ -32,7 +32,7 @@ https://github.com/Booligoosh/booligoosh.github.io
                 <!--BEGIN AUTO CONTENT-->
                 {% assign codingposts = site.coding | reverse %}
                 {% for post in codingposts %}
-                <a href="#{{post.rawname}}-desktop-a">{{post.title}}</a>
+                <a href="#{{post.rawname}}-desktop">{{post.title}}</a>
                 {% if post != codingposts.last %} | {% endif %}
                 {% endfor %}
                 <!--END AUTO CONTENT-->
@@ -54,8 +54,9 @@ https://github.com/Booligoosh/booligoosh.github.io
                     {% assign codingposts = site.coding | reverse %}
                     {% for post in codingposts %}
                     <tr id="{{ post.rawname }}-desktop">
+                        <a name="{{ post.rawname }}-desktop"></a>
                         <td id="left">
-                            <a href="{{ post.link }}" target="blank" id="{{ post.rawname }}-desktop-a">
+                            <a href="{{ post.link }}" target="blank">
                                 <img src="{{ post.image | prepend: site.img }}">
                             </a>
                         </td>
