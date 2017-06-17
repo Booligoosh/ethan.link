@@ -25,3 +25,5 @@ gems:
 collections:
   coding:
     output: false
+  scratch:
+    output: false
