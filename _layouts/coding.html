@@ -28,23 +28,7 @@ https://github.com/Booligoosh/booligoosh.github.io
                 <h4><a href="https://github.com/Booligoosh" target="blank">GitHub</a> - <a href="https://www.codingame.com/profile/1f7c0a954e65b4c68398cdf59a5fb7b56803941" target="blank">CodinGame</a> - <a href="https://www.codecademy.com/Booligoosh" target="blank">Codecademy</a></h4>
             </div>
             <h2>{{content}}</h2>
-            <h4 id="quicklinks-desktop">
-                <!--BEGIN AUTO CONTENT-->
-                {% assign codingposts = site.coding | reverse %}
-                {% for post in codingposts %}
-                <a href="#{{post.rawname}}-desktop">{{post.title}}</a>
-                {% if post != codingposts.last %} | {% endif %}
-                {% endfor %}
-                <!--END AUTO CONTENT-->
-            </h4>
-            <ul id="quicklinks-mobile">
-                <!--BEGIN AUTO CONTENT-->
-                {% assign codingposts = site.coding | reverse %}
-                {% for post in codingposts %}
-                <li><a href="#{{post.rawname}}-mobile">{{post.title}}</a></li>
-                {% endfor %}
-                <!--END AUTO CONTENT-->
-            </ul>
+            {% include quicklinks.html %}
             <h3 id="backtotop"><a href="#top">Back to top &#10177;</a></h3>
         </div>
         <div class="websites-desktop">

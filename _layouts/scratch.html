@@ -32,23 +32,7 @@ https://github.com/Booligoosh/booligoosh.github.io
                 <h4><a href="https://scratch.mit.edu/" target="blank">Scratch</a></h4>
             </div>
             <h2>{{content}}</h2>
-            <h4 id="quicklinks-desktop">
-                <!--BEGIN AUTO CONTENT-->
-                {% assign scratchposts = site.scratch | reverse %}
-                {% for post in scratchposts %}
-                <a href="#{{post.rawname}}-desktop">{{post.title}}</a>
-                {% if post != scratchposts.last %} | {% endif %}
-                {% endfor %}
-                <!--END AUTO CONTENT-->
-            </h4>
-            <ul id="quicklinks-mobile">
-                <!--BEGIN AUTO CONTENT-->
-                {% assign scratchposts = site.scratch | reverse %}
-                {% for post in scratchposts %}
-                <li><a href="#{{post.rawname}}-mobile">{{post.title}}</a></li>
-                {% endfor %}
-                <!--END AUTO CONTENT-->
-            </ul>
+            {% include quicklinks.html %}
             <h3 id="backtotop"><a href="#top">Back to top &#10177;</a></h3>
         </div>
         <div class="projects-desktop">
