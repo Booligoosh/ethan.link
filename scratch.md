@@ -1,7 +1,7 @@
 ---
-title: Coding | Booligoosh
-tabname: Coding
-layout: coding
+title: Scratch | Booligoosh
+tabname: Scratch
+layout: scratch
 ---
 These are projects I have created using [Scratch][scratch]:
 
