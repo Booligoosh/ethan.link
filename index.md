@@ -2,6 +2,7 @@
 title: Booligoosh
 tabname: Home
 layout: home
+ogtitle: "Booligoosh - the website of an amateur programmer"
 ---
 ![Welcome to booligoosh.github.io][welcome]
 
