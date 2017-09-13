@@ -1,64 +1,48 @@
-<!--
-View this code on Github instead: 
-https://github.com/Booligoosh/booligoosh.github.io
--->
-<!DOCTYPE html>
-<html>
-
-<head>
-    {% include head.html %}
-</head>
-
-<body>
-    {% include header.html %}
-    <div class="content">
-        <div class=info>
-            <div class="accounts">
-                <h4>Here are my related accounts:</h4>
-                <h4><a href="https://github.com/Booligoosh" target="blank">GitHub</a> - <a href="https://www.codingame.com/profile/1f7c0a954e65b4c68398cdf59a5fb7b56803941" target="blank">CodinGame</a> - <a href="https://www.codecademy.com/Booligoosh" target="blank">Codecademy</a></h4>
-            </div>
-            <h2>{{content}}</h2>
-            {% include quicklinks.html %}
-            <h3 id="backtotop"><a href="#top">Back to top &#10177;</a></h3>
-        </div>
-        <div class="websites-desktop">
-            <table>
-                <tbody>
-                <!--BEGIN AUTO CONTENT-->
-                    {% assign codingposts = site.coding | reverse %}
-                    {% for post in codingposts %}
-                    <tr id="{{ post.rawname }}-desktop">
-                        <a name="{{ post.rawname }}-desktop"></a>
-                        <td id="left">
-                            <a href="{{ post.link }}" target="blank">
-                                <img src="{{ post.image | prepend: site.img }}">
-                            </a>
-                        </td>
-                        <td id="right">
-                            <h2>{{ post.title }}</h2>
-                            <h4>{{ post.content }}</h4>
-                        </td>
-                    </tr>
-                    {% endfor %}
-                <!--END AUTO CONTENT-->
-                </tbody>
-            </table>
-        </div>
-        <div class="websites-mobile">
-            <!--BEGIN AUTO CONTENT-->
+---
+layout: default
+---
+<div class=info>
+    <div class="accounts">
+        <h4>Here are my related accounts:</h4>
+        <h4><a href="https://github.com/Booligoosh" target="blank">GitHub</a> - <a href="https://www.codingame.com/profile/1f7c0a954e65b4c68398cdf59a5fb7b56803941" target="blank">CodinGame</a> - <a href="https://www.codecademy.com/Booligoosh" target="blank">Codecademy</a></h4>
+    </div>
+    <h2>{{content}}</h2>
+    {% include quicklinks.html %}
+    <h3 id="backtotop"><a href="#top">Back to top &#10177;</a></h3>
+</div>
+<div class="websites-desktop">
+    <table>
+        <tbody>
+        <!--BEGIN AUTO CONTENT-->
             {% assign codingposts = site.coding | reverse %}
             {% for post in codingposts %}
-            <div id="{{post.rawname}}-mobile">
-                <a name="{{post.rawname}}-mobile"></a>
-                <img src="{{ post.image | prepend: site.img }}">
-                <h2>{{post.title}}</h2>
-                <h4>{{ post.content }}</h4>
-            </div>
+            <tr id="{{ post.rawname }}-desktop">
+                <a name="{{ post.rawname }}-desktop"></a>
+                <td id="left">
+                    <a href="{{ post.link }}" target="blank">
+                        <img src="{{ post.image | prepend: site.img }}">
+                    </a>
+                </td>
+                <td id="right">
+                    <h2>{{ post.title }}</h2>
+                    <h4>{{ post.content }}</h4>
+                </td>
+            </tr>
             {% endfor %}
-            <!--END AUTO CONTENT-->
-        </div>
+        <!--END AUTO CONTENT-->
+        </tbody>
+    </table>
+</div>
+<div class="websites-mobile">
+    <!--BEGIN AUTO CONTENT-->
+    {% assign codingposts = site.coding | reverse %}
+    {% for post in codingposts %}
+    <div id="{{post.rawname}}-mobile">
+        <a name="{{post.rawname}}-mobile"></a>
+        <img src="{{ post.image | prepend: site.img }}">
+        <h2>{{post.title}}</h2>
+        <h4>{{ post.content }}</h4>
     </div>
-    {% include before-end-body-tag.html %}
-</body>
-
-</html>
+    {% endfor %}
+    <!--END AUTO CONTENT-->
+</div>
