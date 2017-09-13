@@ -219,3 +219,25 @@ td {
     margin-bottom: 2rem;
     width: auto;
 }
+
+span.with-hover-content {
+    line-height: 3rem;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    width: auto;
+}
+
+span > *.hover-content {
+    display: initial !important;
+    max-width: initial;
+    margin-left: initial;
+    margin-right: initial;
+    margin-top: initial;
+    height: initial;
+    margin-bottom: initial;
+    width: initial;
+}
