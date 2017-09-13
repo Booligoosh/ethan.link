@@ -1,6 +1,9 @@
 ---
 layout: default
-title: Contact
+title: Contact | Booligoosh
+tabname: Contact
+cat: contact
+ogtitle: "Contact Booligoosh"
 ---
 <div class="contact-cards-container">
     <a class="contact-card" href="mailto:{{site.email}}"><i class="fa fa-envelope" aria-hidden="true"></i><span>Email</span></a>
