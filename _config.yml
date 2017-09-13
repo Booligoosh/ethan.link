@@ -5,7 +5,7 @@ url:
 baseurl:          
 
 email:            booligoosh@optusnet.com.au
-
+newsletter:       'https://eepurl.com/bz0PTD'
 
 author:
   name:           'Booligoosh'
@@ -21,6 +21,17 @@ gems:
   - jekyll-feed
   - github-pages
   - jekyll-sitemap # leave at the end
+
+contact:
+  stackoverflow: 'https://stackoverflow.com/users/5374560/booligoosh'
+  github: 'https://github.com/Booligoosh/'
+  behance: 'https://www.behance.net/Booligoosh'
+  dribble: 'https://dribbble.com/Booligoosh'
+  scratch: 'https://scratch.mit.edu/users/Booligoosh/'
+  codecademy: 'https://www.codecademy.com/Booligoosh'
+  codingame: 'https://www.codingame.com/profile/1f7c0a954e65b4c68398cdf59a5fb7b56803941'
+
+
 
 collections:
   coding:
