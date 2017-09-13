@@ -13,7 +13,7 @@ ogtitle: "Contact Booligoosh"
     <a class="contact-card" href="{{site.outlink}}{{site.newsletter}}"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span>Newsletter</span></a>
     <a class="contact-card" href="{{site.contact.behance}}"><i class="fa fa-behance" aria-hidden="true"></i><span>Behance</span></a>
     <a class="contact-card" href="{{site.contact.dribbble}}"><i class="fa fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
-    <a class="contact-card" href="{{site.outlink}}{{site.contact.codingame}}"><img src="/img/contact-icons/codingame.png" alt="Scratch" class="noselect"><span>CodinGame</span></a>
+    <a class="contact-card" href="{{site.outlink}}{{site.contact.codingame}}"><img src="/img/contact-icons/codingameText.png" alt="Scratch" class="noselect"><span>CodinGame</span></a>
     <a class="contact-card" href="{{site.outlink}}{{site.contact.scratch}}"><img src="/img/contact-icons/scratch.png" alt="Scratch" class="noselect"><span>Scratch</span></a>
     <a class="contact-card" href="{{site.outlink}}{{site.contact.codecademy}}"><img src="/img/contact-icons/codecademy.png" alt="Scratch" class="noselect"><span>Codecademy</span></a>
     <!--
