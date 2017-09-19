@@ -76,6 +76,22 @@ body {
     padding-bottom: 20px;
 }
 
+.tabs h2 {
+    position: absolute;
+    top: 0;
+    line-height: 100%;
+    margin: 0;
+    padding: 20px;
+    font-family: Lombok;
+    width: 10.365rem;
+}
+
+@media screen and (max-width: 1034px) {
+    .tabs h2 {
+        display: none;
+    }
+}
+
 .content {
     background-color: #290046;
     margin-top: 0;
