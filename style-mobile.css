@@ -6,7 +6,7 @@ body {
     font-size: 50px;
 }
 .logo {
-    background-image: url('/w-background.jpg');
+    background-image: url('w-background.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
