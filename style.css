@@ -51,7 +51,7 @@ body {
 
 .tabs {
     color: white;
-    background: linear-gradient( rgba(228, 108, 10, 0), rgba(228, 108, 10, 0.5));
+    background-color: #b346ff;
     padding: 1px;
 }
 
@@ -75,7 +75,7 @@ body {
 }
 
 .content {
-    background-color: rgba(228, 108, 10, 0.5);
+    background-color: #290046;
     margin-top: 0;
     padding-top: 10px;
     padding-bottom: 50px;
