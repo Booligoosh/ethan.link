@@ -85,12 +85,6 @@ body {
     margin-top: 50px;
 }
 
-.content {
-    background-color: rgba(228, 108, 10, 0.5);
-    margin-top: 0;
-    padding-top: 10px;
-    padding-bottom: 50px;
-}
 
 .content a {
     color: white;
@@ -131,13 +125,6 @@ body {
 
 .info {
     margin-top: 50px;
-}
-
-.content {
-    background-color: rgba(228, 108, 10, 0.5);
-    margin-top: 0;
-    padding-top: 10px;
-    padding-bottom: 50px;
 }
 
 #warning {
