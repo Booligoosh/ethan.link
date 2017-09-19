@@ -132,8 +132,8 @@ body {
 }
 
 .top-anchor {
-    margin-bottom: 60px;
-    display: block;
+    position: absolute;
+    bottom: 60px;
 }
 
 .content {
