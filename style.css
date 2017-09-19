@@ -131,6 +131,11 @@ body {
     }
 }
 
+.top-anchor {
+    margin-bottom: 60px;
+    display: block;
+}
+
 .content {
     background-color: #290046;
     margin: 0;
