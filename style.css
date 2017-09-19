@@ -133,12 +133,20 @@ body {
 
 .content {
     background-color: #290046;
-    margin-top: 0;
-    padding-bottom: 50px;
+    margin: 0;
+    text-align: left;
+    padding: 2rem;
+    line-height: 1.7rem;
 }
 
 .content a {
     color: white;
+}
+
+.content p:first-child {
+    margin: 0;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
 }
 
 #extlink {
