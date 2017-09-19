@@ -53,7 +53,7 @@ body {
     color: white;
     background-color: #b346ff;
     padding: 1px;
-    position: sticky;
+    position: fixed;
     top: 0;
 }
 
