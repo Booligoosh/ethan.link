@@ -57,6 +57,9 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
 }
 
 .tabs a {
@@ -67,8 +70,8 @@ body {
     border-right: 0px solid rgb(250, 192, 144);
     */
     color: white;
-    padding-bottom: 20px;
-    padding-top: 20px;
+    /*padding-bottom: 20px;
+    padding-top: 20px;*/
     text-decoration: none;
 }
 
@@ -78,14 +81,34 @@ body {
     padding-bottom: 20px;
 }
 
+.tabs h3;
+
 .tabs h2 {
     position: absolute;
     top: 0;
+    left: 60px;
     line-height: 100%;
     margin: 0;
     padding: 20px;
     font-family: Lombok;
     width: 10.365rem;
+}
+
+.tabs img {
+    height: 60px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and (max-width: 1124px) {
+    .tabs img {
+        display: none;
+    }
+    .tabs h2 {
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 1034px) {
