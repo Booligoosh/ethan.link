@@ -66,7 +66,7 @@ body {
     padding: 0;
 }
 
-.tabs a {
+.tabs h3 a {
     padding: 10px;
     display: inline;
     /*
@@ -98,6 +98,7 @@ body {
     padding: 20px;
     font-family: Lombok;
     width: 10.365rem;
+    color: white;
 }
 
 .tabs img {
