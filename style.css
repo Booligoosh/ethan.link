@@ -257,6 +257,10 @@ td {
     text-decoration: none;
 }
 
+body.contact .content {
+    background-color: #cea9ff;
+}
+
 .contact-cards-container {
     width: 72%;
     margin: auto;
@@ -269,8 +273,7 @@ td {
     width: calc(96%/3/*cards per row*/
     );
     display: inline-block;
-    background-color: /*#ddd*/
-    transparent;
+    background-color: #b346ff;
     margin: 0;
     margin-top: 0.15rem;
     margin-bottom: 0.15rem;
@@ -278,7 +281,7 @@ td {
     vertical-align: middle;
     line-height: 7rem;
     text-align: center;
-    box-shadow: inset 0 0 21rem black;
+    /*box-shadow: inset 0 0 21rem black;*/
     transition: all, 0.5s;
 }
 
