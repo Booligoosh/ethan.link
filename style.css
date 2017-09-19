@@ -137,6 +137,8 @@ body {
     text-decoration: underline;
 }
 
+/* Screen width for table to divs transition will be 840px */
+
 .websites-mobile div {
     margin-top: 100px;
 }
