@@ -81,7 +81,9 @@ body {
     padding-bottom: 20px;
 }
 
-.tabs h3;
+.tabs h3 {
+    margin: 0;
+}
 
 .tabs h2 {
     position: absolute;
