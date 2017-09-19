@@ -133,7 +133,7 @@ body {
 
 .top-anchor {
     position: absolute;
-    bottom: 60px;
+    bottom: 56px; /*theoretically this should be 60px but idk, the internet is weird. */
 }
 
 .content {
