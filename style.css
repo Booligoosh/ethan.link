@@ -11,7 +11,15 @@
     font-family: Lombok;
     src: url('fonts/lombok.otf');
 }
-
+/*
+Solution to Safari iOS font rendering, based off:
+https://css-tricks.com/forums/topic/weird-mobile-safari-font-face-problem-font-doubled-and-offset-to-the-left/
+*/
+@font-face {
+    font-family: Lombok;
+    src: url('fonts/lombok.otf');
+    font-weight: bold;
+}
 .noselect {
     -webkit-touch-callout: none;
     /* iOS Safari */
