@@ -144,7 +144,7 @@ body {
 }
 
 .info p {
-    margin: 0;
+    margin-top: 0;
     font-size: 1.5rem;
     line-height: 2.3rem;
 }
@@ -265,6 +265,7 @@ td {
     background-color: #cea9ff;
     padding: 1px;
     color: #545454;
+    margin-bottom: 1rem;
 }
 
 .accounts a {
