@@ -73,7 +73,7 @@ body {
     padding: 0;
 }
 
-.tabs h3 a {
+.tabs nav a {
     padding: 10px;
     display: inline;
     /*
@@ -92,7 +92,7 @@ body {
     padding-bottom: 20px;
 }
 
-.tabs h3 {
+.tabs nav {
     margin: 0;
 }
 
