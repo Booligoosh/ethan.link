@@ -1,4 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+
+@font-face {
+    font-family: Lombok;
+    src: url('fonts/lombok.otf');
+}
+
 .noselect {
     -webkit-touch-callout: none;
     /* iOS Safari */
@@ -31,6 +37,16 @@ body {
 .logo img {
     width: 500px;
     height: 100vh;
+}
+
+.logo h1 {
+    position: absolute;
+    top: 70vh;
+    width: 100%;
+    color: #545454;
+    text-align: center;
+    font-size: 4rem;
+    font-family: Lombok;
 }
 
 .info {
