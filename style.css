@@ -190,17 +190,17 @@ body {
         box-shadow: inset 0 0 3em black;
     }
     body.nav-out .tabs nav ul {
-        display: block;
-        margin: initial;
-        padding: initial;
-        list-style: none;
-        text-align: left;
-        margin-left: 2rem;
-        margin-top: 1rem;
+        display: block !important;
+        margin: initial !important;
+        padding: initial !important;
+        list-style: none !important;
+        text-align: left !important;
+        margin-left: 2rem !important;
+        margin-top: 1rem !important;
     }
     body.nav-out .tabs nav li {
-        padding: initial;
-        display: list-item;
+        padding: initial !important;
+        display: list-item !important;
     }
 }
 
