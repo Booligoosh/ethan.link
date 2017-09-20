@@ -173,10 +173,14 @@ body {
         text-align: center;
         left: 0;
     }
+    .tabs nav {
+        display: none;
+    }
     body.nav-out, body.nav-out .tabs {
         margin-left: 50vw;
     }
     body.nav-out .tabs nav {
+        display: initial;
         position: fixed;
         left: 0;
         top: 0;
