@@ -1,7 +1,7 @@
 ---
 title: Rubik's Time
 rawname: rubiks
-image: z-rubiks.png
+image: rubiks.png
 link: https://booligoosh.github.io/rubiks-time
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: iOS iConify
 rawname: iosiconify
-image: z-iosiconify.png
+image: iosiconify.png
 link: https://iosiconify.github.io/
 ---
 
