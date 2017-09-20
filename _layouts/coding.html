@@ -39,7 +39,7 @@ layout: default
     {% for post in codingposts %}
     <div id="{{post.rawname}}-mobile">
         <a name="{{post.rawname}}-mobile"></a>
-        <img src="{{ post.image | prepend: site.img }}">
+        <img src="img/content/coding/{{post.image}}">
         <h2>{{post.title}}</h2>
         <h4>{{ post.content }}</h4>
     </div>
