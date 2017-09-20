@@ -360,11 +360,6 @@ body.contact .content {
     color: #000;
 }
 
-.contact-card i.fa,
-.contact-card img {
-    font-size: 3rem;
-}
-
 .contact-card:hover i.fa,
 .contact-card:hover img {
     display: none;
@@ -378,15 +373,12 @@ body.contact .content {
     display: inherit;
 }
 
-.contact-card img,
-.contact-card i.fa {
+.contact-card img, .contact-card i.fa {
     max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-    height: 3rem;
-    margin-bottom: 2rem;
+    max-height: 3rem;
     width: auto;
+    vertical-align: middle;
+    font-size: 3rem;
 }
 
 span.with-hover-content {
