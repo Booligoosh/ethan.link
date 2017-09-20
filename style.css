@@ -189,8 +189,6 @@ body {
     text-decoration: underline;
 }
 
-/* Screen width for table to divs transition will be 840px */
-
 .websites-mobile div {
     margin-top: 100px;
 }
@@ -265,16 +263,17 @@ td {
     text-align: left;
 }
 
-.projects-mobile {
+.websites-mobile, projects-mobile, .designs-mobile {
     display: none;
 }
 
-.websites-mobile {
-    display: none;
-}
-
-.designs-mobile {
-    display: none;
+@media screen and (max-width: 750px) {
+    .websites-desktop, .projects-desktop, .designs-desktop {
+        display: none;
+    }
+    .websites-mobile, .projects-mobile, .designs-mobile {
+        display: initial;
+    }
 }
 
 .designs-desktop img {
