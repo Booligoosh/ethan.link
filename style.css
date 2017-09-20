@@ -146,6 +146,10 @@ body {
     z-index: 5;
 }
 
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: white !important;
+}
+
 @media screen and (max-width: 1124px) {
     .tabs img {
         display: none;
