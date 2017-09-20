@@ -168,6 +168,7 @@ body {
         display: none;
     }
     .tabs h2 {
+        display: initial;
         width: calc(100vw - 40px);
         text-align: center;
         left: 0;
