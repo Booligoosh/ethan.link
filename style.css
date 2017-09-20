@@ -46,7 +46,7 @@ body {
 }
 
 .logo img {
-    width: 500px;
+    width: 31.25rem;
     height: 100vh;
 }
 
@@ -58,6 +58,13 @@ body {
     text-align: center;
     font-size: 4rem;
     font-family: Lombok;
+}
+
+
+@media screen and (max-width: 500px) {
+    .logo h1 {
+        font-size: 3rem;
+    }
 }
 
 .info {
