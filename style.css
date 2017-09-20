@@ -144,6 +144,9 @@ body {
 }
 
 @media screen and (max-width: 1034px) {
+    .tabs img {
+        display: initial;
+    }
     .tabs h2 {
         display: none;
     }
