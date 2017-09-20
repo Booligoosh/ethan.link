@@ -81,16 +81,19 @@ body {
     padding: 0;
 }
 
-.tabs nav a {
+.tabs nav ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs nav li {
     padding: 10px;
     display: inline;
-    /*
-    border-left: 0px solid rgb(250, 192, 144);
-    border-right: 0px solid rgb(250, 192, 144);
-    */
+}
+
+.tabs nav a {
     color: white;
-    /*padding-bottom: 20px;
-    padding-top: 20px;*/
     text-decoration: none;
 }
 
