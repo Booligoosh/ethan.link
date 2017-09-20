@@ -173,10 +173,29 @@ body {
         text-align: center;
         left: 0;
     }
-    .tabs nav {
-        display: none;
+    body.nav-out, body.nav-out .tabs {
+        margin-left: 50vw;
     }
-    /* I will need to add a menu slide-out in here later */
+    body.nav-out .tabs nav {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 50vw;
+        background-color: #b346ff;
+        box-shadow: inset 0 0 3em black;
+    }
+    body.nav-out .tabs nav ul {
+        display: initial;
+        margin: initial;
+        padding: initial;
+        list-style: none;
+        text-align: left;
+    }
+    body.nav-out .tabs nav li {
+        padding: initial;
+        display: initial;
+    }
 }
 
 .top-anchor {
