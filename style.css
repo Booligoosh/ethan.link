@@ -190,15 +190,17 @@ body {
         box-shadow: inset 0 0 3em black;
     }
     body.nav-out .tabs nav ul {
-        display: initial;
+        display: block;
         margin: initial;
         padding: initial;
         list-style: none;
         text-align: left;
+        margin-left: 2rem;
+        margin-top: 1rem;
     }
     body.nav-out .tabs nav li {
         padding: initial;
-        display: initial;
+        display: list-item;
     }
 }
 
