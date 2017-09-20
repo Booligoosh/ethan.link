@@ -428,7 +428,7 @@ span.with-hover-content {
 
 span > *.hover-content {
     display: initial !important;
-    max-width: initial;
+    max-width: 95%;
     margin-left: initial;
     margin-right: initial;
     margin-top: initial;
