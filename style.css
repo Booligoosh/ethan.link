@@ -153,6 +153,15 @@ body {
     }
 }
 
+@media screen and (max-width: 699px) {
+    .tabs img {
+        display: none;
+    }
+    .tabs h2 {
+        display: none;
+    }
+}
+
 .top-anchor {
     position: absolute;
     bottom: 56px; /*theoretically this should be 60px but idk, the internet is weird. */
