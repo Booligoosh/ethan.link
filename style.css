@@ -135,6 +135,17 @@ body {
     left: 0;
 }
 
+.tabs .hamburger {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 100%;
+    margin: 0;
+    padding: 17px;
+    z-index: 5;
+}
+
 @media screen and (max-width: 1124px) {
     .tabs img {
         display: none;
@@ -175,6 +186,9 @@ body {
     }
     .tabs nav {
         display: none;
+    }
+    .tabs .hamburger {
+        display: initial;
     }
     body.nav-out, body.nav-out .tabs {
         margin-left: 50vw;
