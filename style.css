@@ -410,6 +410,10 @@ body.contact .content {
     .contact-card img, .contact-card i.fa {
         font-size: 2rem;
     }
+    .contact-cards-container {
+        margin: 0;
+        width: -webkit-fill-available;
+    }
 }
 
 span.with-hover-content {
