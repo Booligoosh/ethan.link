@@ -381,6 +381,12 @@ body.contact .content {
     font-size: 3rem;
 }
 
+@media screen and (max-width: 549px) {
+    .contact-card img, .contact-card i.fa {
+        font-size: 2rem;
+    }
+}
+
 span.with-hover-content {
     line-height: 3rem;
     margin-left: auto;
