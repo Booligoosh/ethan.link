@@ -281,7 +281,7 @@ td {
 }
 
 .websites-mobile, projects-mobile, .designs-mobile {
-    display: none;
+    display: none !important;
 }
 
 @media screen and (max-width: 750px) {
@@ -289,7 +289,7 @@ td {
         display: none;
     }
     .websites-mobile, .projects-mobile, .designs-mobile {
-        display: initial;
+        display: initial !important;
     }
 }
 
