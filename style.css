@@ -162,6 +162,22 @@ body {
     }
 }
 
+/* IF ADDING MORE LINKS TO THE NAV THEN CHANGE THIS!!! */
+@media screen and (max-width: 574px) {
+    .tabs img {
+        display: none;
+    }
+    .tabs h2 {
+        width: calc(100vw - 40px);
+        text-align: center;
+        left: 0;
+    }
+    .tabs nav {
+        display: none;
+    }
+    /* I will need to add a menu slide-out in here later */
+}
+
 .top-anchor {
     position: absolute;
     bottom: 56px; /*theoretically this should be 60px but idk, the internet is weird. */
