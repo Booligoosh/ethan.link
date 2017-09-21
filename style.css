@@ -286,17 +286,9 @@ body.home .logo h1 {
     width: 100%;
 }
 
-.websites-mobile img, .designs-mobile img {
+.websites-mobile img, .designs-mobile img, .projects-mobile iframe {
     width: 100%;
-}
-
-#backtotop {
-    position: fixed;
-    bottom: 0;
-    right: 25px;
-    background-color: rgb(247, 150, 70);
-    padding: 3px;
-    text-decoration: none;
+    max-width: 100%;
 }
 
 #warning {
