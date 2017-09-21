@@ -45,20 +45,38 @@ body {
     text-align: center;
 }
 
+.logo a {
+    text-decoration: none;
+}
+
 .logo img {
+    display: none;
     width: 31.25rem;
     max-width: 100vw;
     height: 100vh;
 }
 
+body.home .logo img {
+    display: initial;
+}
+
 .logo h1 {
-    position: absolute;
-    top: 70vh;
     width: 100%;
     color: #545454;
     text-align: center;
     font-size: 4rem;
     font-family: Lombok;
+    line-height: 30vh;
+    height: 30vh;
+    margin-top: 60px;
+    margin-bottom: 0;
+}
+
+body.home .logo h1 {
+    position: absolute;
+    top: 70vh;
+    line-height: initial;
+    height: initial;
 }
 
 
