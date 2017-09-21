@@ -90,6 +90,7 @@ body.home .logo h1 {
 body.not-found .logo h1 {
     height: 100vh;
     line-height: 100vh;
+    margin: 0;
 }
 
 
