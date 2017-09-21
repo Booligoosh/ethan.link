@@ -87,6 +87,11 @@ body.home .logo h1 {
     height: initial;
 }
 
+body.not-found .logo h1 {
+    height: 100vh;
+    line-height: 100vh;
+}
+
 
 @media screen and (max-width: 500px) {
     .logo h1 {
