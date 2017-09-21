@@ -72,6 +72,14 @@ body.home .logo img {
     margin-bottom: 0;
 }
 
+.logo h1 .num {
+    font-family: Montserrat;
+}
+
+.logo h1 br {
+    display: none;
+}
+
 body.home .logo h1 {
     position: absolute;
     top: 70vh;
@@ -197,6 +205,9 @@ body.home .logo h1 {
 
 /* IF ADDING MORE LINKS TO THE NAV THEN CHANGE THIS!!! */
 @media screen and (max-width: 574px) {
+    .logo h1 br {
+        display: initial;
+    }
     .tabs img {
         display: none;
     }
