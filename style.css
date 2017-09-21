@@ -344,7 +344,7 @@ td {
     text-align: left;
 }
 
-.websites-mobile, projects-mobile, .designs-mobile {
+.websites-mobile, .projects-mobile, .designs-mobile {
     display: none !important;
 }
 
