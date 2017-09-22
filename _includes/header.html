@@ -1,8 +1,8 @@
 <section class="header">
     <div class=logo>
-        <a href="./">
+        <a href="{{site.baseurl}}/">
             <!-- Created with Inkscape (http://www.inkscape.org/) -->
-            <img src="img/logos/logo_trans.svg">
+            <img src="{{site.baseurl}}/img/logos/logo_trans.svg">
             <h1>BOOLIGOOSH</h1>
         </a>
     </div>
@@ -13,17 +13,17 @@
             <span class="hamburger-inner"></span>
         </span>
     </button>
-    <a href="./">
-        <img src="img/logos/logo.svg">
+    <a href="{{site.baseurl}}/">
+        <img src="{{site.baseurl}}/img/logos/logo.svg">
         <h2>BOOLIGOOSH</h2>
     </a>
     <nav>
         <ul>
-            <li><a href="./">{% if page.tabname == "Home" %}<span>{% endif %}Home{% if page.tabname == "Home" %}</span>{% endif %}</a>
-                <li><a href="coding#top">{% if page.tabname == "Coding" %}<span>{% endif %}Coding{% if page.tabname == "Coding" %}</span>{% endif %}</a></li>
-                <li><a href="scratch#top">{% if page.tabname == "Scratch" %}<span>{% endif %}Scratch{% if page.tabname == "Scratch" %}</span>{% endif %}</a></li>
-                <li><a href="design#top">{% if page.tabname == "Graphic Design" %}<span>{% endif %}Graphic Design{% if page.tabname == "Graphic Design" %}</span>{% endif %}</a></li>
-                <li><a href="contact#top">{% if page.tabname == "Contact" %}<span>{% endif %}Contact{% if page.tabname == "Contact" %}</span>{% endif %}</a></li>
+            <li><a href="{{site.baseurl}}/">{% if page.tabname == "Home" %}<span>{% endif %}Home{% if page.tabname == "Home" %}</span>{% endif %}</a>
+                <li><a href="{{site.baseurl}}/coding#top">{% if page.tabname == "Coding" %}<span>{% endif %}Coding{% if page.tabname == "Coding" %}</span>{% endif %}</a></li>
+                <li><a href="{{site.baseurl}}/scratch#top">{% if page.tabname == "Scratch" %}<span>{% endif %}Scratch{% if page.tabname == "Scratch" %}</span>{% endif %}</a></li>
+                <li><a href="{{site.baseurl}}/design#top">{% if page.tabname == "Graphic Design" %}<span>{% endif %}Graphic Design{% if page.tabname == "Graphic Design" %}</span>{% endif %}</a></li>
+                <li><a href="{{site.baseurl}}/contact#top">{% if page.tabname == "Contact" %}<span>{% endif %}Contact{% if page.tabname == "Contact" %}</span>{% endif %}</a></li>
                 <li><a href="http://eepurl.com/bz0PTD">Newsletter</a></li>
         </ul>
     </nav>
