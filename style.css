@@ -260,7 +260,7 @@ body.not-found .logo h1 {
     }
 }
 
-.top-anchor {
+body.home .top-anchor {
     position: absolute;
     bottom: 56px; /*theoretically this should be 60px but idk, the internet is weird. */
 }
