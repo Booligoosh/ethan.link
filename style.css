@@ -511,3 +511,7 @@ span > *.hover-content {
 .addthis_inline_share_toolbox {
     margin-top: 1rem;
 }
+
+body.home .share, body.contact .share {
+    display: none;
+}
