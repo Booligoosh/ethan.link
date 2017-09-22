@@ -214,6 +214,11 @@ body.not-found .logo h1 {
     .logo h1 br {
         display: initial;
     }
+    body .not-found .logo h1 {
+        line-height: initial;
+        margin-top: calc((100vh - 60px) / 2);
+        height: calc(100vh - calc((100vh - 60px) / 2));
+    }
     .tabs img {
         display: none;
     }
