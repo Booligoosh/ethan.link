@@ -497,8 +497,17 @@ span > *.hover-content {
     width: initial;
 }
 
-.addthis_inline_share_toolbox {
+.share {
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
+}
+
+.share .share-message {
+    display: block;
+    font-size: 2rem;
+}
+
+.addthis_inline_share_toolbox {
+    margin-top: 1rem;
 }
