@@ -6,7 +6,7 @@
     #545454  */
 
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
-@import url("https://rawgit.com/jonsuh/hamburgers/master/dist/hamburgers.css");
+@import url(https://rawgit.com/jonsuh/hamburgers/master/dist/hamburgers.css) (screen and max-width: 574px);
 
 @font-face {
     font-family: Lombok;
@@ -213,7 +213,6 @@ body.not-found .logo h1 {
 
 /* IF ADDING MORE LINKS TO THE NAV THEN CHANGE THE QUERY SIZES!!! */
 @media screen and (max-width: 574px) {
-    
     .logo h1 br {
         display: initial;
     }
