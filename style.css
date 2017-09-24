@@ -6,7 +6,7 @@
     #545454  */
 
 @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
-@import url("https://rawgit.com/jonsuh/hamburgers/master/dist/hamburgers.css") (max-width: 574px);
+@import url(https://rawgit.com/jonsuh/hamburgers/master/dist/hamburgers.css) screen and (max-width: 574px);
 
 @font-face {
     font-family: Lombok;
