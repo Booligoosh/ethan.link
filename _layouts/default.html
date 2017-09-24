@@ -1,35 +1,19 @@
 ---
+layout: basic
 ---
-<!--
-View this code on Github instead:
-https://github.com/Booligoosh/booligoosh.github.io
--->
-<!DOCTYPE html>
-<html>
-
-<head>
-    {% include head.html %}
-</head>
-
-<body class="{{page.cat}}">
-    <div id="all">
-        {% include header.html %}
-        <div id="barba-wrapper">
-            <div class="barba-container">
-                <section class="content">
-                    {{ content }}
-                    <div class="share">
-                        Let's be serious, you've already come this far
-                        <span class="share-message">Please be nice and share</span>
-                        You will make me very happy...
-                        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-                        <div class="addthis_inline_share_toolbox"></div>
-                    </div>
-                </section>
-            </div>
+<div id="all">
+    {% include header.html %}
+    <div id="barba-wrapper">
+        <div class="barba-container">
+            <section class="content">
+                {{ content }}
+                <div class="share">
+                    Let's be serious, you've already come this far
+                    <span class="share-message">Please be nice and share</span> You will make me very happy...
+                    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                    <div class="addthis_inline_share_toolbox"></div>
+                </div>
+            </section>
         </div>
     </div>
-    {% include before-body-end.html %}
-</body>
-
-</html>
+</div>
