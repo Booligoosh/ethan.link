@@ -266,6 +266,13 @@ body.not-found .logo h1 {
     }
 }
 
+.top-anchor {
+    display: block;
+    position: relative;
+    top: -60px;
+    visibility: hidden;
+}
+
 body.home .top-anchor {
     position: absolute;
     bottom: 56px; /*theoretically this should be 60px but idk, the internet is weird. */
