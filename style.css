@@ -38,7 +38,8 @@ https://css-tricks.com/forums/topic/weird-mobile-safari-font-face-problem-font-d
 }
 
 body {
-    background-color: white;
+    background-color: white !important;
+    display: block !important;
     margin: 0;
     color: white;
     font-family: 'Quicksand', sans-serif;
