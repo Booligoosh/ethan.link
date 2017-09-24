@@ -11,6 +11,8 @@ author:
   name:           'Booligoosh'
   url:            https://booligoosh.github.io/
 
+description:      'The portfolio of Booligoosh - Graphic Designer, Programmer & Tech Enthusiast.'
+
 paginate:         5
 
 img: '/' # always end in /
