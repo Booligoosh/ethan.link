@@ -1,2 +1,11 @@
 <!-- Stylesheets -->
-<link rel="stylesheet" href="{{site.baseurl}}/style.css">
+    <!-- <link rel="stylesheet" href="{{site.baseurl}}/style.css"> -->
+<script type="text/javascript">
+    /* CSS File */
+    var linkElem = document.createElement('link');
+    linkElem.rel = 'stylesheet';
+    linkElem.href = '/style.css';
+    linkElem.type = 'text/css';
+    var godefer = document.getElementsByTagName('link')[0];
+    godefer.parentNode.insertBefore(linkElem, godefer);
+</script>
