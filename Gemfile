@@ -20,6 +20,8 @@ gem "redcarpet"
 
 gem "jekyll-gist"
 
+gem 'jekyll-press'
+
 gem "pygments.rb"
 
 gem "github-pages"

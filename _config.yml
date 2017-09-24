@@ -19,6 +19,7 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-feed
+  - jekyll-press
   - github-pages
   - jekyll-sitemap # leave at the end
 
