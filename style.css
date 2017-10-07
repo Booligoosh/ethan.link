@@ -97,7 +97,7 @@ body.not-found .logo h1 {
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 463px) {
     .logo h1 {
         font-size: 3rem;
     }
@@ -185,7 +185,7 @@ body.not-found .logo h1 {
     background-color: white !important;
 }
 
-@media screen and (max-width: 1124px) {
+@media screen and (max-width: 1087px) {
     .tabs img {
         display: none;
     }
@@ -194,7 +194,7 @@ body.not-found .logo h1 {
     }
 }
 
-@media screen and (max-width: 1034px) {
+@media screen and (max-width: 997px) {
     .tabs img {
         display: initial;
     }
@@ -203,7 +203,7 @@ body.not-found .logo h1 {
     }
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 662px) {
     .tabs img {
         display: none;
     }
@@ -213,7 +213,7 @@ body.not-found .logo h1 {
 }
 
 /* IF ADDING MORE LINKS TO THE NAV THEN CHANGE THE QUERY SIZES!!! */
-@media screen and (max-width: 574px) {
+@media screen and (max-width: 537px) {
     .logo h1 br {
         display: initial;
     }
@@ -372,7 +372,7 @@ td {
     display: none !important;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 713px) {
     .websites-desktop, .projects-desktop, .designs-desktop {
         display: none;
     }
@@ -469,7 +469,7 @@ body.contact .content {
     font-size: 3rem;
 }
 
-@media screen and (max-width: 549px) {
+@media screen and (max-width: 512px) {
     .contact-card img, .contact-card i.fa {
         font-size: 2rem;
     }
@@ -479,7 +479,7 @@ body.contact .content {
     }
 }
 
-@media screen and (max-width: 449px) {
+@media screen and (max-width: 412px) {
     .contact-card .with-hover-content img {
         display: none !important;
     }
