@@ -141,6 +141,12 @@ body.not-found .logo h1 {
     text-decoration: none;
 }
 
+.tabs nav a:hover {
+    color: rgb(1, 255, 174);
+    transition: all, 0.5s;
+    text-decoration: none;
+}
+
 .tabs nav span {
     color: rgb(1, 255, 174);
     padding-top: 20px;
