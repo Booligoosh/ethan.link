@@ -65,7 +65,7 @@ body.home .logo img {
 
 .logo h1 {
     width: 100%;
-    color: /* #545454 */ white;
+    color: #545454;
     text-align: center;
     font-size: 4rem;
     font-family: Lombok;
@@ -553,4 +553,8 @@ body {
 
 .logo {
     filter: drop-shadow(0 0 1em rgba(0,0,0,0.5));
+}
+
+body.home .logo h1 {
+    color: white !important;
 }
