@@ -273,6 +273,10 @@ body.not-found .logo h1 {
         padding: initial !important;
         display: list-item !important;
     }
+    
+    body:not(.home) .content {
+        margin: 0 !important;
+    }
 }
 
 .top-anchor {
@@ -530,4 +534,17 @@ span > *.hover-content {
 
 body.home .share, body.contact .share {
     display: none;
+}
+
+body:not(.home) {
+    background-image: linear-gradient(white 0,transparent),url(https://farm5.staticflickr.com/4760/40126462231_cdf00ef431_o_d.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+body:not(.home) .content {
+    background-color: rgba(41, 0, 70, 0.68); /*#290046*/
+    margin: 0 60px;
 }
