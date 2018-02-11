@@ -537,11 +537,11 @@ body.home .share, body.contact .share {
 }
 
 body:not(.home) {
-    background-image: linear-gradient(white 0,transparent),url(https://farm5.staticflickr.com/4760/40126462231_cdf00ef431_o_d.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(white 0,transparent),url(https://farm5.staticflickr.com/4760/40126462231_cdf00ef431_o_d.jpg) !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
 }
 
 body:not(.home) .content {
