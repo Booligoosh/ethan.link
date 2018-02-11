@@ -5,7 +5,7 @@ url:
 baseurl:          ''
 
 email:            booligoosh@optusnet.com.au
-newsletter:       'https://eepurl.com/bz0PTD'
+newsletter:       'https://codetheweb.blog/newsletter/' # old: https://eepurl.com/bz0PTD
 
 author:
   name:           'Booligoosh'
