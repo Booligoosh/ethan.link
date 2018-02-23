@@ -561,10 +561,14 @@ body.home .logo h1 {
 }
 
 .photo-grid {
-    display: grid;
-    grid-template: auto / auto auto auto;
-    grid-gap: 2rem;
+    display: flex;
 }
+
+.photo-grid .col {
+    padding:  1em 0;
+}
+
 .photo-grid img {
     width: 100%;
+    padding: .5em 0;
 }

@@ -7,13 +7,19 @@ layout: default
         <h4><a href="https://unsplash.com/@booligoosh">Unsplash</a></h4>
     </div>
     <p>{{content}}</p>
-    {%# include quicklinks.html %} 
     <h3 id="backtotop"><a href="#top">Back to top &#10177;</a></h3>
 </div>
 <div class="photo-grid">
+    <div class="col">
     <!--BEGIN AUTO CONTENT-->
         {% assign photos = site.photography | reverse %}
+        {% assign perRow = 3 | minus: 1 %}
+        {% assign size = photos | size %}
+        {% assign perCol = size | divided_by: perRow | floor %}
+        
         {% for photo in photos %}
+        {% assign mod = forloop.index | modulo: perCol %}
+        {% if mod == 0 %}</div><div class="col">{% endif %}
         <img src="{{photo.src}}">
         {% endfor %}
     <!--END AUTO CONTENT-->
