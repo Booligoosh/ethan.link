@@ -13,14 +13,24 @@ layout: default
     <div class="col">
     <!--BEGIN AUTO CONTENT-->
         {% assign photos = site.photography | reverse %}
-        {% assign perRow = 3 | minus: 1 %}
+        {% assign colsReal = 3 %}
+        {% assign cols = colsReal | minus: 0 %}
+        {% assign colsMinus = colsReal | minus: 1 %}
         {% assign size = photos | size %}
-        {% assign perCol = size | divided_by: perRow | floor %}
+        {% assign perCol = size | divided_by: cols | floor %}
         
-        {% for photo in photos %}
-        {% assign mod = forloop.index | modulo: perCol %}
-        {% if mod == 0 %}</div><div class="col">{% endif %}
-        <img src="{{photo.src}}">
+        {% for col in (0..colsMinus) %}
+           {% assign i = forloop.index | plus: 0 %}
+            <div class="col">
+                {% for photo in photos %}
+                    {% assign toMod = forloop.index | plus: i %}
+                    {% assign mod = toMod | modulo: colsReal %}
+                    <!--i:{{i}} | mod:{{mod}} | index:{{forloop.index}} <b>VERDICT: {% if mod == 0 %}YAY! :D{% else %}NAY! :({% endif %}</b><br>-->
+                    {% if mod == 0 %}
+                        <img src="{{photo.src}}">
+                    {% endif %}
+                {% endfor %}
+            </div>
         {% endfor %}
     <!--END AUTO CONTENT-->
 </div>
