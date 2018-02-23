@@ -566,6 +566,15 @@ body.home .logo h1 {
 
 .photo-grid .col {
     padding: 0 1em;
+    width: fit-content;
+}
+
+.photo-grid .col:first-child {
+    padding-left: 0;
+}
+
+.photo-grid .col:last-child {
+    padding-right: 0;
 }
 
 .photo-grid img {
