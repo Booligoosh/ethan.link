@@ -565,7 +565,7 @@ body.home .logo h1 {
 }
 
 .photo-grid .col {
-    padding:  1em 0;
+    padding: 0 1em;
 }
 
 .photo-grid img {
