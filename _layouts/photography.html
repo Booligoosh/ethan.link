@@ -12,7 +12,7 @@ layout: default
 </div>
 <div class="photo-grid">
     <!--BEGIN AUTO CONTENT-->
-        {% assign photos = site.photography %}
+        {% assign photos = site.photography | reverse %}
         {% for photo in photos %}
         <img src="{{photo.src}}">
         {% endfor %}
