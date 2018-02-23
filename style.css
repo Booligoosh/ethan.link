@@ -564,6 +564,16 @@ body.home .logo h1 {
     display: flex;
 }
 
+@media screen and (orientation:portrait) {
+    .photo-grid {
+        flex-wrap: wrap;
+    }
+    .photo-grid .col {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
 .photo-grid .col {
     padding: 0 1em;
     width: fit-content;
