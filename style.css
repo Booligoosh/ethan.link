@@ -561,7 +561,7 @@ body.home .logo h1 {
 
 .photo-grid {
     display: grid;
-    grid-template: auto / auto auto;
+    grid-template: auto / auto auto auto;
     grid-gap: 2rem;
 }
 .photo-grid img {
