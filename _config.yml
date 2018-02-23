@@ -41,3 +41,5 @@ collections:
     output: false
   scratch:
     output: false
+  photography:
+    output: false

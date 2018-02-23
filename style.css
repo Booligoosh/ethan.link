@@ -558,3 +558,9 @@ body {
 body.home .logo h1 {
     color: white !important;
 }
+
+.photo-grid {
+    display: grid;
+    grid-template: auto / auto auto;
+    grid-gap: 2rem;
+}
