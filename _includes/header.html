@@ -3,7 +3,7 @@
         <a href="{{site.baseurl}}/">
             <!-- Created with Inkscape (http://www.inkscape.org/) -->
             <img src="{{site.baseurl}}/img/logos/logo_trans.svg">
-            <h1>BOOLIGOOSH</h1>
+            <h1>{% if page.tabname == "Home" %}BOOLIGOOSH{% else %}{{page.tabname | upcase}}{% endif %}</h1>
         </a>
     </div>
 </section>
