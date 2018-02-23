@@ -548,7 +548,8 @@ body {
 
 .content {
     background-color: rgba(41, 0, 70, 0.68); /*#290046*/
-    margin: 0 60px;
+    margin: 60px;
+    margin-top: 0;
 }
 
 .logo {
