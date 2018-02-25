@@ -292,13 +292,12 @@ body.home .top-anchor {
 }
 
 .content {
-
     background-color: #b452f7;
     margin: 60px;
     margin-top: 0;
     text-align: left;
     padding: 2rem;
-    line-height: 1.7rem;
+    line-height: 2rem;
     border-radius: 1em;
     color: white;
     letter-spacing: 1px;
