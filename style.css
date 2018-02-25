@@ -5,8 +5,7 @@
     #290046
     #545454  */
 
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
 @import url(https://rawgit.com/jonsuh/hamburgers/master/dist/hamburgers.css) screen and (max-width: 574px);
 
 @font-face {
@@ -39,16 +38,17 @@ https://css-tricks.com/forums/topic/weird-mobile-safari-font-face-problem-font-d
 }
 
 body {
+    margin-top: 60px !important;
     background-color: white !important;
     display: block !important;
     margin: 0;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
+    color: #32424A;
+    font-family: 'Muli', sans-serif;
     font-weight: 400;
     text-align: center;
 }
 
-.logo a {
+/* .logo a {
     text-decoration: none;
 }
 
@@ -102,7 +102,7 @@ body.not-found .logo h1 {
     .logo h1 {
         font-size: 3rem;
     }
-}
+} */
 
 .info {
     
@@ -113,8 +113,9 @@ body.not-found .logo h1 {
 }
 
 .tabs {
-    color: white;
-    background-color: #b346ff;
+    color: #cea8fa;
+    background-color: #32424A;
+    font-weight: bold;
     padding: 1px;
     position: fixed;
     top: 0;
@@ -136,19 +137,19 @@ body.not-found .logo h1 {
     display: inline;
 }
 
-.tabs nav a {
-    color: white;
+.tabs a {
+    color: inherit;
     text-decoration: none;
 }
 
 .tabs nav a:hover {
-    color: rgb(1, 255, 174);
+    /* color: rgb(1, 255, 174); */
     transition: all, 0.5s;
     text-decoration: none;
 }
 
 .tabs nav span {
-    color: rgb(1, 255, 174);
+    /* color: rgb(1, 255, 174); */
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -221,14 +222,14 @@ body.not-found .logo h1 {
 
 /* IF ADDING MORE LINKS TO THE NAV THEN CHANGE THE QUERY SIZES!!! */
 @media screen and (max-width: 537px) {
-    .logo h1 br {
+    /* .logo h1 br {
         display: initial;
     }
     body.not-found .logo h1 {
         line-height: initial;
         margin-top: calc((100vh - 60px) / 2);
         height: calc(100vh - calc((100vh - 60px) / 2));
-    }
+    } */
     .tabs img {
         display: none;
     }
@@ -292,11 +293,16 @@ body.home .top-anchor {
 }
 
 .content {
-    background-color: #290046;
-    margin: 0;
+
+    background-color: #b452f7;
+    margin: 60px;
+    margin-top: 0;
     text-align: left;
     padding: 2rem;
     line-height: 1.7rem;
+    border-radius: 1em;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .content a {
@@ -543,26 +549,20 @@ body.home .share, body.contact .share {
 /* New styles */
 
 body {
-    background-image: linear-gradient(white 0,transparent),url(https://farm5.staticflickr.com/4760/40126462231_cdf00ef431_o_d.jpg) !important;
+    background-image: linear-gradient(45deg,transparent,#F5F5F5),linear-gradient(120deg, #fccb90 0%, #d57eeb 100%) !important;
     background-attachment: fixed !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
 }
 
-.content {
-    background-color: rgba(41, 0, 70, 0.68); /*#290046*/
-    margin: 60px;
-    margin-top: 0;
-}
-
-.logo {
+/* .logo {
     filter: drop-shadow(0 0 1em rgba(0,0,0,0.5));
-}
+} */
 
-body.home .logo h1 {
+/* body.home .logo h1 {
     color: white !important;
-}
+} */
 
 .photo-grid {
     display: flex;
@@ -594,4 +594,22 @@ body.home .logo h1 {
 .photo-grid img {
     width: 100%;
     padding: .5em 0;
+}
+
+.header {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+}
+
+.header h1 {
+    font-size: 3em;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.header h1 span {
+    color: #b452f7;
 }
