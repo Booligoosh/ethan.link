@@ -278,6 +278,9 @@ body.not-found .logo h1 {
     .content {
         margin: 0 !important;
     }
+    .back-to-top {
+        margin-top: 0;
+    }
 }
 
 .top-anchor {
@@ -347,21 +350,15 @@ body.home .top-anchor {
     padding: 2px;
 }
 
-#backtotop {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-color: white;
-    width: 60px;
+.back-to-top {
+    display: block;
+    margin-top: -60px;
     height: 60px;
     line-height: 60px;
-    text-align: center;
-    margin: 0;
-}
-
-#backtotop a {
     text-decoration: none;
-    color: black;
+    color: white;
+    opacity: .8;
+    letter-spacing: 1px;
 }
 
 #quicklinks-mobile {
