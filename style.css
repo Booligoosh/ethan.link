@@ -590,7 +590,8 @@ body {
 
 .photo-grid img {
     width: 100%;
-    padding: .5em 0;
+    margin: .5em 0;
+    border-radius: 1em;
 }
 
 .header {
