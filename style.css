@@ -354,6 +354,11 @@ body.home .top-anchor {
     color: white;
     opacity: .8;
     letter-spacing: 1px;
+    transition: opacity, .5s;
+}
+
+.back-to-top:hover {
+    opacity: 1;
 }
 
 #quicklinks-mobile {
