@@ -10,7 +10,7 @@ layout: default
 </div>
 <div class="photo-grid">
     <!--BEGIN AUTO CONTENT-->
-        {% assign photos = site.photography | reverse %}
+        {% assign photos = site.photographySrcs %}
         {% assign colsReal = 3 %}
         {% assign cols = colsReal | minus: 0 %}
         {% assign colsMinus = colsReal | minus: 1 %}
@@ -25,7 +25,7 @@ layout: default
                     {% assign mod = toMod | modulo: colsReal %}
                     <!--i:{{i}} | mod:{{mod}} | index:{{forloop.index}} <b>VERDICT: {% if mod == 0 %}YAY! :D{% else %}NAY! :({% endif %}</b><br>-->
                     {% if mod == 0 %}
-                        <img src="{{photo.src}}">
+                        <img src="{{photo}}">
                     {% endif %}
                 {% endfor %}
             </div>
