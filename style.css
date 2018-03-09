@@ -246,6 +246,9 @@ body.not-found .logo h1 {
         margin-top: calc(-100vh + 60px);
         transition: all,1s;
     }
+    body.nav-out {
+        overflow: hidden;
+    }
     body.nav-out .tabs nav {
         display: block;
         margin-top: 60px;
