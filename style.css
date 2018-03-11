@@ -311,6 +311,11 @@ body.home .top-anchor {
     color: inherit;
 }
 
+.content img {
+    border-radius: 5px;
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.5);
+}
+
 .info p {
     margin-top: 0;
     font-size: 1.5rem;
@@ -595,8 +600,6 @@ body {
 .photo-grid img {
     width: 100%;
     margin: .5em 0;
-    border-radius: 5px;
-    box-shadow: 0 0 3em rgba(0, 0, 0, 0.5);
 }
 
 .header {
