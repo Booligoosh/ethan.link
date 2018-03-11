@@ -296,6 +296,7 @@ body.home .top-anchor {
 
 .content {
     /* background-color: rgba(255, 255, 255, 0.35); */
+    background-color: transparent;
     box-shadow: 0 0 25vw rgba(0, 0, 0, 0.35);
     margin: 60px;
     margin-top: 0;
@@ -440,9 +441,9 @@ td {
     text-decoration: none;
 }
 
-body.contact .content {
+/* body.contact .content {
     background-color: #cea9ff;
-}
+}*/
 
 .contact-cards-container {
     width: 72%;
