@@ -295,19 +295,20 @@ body.home .top-anchor {
 }
 
 .content {
-    background-color: #b452f7;
+    /* background-color: rgba(255, 255, 255, 0.35); */
+    box-shadow: 0 0 25vw rgba(0, 0, 0, 0.35);
     margin: 60px;
     margin-top: 0;
     text-align: left;
     padding: 2rem;
     line-height: 2rem;
     border-radius: 1em;
-    color: white;
+    /* color: white; */
     letter-spacing: 1px;
 }
 
 .content a {
-    color: white;
+    color: inherit;
 }
 
 .info p {
@@ -594,7 +595,8 @@ body {
 .photo-grid img {
     width: 100%;
     margin: .5em 0;
-    /* border-radius: 1em; */
+    border-radius: 5px;
+    box-shadow: 0 0 3em rgba(0, 0, 0, 0.5);
 }
 
 .header {
