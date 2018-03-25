@@ -14,10 +14,10 @@ layout: default
         {% assign colsReal = 3 %}
         {% assign cols = colsReal | minus: 0 %}
         {% assign colsMinus = colsReal | minus: 1 %}
-        {% assign size = photos | size %}
+        {% assign size = photos | size | plus: 1 %}
         {% assign perCol = size | divided_by: cols | floor %}
         
-        {% for col in (0..cols) %}
+        {% for col in (0..colsMinus) %}
            {% assign i = forloop.index | plus: 0 %}
             <div class="col">
                 {% for photo in photos %}
