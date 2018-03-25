@@ -17,7 +17,7 @@ layout: default
         {% assign size = photos | size %}
         {% assign perCol = size | divided_by: cols | floor %}
         
-        {% for col in (0..colsMinus) %}
+        {% for col in (0..cols) %}
            {% assign i = forloop.index | plus: 0 %}
             <div class="col">
                 {% for photo in photos %}
