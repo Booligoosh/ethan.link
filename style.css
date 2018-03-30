@@ -320,7 +320,7 @@ body.home .top-anchor {
 .content {
     /* background-color: rgba(255, 255, 255, 0.35); */
     background-color: transparent;
-    box-shadow: 0 0 25vw rgba(0, 0, 0, 0.35);
+    /* box-shadow: 0 0 25vw rgba(0, 0, 0, 0.35); Sad to remove this, but the page just looks better without */
     margin: 60px;
     margin-top: 0;
     text-align: left;
@@ -415,6 +415,8 @@ td {
     padding: 1px;
     color: #545454;
     margin-bottom: 1rem;
+    /* DIE!!!!! (for the moment) */
+    DISPLAY: NONE;
 }
 
 .accounts a {
