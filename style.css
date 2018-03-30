@@ -180,6 +180,7 @@ header .logo h2 {
 
 header .logo img {
     height: 60px;
+    filter: drop-shadow(0 0 7px white);
 }
 
 header .hamburger {
