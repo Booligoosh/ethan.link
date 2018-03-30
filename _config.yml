@@ -1,3 +1,5 @@
+port: 8001
+
 title:            Booligoosh
 tagline:          ''
 description:      ''
@@ -18,11 +20,7 @@ paginate:         5
 img: '/' # always end in /
 
 gems:
-  - jekyll-paginate
-  - jekyll-gist
   - jekyll-feed
-  - jekyll-press
-  - github-pages
   - jekyll-sitemap # leave at the end
 
 contact:

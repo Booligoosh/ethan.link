@@ -276,9 +276,17 @@ body.not-found .logo h1 {
     
     .content {
         margin: 0 !important;
+        border-radius: 0 !important;
     }
     .back-to-top {
         margin-top: 0 !important;
+    }
+    .main-content-list.fullwidth-feature-items .item {
+        min-height: unset !important;
+        padding: 2rem !important;
+    }
+    .quicklinks li {
+        width: 100%;
     }
 }
 
@@ -312,7 +320,7 @@ body.home .top-anchor {
     color: inherit;
 }
 
-.content img {
+.content img, .main-content-list.fullwidth-feature-items .item, .quicklinks li {
     border-radius: 5px;
     box-shadow: 0 0 3em rgba(0, 0, 0, 0.5);
 }
@@ -325,27 +333,6 @@ body.home .top-anchor {
 
 #extlink {
     text-decoration: underline;
-}
-
-.websites-mobile div {
-    margin-top: 100px;
-}
-
-.websites-desktop a {
-    text-decoration: none;
-}
-
-.websites-mobile a {
-    text-decoration: none;
-}
-
-.websites-desktop img {
-    width: 100%;
-}
-
-.websites-mobile img, .designs-mobile img, .projects-mobile iframe {
-    width: 100%;
-    max-width: 100%;
 }
 
 #warning {
@@ -371,14 +358,6 @@ body.home .top-anchor {
     opacity: 1;
 }
 
-#quicklinks-mobile {
-    display: none;
-}
-
-#quicklinks-desktop a {
-    text-decoration: none;
-}
-
 table {
     width: 100%;
 }
@@ -394,19 +373,6 @@ td {
 
 #right {
     text-align: left;
-}
-
-.websites-mobile, .projects-mobile, .designs-mobile {
-    display: none !important;
-}
-
-@media screen and (max-width: 713px) {
-    .websites-desktop, .projects-desktop, .designs-desktop {
-        display: none;
-    }
-    .websites-mobile, .projects-mobile, .designs-mobile {
-        display: initial !important;
-    }
 }
 
 .designs-desktop img {
@@ -623,4 +589,65 @@ body {
 
 .header h2 {
     color: #57727f;
+}
+
+.main-content-list.fullwidth-feature-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+.main-content-list.fullwidth-feature-items > a {
+    text-decoration: none;
+}
+
+.main-content-list.fullwidth-feature-items .item {
+    box-sizing: border-box;
+    display: block;
+    min-height: calc(100vh - 60px - 4rem);
+    padding: 3rem;
+    line-height: 1.5em;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+
+.main-content-list.fullwidth-feature-items .item:first-child {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 950px) {
+    .main-content-list.fullwidth-feature-items {
+        grid-template-columns: 1fr;
+    }
+    .main-content-list.fullwidth-feature-items .item {
+        grid-column-start: 1 !important;
+        grid-column-end: 1 !important;
+    }
+}
+
+.quicklinks {
+    list-style: none;
+    margin: 2rem 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quicklinks li {
+    margin: 0.5em;
+    min-width: max-content;
+    background-size: cover;
+    background-position: center center;
+}
+
+.quicklinks a {
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    line-height: 3em;
 }

@@ -1,17 +1,8 @@
-            <h4 id="quicklinks-desktop">
-                <!--BEGIN AUTO CONTENT-->
-                {% assign ql_posts = site[page.cat] | reverse %}
-                {% for post in ql_posts %}
-                <a href="#{{post.rawname}}-desktop">{{post.title}}</a>
-                {% if post != ql_posts.last %} | {% endif %}
-                {% endfor %}
-                <!--END AUTO CONTENT-->
-            </h4>
-            <ul id="quicklinks-mobile">
-                <!--BEGIN AUTO CONTENT-->
-                {% assign ql_posts = site[page.cat] | reverse %}
-                {% for post in ql_posts %}
-                <li><a href="#{{post.rawname}}-mobile">{{post.title}}</a></li>
-                {% endfor %}
-                <!--END AUTO CONTENT-->
-            </ul>
+<ul class="quicklinks">
+    <!--BEGIN AUTO CONTENT-->
+    {% assign ql_posts = site[page.cat] | reverse %}
+    {% for post in ql_posts %}
+    <li style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('{{site.baseurl}}/img/content/coding/{{post.image}}');"><a href="#{{post.rawname}}">{{post.title}}</a></li>
+    {% endfor %}
+    <!--END AUTO CONTENT-->
+</ul>

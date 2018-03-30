@@ -1,5 +1,6 @@
 ---
 title: ResistorFind
+fullwidth: true
 rawname: resistorfind
 image: resistorfind.png
 link: https://booligoosh.github.io/resistorfind
