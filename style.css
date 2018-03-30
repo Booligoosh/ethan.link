@@ -263,6 +263,7 @@ header .hamburger {
         background-color: #32424a;
         position: fixed;
         opacity: 0;
+        pointer-events: none;
     }
     header nav ul {
         display: block !important;
@@ -276,13 +277,16 @@ header .hamburger {
         padding: initial !important;
         display: list-item !important;
     }
-    
+    body {
+        overflow: scroll;
+    }
     body.nav-out {
         overflow: hidden;
     }
     body.nav-out header nav {
         opacity: 1;
         margin-top: 60px;
+        pointer-events: auto;
     }
     .content {
         margin: 0 !important;
