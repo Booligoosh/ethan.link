@@ -130,6 +130,7 @@ header {
     line-height: 60px;
     padding: 0;
     display: flex;
+    z-index: 1;
 }
 
 header nav {
