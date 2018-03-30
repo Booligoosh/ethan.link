@@ -1,38 +1,7 @@
 ---
-layout: basic
+layout: default
 title: 404 Not Found
+heading: "&#x1F4A5; 404 Page Not Found &#x1F4A5;"
+subheading: You've reached the end of the internet... :(
 rawname: not-found
 ---
-<div id="all">
-    <section class="header">
-        <div class=logo>
-            <a href="{{site.baseurl}}/">
-                <!-- Created with Inkscape (http://www.inkscape.org/) -->
-                <img src="{{site.baseurl}}/img/logos/logo_trans.svg">
-                <h1><span class="num">404</span><br> NOT FOUND</h1>
-            </a>
-        </div>
-    </section>
-    <header class="tabs">
-        <button class="hamburger hamburger--spin" id="toggle-nav" type="button" onclick="document.getElementById('toggle-nav').classList.toggle('is-active'); document.body.classList.toggle('nav-out')">
-            <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-            </span>
-        </button>
-        <a href="{{site.baseurl}}/">
-            <img src="{{site.baseurl}}/img/logos/logo.svg">
-            <h2>BOOLIGOOSH</h2>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="{{site.baseurl}}/">{% if page.tabname == "Home" %}<span>{% endif %}Home{% if page.tabname == "Home" %}</span>{% endif %}</a>
-                    <li><a href="{{site.baseurl}}/coding#top">{% if page.tabname == "Coding" %}<span>{% endif %}Coding{% if page.tabname == "Coding" %}</span>{% endif %}</a></li>
-                    <li><a href="{{site.baseurl}}/scratch#top">{% if page.tabname == "Scratch" %}<span>{% endif %}Scratch{% if page.tabname == "Scratch" %}</span>{% endif %}</a></li>
-                    <li><a href="{{site.baseurl}}/design#top">{% if page.tabname == "Graphic Design" %}<span>{% endif %}Graphic Design{% if page.tabname == "Graphic Design" %}</span>{% endif %}</a></li>
-                    <li><a href="{{site.baseurl}}/contact#top">{% if page.tabname == "Contact" %}<span>{% endif %}Contact{% if page.tabname == "Contact" %}</span>{% endif %}</a></li>
-                    <li><a href="http://eepurl.com/bz0PTD">Newsletter</a></li>
-            </ul>
-        </nav>
-    </header>
-    <a name="top" class="top-anchor"></a>
-</div>
