@@ -37,6 +37,10 @@ https://css-tricks.com/forums/topic/weird-mobile-safari-font-face-problem-font-d
                                   supported by Chrome and Opera */
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     margin-top: 60px !important;
     background-color: white !important;
