@@ -112,9 +112,10 @@ body.not-found .logo h1 {
     display: inline-block;
 }
 
-.tabs {
-    color: #cea8fa;
-    background-color: #32424A;
+header {
+    /* color: #cea8fa;
+    background-color: #32424A; */
+    color: #32424A;
     font-weight: bold;
     padding: 1px;
     position: fixed;
@@ -124,61 +125,60 @@ body.not-found .logo h1 {
     height: 60px;
     line-height: 60px;
     padding: 0;
+    display: flex;
 }
 
-.tabs nav ul {
-    display: inline;
+header nav {
+    width: 100%;
+}
+
+header nav ul {
     margin: 0;
     padding: 0;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.tabs nav li {
+header nav li {
+    box-sizing: border-box;
     padding: 10px;
-    display: inline;
+    overflow: hidden;
+    transition: width, 1s;
 }
 
-.tabs a {
+header nav a {
     color: inherit;
     text-decoration: none;
 }
 
-.tabs nav a:hover {
-    /* color: rgb(1, 255, 174); */
-    transition: all, 0.5s;
+header nav a span {
+    margin-left: 0.5em;
+}
+
+header nav {
+    margin: 0;
+}
+
+header .logo {
+    display: flex;
     text-decoration: none;
+    color: inherit;
 }
 
-.tabs nav span {
-    /* color: rgb(1, 255, 174); */
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.tabs nav {
+header .logo h2 {
     margin: 0;
+    margin-left: 1em;
+    line-height: inherit;
+    color: inherit;
 }
 
-.tabs h2 {
-    position: absolute;
-    top: 0;
-    left: 60px;
-    line-height: 100%;
-    margin: 0;
-    padding: 20px;
-    font-family: Lombok;
-    width: 10.365rem;
-    color: white;
-}
-
-.tabs img {
+header .logo img {
     height: 60px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
 }
 
-.tabs .hamburger {
+header .hamburger {
     display: none;
     position: absolute;
     top: 0;
@@ -190,32 +190,32 @@ body.not-found .logo h1 {
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    background-color: white !important;
+    background-color: #32424A !important;
 }
 
 @media screen and (max-width: 1087px) {
-    .tabs img {
+    header img {
         display: none;
     }
-    .tabs h2 {
+    header h2 {
         left: 0;
     }
 }
 
 @media screen and (max-width: 997px) {
-    .tabs img {
+    header img {
         display: initial;
     }
-    .tabs h2 {
+    header h2 {
         display: none;
     }
 }
 
 @media screen and (max-width: 662px) {
-    .tabs img {
+    header img {
         display: none;
     }
-    .tabs h2 {
+    header h2 {
         display: none;
     }
 }
@@ -230,30 +230,26 @@ body.not-found .logo h1 {
         margin-top: calc((100vh - 60px) / 2);
         height: calc(100vh - calc((100vh - 60px) / 2));
     } */
-    .tabs img {
+    header img {
         display: none;
     }
-    .tabs h2 {
+    header .logo h2 {
         display: initial;
-        width: calc(100vw - 40px);
+        width: 100vw;
         text-align: center;
         left: 0;
+        margin-left: 0;
     }
-    .tabs .hamburger {
+    header .hamburger {
         display: initial;
     }
-    .tabs nav {
-        margin-top: calc(-100vh + 60px);
-        transition: all,1s;
-    }
-    body.nav-out {
-        overflow: hidden;
-    }
-    body.nav-out .tabs nav {
-        display: block;
+    header nav {
+        /* margin-top: calc(-100vh + 60px); SWAP WITH LINE BELOW IF WANT TO HAVE DROP-DOWN EFFECT*/
         margin-top: 60px;
+        transition: all,.5s;
         background-color: #b346ff;
-        box-shadow: inset 0 0 4rem -0.5rem black;
+        /* box-shadow: inset 0 0 4rem -0.5rem black; CHANGED DIFFERENTIATOR TO BORDER */
+        border-top: 2px solid white;
         width: 100vw;
         height: calc(100vh - 60px);
         text-align: center !important;
@@ -261,19 +257,29 @@ body.not-found .logo h1 {
         overflow-y: scroll;
         font-size: 1.5em;
         background-color: #32424a;
+        position: fixed;
+        opacity: 0;
     }
-    body.nav-out .tabs nav ul {
+    header nav ul {
         display: block !important;
         margin: 0 !important;
         padding: 0 !important;
         list-style: none !important;
         text-align: center !important;
+        color: #cea9ff !important;
     }
-    body.nav-out .tabs nav li {
+    header nav li {
         padding: initial !important;
         display: list-item !important;
     }
     
+    body.nav-out {
+        overflow: hidden;
+    }
+    body.nav-out header nav {
+        opacity: 1;
+        margin-top: 60px;
+    }
     .content {
         margin: 0 !important;
         border-radius: 0 !important;
@@ -521,7 +527,7 @@ body.home .share, body.contact .share {
 
 /* New styles */
 
-body {
+body, header {
     background-image: linear-gradient(45deg,transparent,#F5F5F5),linear-gradient(120deg, #fccb90 0%, #d57eeb 100%) !important;
     background-attachment: fixed !important;
     background-size: cover !important;
