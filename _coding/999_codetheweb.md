@@ -1,6 +1,5 @@
 ---
 title: Code The Web
-hidetitle: true
 fullwidth: true
 rawname: codetheweb
 image: codetheweb.svg
