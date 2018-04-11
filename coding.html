@@ -17,7 +17,8 @@ heading: "Take a look at my <span>coding projects</span>."
     <!--BEGIN AUTO CONTENT-->
     {% assign codingposts = site.coding | reverse %}
     {% for post in codingposts %}
-    {% if post.link %}<a href="{{post.link}}" {% else %}<div {% endif %}class="item" id="{{post.rawname}}" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('{{site.baseurl}}/img/content/coding/{{post.image}}');{% if post.fullwidth %}grid-column-start: 1; grid-column-end: 3;{% endif %}">
+    {% capture mod %}{{forloop.index | minus: 1 | modulo: 3}}{% endcapture %}
+    {% if post.link %}<a href="{{post.link}}" {% else %}<div {% endif %}class="item" id="{{post.rawname}}" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('{{site.baseurl}}/img/content/coding/{{post.image}}');{% if mod == '0' %}grid-column-start: 1; grid-column-end: 3;{% endif %}">
             <div>
                 {% unless post.hidetitle %}<h2>{{post.title}}</h2>{% endunless %}
                 {{post.content}}
