@@ -221,6 +221,9 @@ header .hamburger {
     header img {
         display: none;
     }
+    .header { /* No more need for 60px to align with logo in nav */
+        padding: 0 2rem !important;
+    }
     header h2 {
         display: none;
     }
