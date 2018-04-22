@@ -1,6 +1,7 @@
 ---
 title: Egeote Website
 rawname: egeote
+permalink: /coding/egeote
 image: egeote.png
 link: https://egeote.com
 ---

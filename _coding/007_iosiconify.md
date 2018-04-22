@@ -1,6 +1,7 @@
 ---
 title: iOS iConify
 rawname: iosiconify
+permalink: /coding/iosiconify
 image: iosiconify.png
 link: https://iosiconify.github.io/
 ---

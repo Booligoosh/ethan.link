@@ -1,6 +1,7 @@
 ---
 title: Applord Website
 rawname: applord
+permalink: /coding/applord
 image: applord.png
 link: https://appguruonline.github.io/
 ---

@@ -1,6 +1,7 @@
 ---
 title: Blueprint
 rawname: blueprint
+permalink: /coding/blueprint
 image: blueprint.png
 link: https://booligoosh.github.io/blueprint
 ---

@@ -1,6 +1,7 @@
 ---
 title: Code The Web
 rawname: codetheweb
+permalink: /coding/codetheweb
 image: codetheweb.svg
 link: https://codetheweb.blog/
 ---

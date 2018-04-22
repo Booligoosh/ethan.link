@@ -650,6 +650,13 @@ header:before {
     margin-top: 0;
 }
 
+.main-content-list.fullwidth-feature-items .item h2 {
+    background: rgba(0,0,0,0.6);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 950px) {
     .main-content-list.fullwidth-feature-items {
         grid-template-columns: 1fr;

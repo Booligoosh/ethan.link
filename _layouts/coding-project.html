@@ -1,0 +1,75 @@
+---
+layout: default
+---
+<div class="main-content-list fullwidth-feature-items">
+    <a href="{{page.link}}" class="img"><img src="{{site.baseurl}}/img/content/coding/{{page.image}}" class="item text" style="padding: 0 !important;"></a>
+    <a href="{{site.baseurl}}/coding#{{page.rawname}}" class="coding-project-cta item text">&#x23EA; Back to coding page</a>
+    <div class="item text">
+        <div>
+            <h2>{{page.title}}</h2>
+            {{content}}
+            <!-- <br>
+            <em>Below is an embedded version of the website...</em> (or <a href="{{page.link}}">click me to see it properly 	&#x1F61C;</a>) -->
+        </div>
+    </div>
+    <!-- <div class="item" id="{{post.rawname}}" style="background-image: url('{{site.baseurl}}/img/content/coding/{{page.image}}');grid-column-start: 1;grid-column-end:3">
+    </div> -->
+    <a href="{{page.link}}" class="coding-project-cta item text">Take me to {{page.title}}! &#x1F680;</a>
+    <!-- <iframe class="item" src="{{page.link}}"></iframe> -->
+</div>
+
+
+<style>
+    .main-content-list.fullwidth-feature-items {
+        min-height: 75vh;
+    }
+    .main-content-list.fullwidth-feature-items > .img {
+        grid-row-start: 1;
+        grid-row-end: 4
+    }
+    .main-content-list.fullwidth-feature-items > .img > img {
+        padding: 0 !important;
+        max-width: 100%;;
+        height: 100%;
+        object-fit: cover;
+    }
+    @media screen and (max-width: 950px) {
+        .main-content-list.fullwidth-feature-items > img {
+            height: auto;
+            width: 100%;
+            object-fit: initial;
+        }
+    }
+    .header {
+        display: none;
+    }
+    iframe.item {
+        background: white;
+        grid-column-start: 1;
+        grid-column-end:3;
+        padding: 0 !important;
+        border: none;
+        {% assign zoom = 0.8 %}
+        width: calc(100% / {{zoom}});
+        height: calc((100vh - 60px - 4rem) / {{zoom}}) !important;
+        transform: scale({{zoom}});
+        transform-origin: top left;
+    }
+    .item.text {
+        justify-content: center;
+        text-align: center;
+        align-items: center !important;
+        color: #32424A !important;
+        padding: 3rem 15% !important;
+        min-height: unset !important;
+    }
+    .coding-project-cta {
+        display: block;
+        background: #CEA9FF;
+        color: white;
+    }
+    /* body:before, header:before {
+        background-image: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)), url('{{site.baseurl}}/img/content/coding/{{page.image}}') !important;
+        filter: blur(2px);
+    } */
+</style>

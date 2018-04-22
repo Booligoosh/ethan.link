@@ -1,6 +1,7 @@
 ---
 title: Orange CSS
 rawname: orange_css
+permalink: /coding/orange_css
 image: orange_css.png
 link: https://booligoosh.github.io/csszen/
 ---

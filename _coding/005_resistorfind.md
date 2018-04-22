@@ -1,6 +1,7 @@
 ---
 title: ResistorFind
 rawname: resistorfind
+permalink: /coding/resistorfind
 image: resistorfind.png
 link: https://booligoosh.github.io/resistorfind
 ---

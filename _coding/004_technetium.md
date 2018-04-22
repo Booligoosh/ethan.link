@@ -1,6 +1,7 @@
 ---
 title: TechnetiumPrime
 rawname: technetium
+permalink: /coding/technetium
 image: technetium.png
 link: https://booligoosh.github.io/technetiumprime
 ---

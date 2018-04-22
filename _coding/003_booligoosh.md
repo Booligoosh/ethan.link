@@ -1,6 +1,7 @@
 ---
 title: Booligoosh
 rawname: booligoosh
+permalink: /coding/booligoosh
 image: booligoosh.png
 link: https://booligoosh.github.io/
 ---
