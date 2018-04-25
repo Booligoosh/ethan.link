@@ -158,6 +158,13 @@ header nav a {
     text-decoration: none;
 }
 
+header nav a:hover {
+    transition: 0.5s;
+    color: white;
+    text-decoration: none;
+}
+
+
 header nav a span {
     margin-left: 0.5em;
 }
