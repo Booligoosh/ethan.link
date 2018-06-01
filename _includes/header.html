@@ -28,3 +28,16 @@
     </nav>
 </header>
 <a name="top" class="top-anchor"></a>
+
+
+<script>
+window.addEventListener('scroll', function(){
+    var divBy = 6;
+    var x = (window.scrollY / window.innerHeight) / divBy;
+    if(x > 1/divBy) {
+        x = 1/divBy;
+    }
+    console.log(x);
+    document.querySelector('header').style.boxShadow = '0 0 1rem rgba(0,0,0,' + x + ')';
+});
+</script>
