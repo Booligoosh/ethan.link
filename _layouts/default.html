@@ -4,6 +4,7 @@ layout: basic
 <a name="top"></a>
 <div id="all">
     {% include header.html %}
+    {% if content %}
     <div id="barba-wrapper">
         <div class="barba-container">
             <section class="content">
@@ -18,4 +19,5 @@ layout: basic
             {% unless page.nobacktotop %}<a href="#top" class="back-to-top">Back to top</a>{% endunless %}
         </div>
     </div>
+    {% endif %}
 </div>
