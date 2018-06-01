@@ -603,11 +603,16 @@ header:before {
 }
 
 .header {
-    height: 80vh;
+    /* height: 80vh; */
+    height: 40vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 60px;
+}
+
+body.home .header {
+    height: 80vh;
 }
 
 .header h1 {
