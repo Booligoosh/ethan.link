@@ -5,19 +5,15 @@ layout: basic
 <div id="all">
     {% include header.html %}
     {% if content %}
-    <div id="barba-wrapper">
-        <div class="barba-container">
-            <section class="content">
-                {{ content }}
-                <!-- <div class="share">
-                    Let's be serious, you've already come this far
-                    <span class="share-message">Please be nice and share</span> You will make me very happy...
-                    Go to www.addthis.com/dashboard to customize your tools
-                    <div class="addthis_inline_share_toolbox"></div>
-                </div> -->
-            </section>
-            {% unless page.nobacktotop %}<a href="#top" class="back-to-top">Back to top</a>{% endunless %}
-        </div>
-    </div>
+    <section class="content">
+        {{ content }}
+        <!-- <div class="share">
+            Let's be serious, you've already come this far
+            <span class="share-message">Please be nice and share</span> You will make me very happy...
+            Go to www.addthis.com/dashboard to customize your tools
+            <div class="addthis_inline_share_toolbox"></div>
+        </div> -->
+    </section>
     {% endif %}
+    {% unless page.nobacktotop %}<a href="#top" class="back-to-top">Back to top</a>{% endunless %}
 </div>
