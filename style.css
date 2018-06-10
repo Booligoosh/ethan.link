@@ -505,7 +505,8 @@ header:before {
 }
 
 body.home .header {
-    height: calc(100vh - 60px);
+    height: 100vh;
+    margin-top: -60px;
 }
 
 .header h1 {
@@ -687,12 +688,16 @@ body.home .header {
     }
     body {
         overflow: scroll;
+        margin-top: 0 !important;
     }
     header nav a span {
         display: none;
     }
     body.home .header {
-        height: calc(100vh - 120px);
+        margin-top: 0;
+    }
+    .header {
+        height: calc(80vh - 60px);
     }
     /* MOBILE HEADER OLD CONT.
     body.nav-out {
