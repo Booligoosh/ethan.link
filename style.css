@@ -689,6 +689,7 @@ body.home .header {
     body {
         overflow: scroll;
         margin-top: 0 !important;
+        margin-bottom: 60px;
     }
     header nav a span {
         display: none;
