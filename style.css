@@ -301,6 +301,9 @@ header .hamburger {
     header nav a span {
         display: none;
     }
+    body.home .header {
+        height: calc(100vh - 120px);
+    }
     /* MOBILE HEADER OLD CONT.
     body.nav-out {
         overflow: hidden;
@@ -630,7 +633,7 @@ header:before {
 }
 
 body.home .header {
-    height: 80vh;
+    height: calc(100vh - 60px);
 }
 
 .header h1 {
