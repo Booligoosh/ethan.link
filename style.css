@@ -201,135 +201,6 @@ header .hamburger {
     background-color: #32424A !important;
 }
 
-@media screen and (max-width: 1087px) {
-    header img {
-        display: none;
-    }
-    header h2 {
-        left: 0;
-    }
-}
-
-@media screen and (max-width: 997px) {
-    header img {
-        display: initial;
-    }
-    header h2 {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 662px) {
-    header img {
-        display: none;
-    }
-    .header { /* No more need for 60px to align with logo in nav */
-        padding: 0 2rem !important;
-    }
-    header h2 {
-        display: none;
-    }
-}
-
-/* IF ADDING MORE LINKS TO THE NAV THEN CHANGE THE QUERY SIZES!!! */
-/* MOBILE NAV */
-@media screen and (max-width: 537px) {
-    /* .logo h1 br {
-        display: initial;
-    }
-    body.not-found .logo h1 {
-        line-height: initial;
-        margin-top: calc((100vh - 60px) / 2);
-        height: calc(100vh - calc((100vh - 60px) / 2));
-    } */
-    
-    /* Old style (hamburger) *
-    header img {
-        display: none;
-    }
-    header .logo h2 {
-        display: initial;
-        width: 100vw;
-        text-align: center;
-        left: 0;
-        margin-left: 0;
-    }
-    header .hamburger {
-        display: initial;
-    }
-    header nav {
-        /* margin-top: calc(-100vh + 60px); SWAP WITH LINE BELOW IF WANT TO HAVE DROP-DOWN EFFECT*
-        margin-top: 60px;
-        transition: all,.5s;
-        background-color: #b346ff;
-        border-top: 2px solid white;
-        width: 100vw;
-        height: calc(100vh - 60px);
-        text-align: center !important;
-        line-height: 5em;
-        overflow-y: scroll;
-        font-size: 1.5em;
-        background-color: #32424a;
-        position: fixed;
-        opacity: 0;
-        pointer-events: none;
-    }
-    header nav ul {
-        display: block !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        list-style: none !important;
-        text-align: center !important;
-        color: #cea9ff !important;
-    }
-    header nav li {
-        padding: initial !important;
-        display: list-item !important;
-    }
-    */
-    header {
-        top: unset;
-        bottom: 0;
-        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.17) !important;
-    }
-    header:before {
-        clip: rect(calc(100vh - 60px),100vw,100vh,0) !important;
-    }
-    body {
-        overflow: scroll;
-    }
-    header nav a span {
-        display: none;
-    }
-    body.home .header {
-        height: calc(100vh - 120px);
-    }
-    /* MOBILE HEADER OLD CONT.
-    body.nav-out {
-        overflow: hidden;
-    }
-    body.nav-out header nav {
-        opacity: 1;
-        margin-top: 60px;
-        pointer-events: auto;
-    }
-    */
-    .content {
-        margin: 0 !important;
-        border-radius: 0 !important;
-    }
-    .back-to-top {
-        margin-top: 0 !important;
-    }
-    .main-content-list.fullwidth-feature-items .item {
-        min-height: unset !important;
-        padding: 2rem !important;
-    }
-    .quicklinks li {
-        width: 100%;
-    }
-}
-
 .top-anchor {
     display: block;
     position: relative;
@@ -716,4 +587,133 @@ body.home .header {
     text-decoration: none;
     padding: 1em;
     line-height: 3em;
+}
+
+@media screen and (max-width: 1087px) {
+    header img {
+        display: none;
+    }
+    header h2 {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 997px) {
+    header img {
+        display: initial;
+    }
+    header h2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 662px) {
+    header img {
+        display: none;
+    }
+    .header { /* No more need for 60px to align with logo in nav */
+        padding: 0 2rem !important;
+    }
+    header h2 {
+        display: none;
+    }
+}
+
+/* IF ADDING MORE LINKS TO THE NAV THEN CHANGE THE QUERY SIZES!!! */
+/* MOBILE NAV */
+@media screen and (max-width: 537px) {
+    /* .logo h1 br {
+        display: initial;
+    }
+    body.not-found .logo h1 {
+        line-height: initial;
+        margin-top: calc((100vh - 60px) / 2);
+        height: calc(100vh - calc((100vh - 60px) / 2));
+    } */
+    
+    /* Old style (hamburger) *
+    header img {
+        display: none;
+    }
+    header .logo h2 {
+        display: initial;
+        width: 100vw;
+        text-align: center;
+        left: 0;
+        margin-left: 0;
+    }
+    header .hamburger {
+        display: initial;
+    }
+    header nav {
+        /* margin-top: calc(-100vh + 60px); SWAP WITH LINE BELOW IF WANT TO HAVE DROP-DOWN EFFECT*
+        margin-top: 60px;
+        transition: all,.5s;
+        background-color: #b346ff;
+        border-top: 2px solid white;
+        width: 100vw;
+        height: calc(100vh - 60px);
+        text-align: center !important;
+        line-height: 5em;
+        overflow-y: scroll;
+        font-size: 1.5em;
+        background-color: #32424a;
+        position: fixed;
+        opacity: 0;
+        pointer-events: none;
+    }
+    header nav ul {
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+        text-align: center !important;
+        color: #cea9ff !important;
+    }
+    header nav li {
+        padding: initial !important;
+        display: list-item !important;
+    }
+    */
+    header {
+        top: unset;
+        bottom: 0;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.17) !important;
+    }
+    header:before {
+        clip: rect(calc(100vh - 60px),100vw,100vh,0) !important;
+    }
+    body {
+        overflow: scroll;
+    }
+    header nav a span {
+        display: none;
+    }
+    body.home .header {
+        height: calc(100vh - 120px);
+    }
+    /* MOBILE HEADER OLD CONT.
+    body.nav-out {
+        overflow: hidden;
+    }
+    body.nav-out header nav {
+        opacity: 1;
+        margin-top: 60px;
+        pointer-events: auto;
+    }
+    */
+    .content {
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+    .back-to-top {
+        margin-top: 0 !important;
+    }
+    .main-content-list.fullwidth-feature-items .item {
+        min-height: unset !important;
+        padding: 2rem !important;
+    }
+    .quicklinks li {
+        width: 100%;
+    }
 }
