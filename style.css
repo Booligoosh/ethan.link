@@ -131,6 +131,7 @@ header {
     padding: 0;
     display: flex;
     z-index: 1;
+    background-position: center top;
 }
 
 header nav {
@@ -440,10 +441,6 @@ body:before, header/*:before*/ {
     background-repeat: no-repeat !important;
 }
 
-header {
-    background-position: center bottom;
-}
-
 body:before/*, header:before*/ {
     content: '';
     position: fixed;
@@ -683,6 +680,7 @@ body.home .header {
         top: unset;
         bottom: 0;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.17) !important;
+        background-position: center bottom;
     }
     header:before {
         clip: rect(calc(100vh - 60px),100vw,100vh,0) !important;
