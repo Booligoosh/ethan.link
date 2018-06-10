@@ -297,7 +297,6 @@ header .hamburger {
     }
     body {
         overflow: scroll;
-        margin-top: 0 !important;
     }
     header nav a span {
         display: none;
