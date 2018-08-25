@@ -575,6 +575,38 @@ body.home .header h1 {
     left: 0;
 }
 
+body.home .header {
+    
+}
+
+body.home .header .text {
+    transform: perspective(1000px) rotateY(-20deg);
+    /* animation: home-text-animation 10s infinite ease-in-out alternate; */
+}
+
+body.home .header .makerlog-embed {
+    transform: perspective(1000px) rotateY(10deg);
+    /* animation: home-makerlog-animation 10s infinite ease-in-out alternate; */
+}
+
+@keyframes home-text-animation {
+    0% {
+        transform: perspective(1000px) rotateY(-20deg);
+    }
+    100%  {
+        transform: perspective(1000px) rotateY(20deg);
+    }
+}
+
+@keyframes home-makerlog-animation {
+    0% {
+        transform: perspective(1000px) rotateY(10deg);
+    }
+    100%  {
+        transform: perspective(1000px) rotateY(-10deg);
+    }
+}
+
 .main-content-list.fullwidth-feature-items {
     display: grid;
     grid-template-columns: 1fr 1fr;

@@ -1,9 +1,9 @@
 <section class="header">
     <div class=logo>
-            <!-- Created with Inkscape (http://www.inkscape.org/) -->
-            <!-- <img src="{{site.baseurl}}/img/logos/logo_trans.svg"> -->
-            <h1>{{page.heading}}</h1>
-            {% if page.subheading %}<h2>{{page.subheading}}</h2>{% endif %}
+            <div class="text">
+               <h1>{{page.heading}}</h1>
+                {% if page.subheading %}<h2>{{page.subheading}}</h2>{% endif %}
+            </div>
             {% if page.rawname == 'home' %}
             <div class="makerlog-embed">
                 <iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://api.getmakerlog.com/users/26/embed/?header_color=%2332424A&title_color=%23FDD835"></iframe>
