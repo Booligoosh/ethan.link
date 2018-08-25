@@ -37,14 +37,6 @@ https://css-tricks.com/forums/topic/weird-mobile-safari-font-face-problem-font-d
                                   supported by Chrome and Opera */
 }
 
-* {
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    -o-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
 *:focus {
     outline: none;
 }
@@ -599,6 +591,14 @@ body.home .header h1 {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+body.home:not([browser='safari']) .header .text, body.home:not([browser='safari']) .header .makerlog-embed, body.home:not([browser='safari']) .header .text > *, body.home:not([browser='safari']) .header .makerlog-embed > * {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 body.home:not([browser='safari']) .header .text {
