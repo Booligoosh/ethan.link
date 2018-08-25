@@ -651,6 +651,19 @@ body.home .header h1 {
     }
 }
 
+@media screen and (max-width: 830px) {
+    header nav li.nav-section-explainer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    header nav ul > div:not(.projects) a span {
+        display: none;
+    }
+}
+
+    
 @media screen and (max-width: 662px) {
     header img {
         display: none;
@@ -668,7 +681,7 @@ body.home .header h1 {
 
 /* IF ADDING MORE LINKS TO THE NAV THEN CHANGE THE QUERY SIZES!!! */
 /* MOBILE NAV */
-@media screen and (max-width: 537px) {
+@media screen and (max-width: 510px) {
     /* .logo h1 br {
         display: initial;
     }
@@ -741,9 +754,6 @@ body.home .header h1 {
     }
     header nav li {
         height: 50%;
-    }
-    header nav li.nav-section-explainer {
-        display: none;
     }
     header nav a i {
         margin-right: 0;
