@@ -43,7 +43,7 @@ https://css-tricks.com/forums/topic/weird-mobile-safari-font-face-problem-font-d
 
 body {
     margin-top: 60px !important;
-    background-color: white !important;
+    /* background-color: white !important; */
     opacity: 1 !important;
     margin: 0;
     color: #32424A;
