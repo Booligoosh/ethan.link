@@ -580,33 +580,35 @@ body.home .header {
     
 }
 
-body.home .header .text {
-    /* transform: perspective(1000px) rotateY(-20deg) !important; */
-    transform: perspective(700px) rotateY(-20deg) translateZ(50px) scale(0.9) !important;
-    /* animation: home-text-animation 10s infinite ease-in-out alternate; */
-}
-
-body.home .header .makerlog-embed {
-    /* transform: perspective(1000px) rotateY(10deg) !important; */
-    transform: perspective(700px) rotateY(10deg) translateZ(70px) scale(0.9) !important;
-    /* animation: home-makerlog-animation 10s infinite ease-in-out alternate; */
-}
-
-@keyframes home-text-animation {
-    0% {
-        transform: perspective(1000px) rotateY(20deg) translateZ(50px) scale(0.9) !important;
+@media screen and (min-device-width: 511px) {
+    body.home .header .text {
+        /* transform: perspective(1000px) rotateY(-20deg) !important; */
+        transform: perspective(700px) rotateY(-20deg) translateZ(50px) scale(0.9) !important;
+        /* animation: home-text-animation 10s infinite ease-in-out alternate; */
     }
-    100%  {
-        transform: perspective(1000px) rotateY(-20deg) translateZ(50px) scale(0.9) !important;
-    }
-}
 
-@keyframes home-makerlog-animation {
-    0% {
-        transform: perspective(1000px) rotateY(10deg) translateZ(70px) scale(0.9) !important;
+    body.home .header .makerlog-embed {
+        /* transform: perspective(1000px) rotateY(10deg) !important; */
+        transform: perspective(700px) rotateY(10deg) translateZ(70px) scale(0.9) !important;
+        /* animation: home-makerlog-animation 10s infinite ease-in-out alternate; */
     }
-    100%  {
-        transform: perspective(1000px) rotateY(-10deg) translateZ(70px) scale(0.9) !important;
+
+    @keyframes home-text-animation {
+        0% {
+            transform: perspective(1000px) rotateY(20deg) translateZ(50px) scale(0.9) !important;
+        }
+        100%  {
+            transform: perspective(1000px) rotateY(-20deg) translateZ(50px) scale(0.9) !important;
+        }
+    }
+
+    @keyframes home-makerlog-animation {
+        0% {
+            transform: perspective(1000px) rotateY(10deg) translateZ(70px) scale(0.9) !important;
+        }
+        100%  {
+            transform: perspective(1000px) rotateY(-10deg) translateZ(70px) scale(0.9) !important;
+        }
     }
 }
 
