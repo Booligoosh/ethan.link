@@ -523,6 +523,16 @@ body.home .header {
     color: #57727f;
 }
 
+.header h2 a {
+    color: #2196F3;
+    text-decoration-color: transparent;
+    transition: text-decoration-color, .25s;
+}
+
+.header h2 a:hover {
+    text-decoration-color: #2196F3;
+}
+
 .main-content-list.fullwidth-feature-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
