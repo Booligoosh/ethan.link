@@ -757,9 +757,6 @@ body.home .header h1 {
     body.home .header {
         margin-top: 0;
     }
-    .header {
-        height: calc(80vh - 60px);
-    }
     body.home .header {
         text-align: center;
     }
