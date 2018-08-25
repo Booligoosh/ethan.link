@@ -540,6 +540,10 @@ body.home .header {
     text-decoration-color: #2196F3;
 }
 
+.header .makerlog-embed {
+    margin-top: 1em;
+}
+
 .main-content-list.fullwidth-feature-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
