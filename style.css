@@ -137,10 +137,6 @@ header {
     filter: brightness(1);
 }
 
-header:hover {
-    filter: brightness(1.1);
-}
-
 header nav {
     width: 100%;
 }
@@ -150,24 +146,82 @@ header nav ul {
     padding: 0;
     height: 60px;
     display: flex;
+    justify-content: space-between;
+}
+
+header nav ul > div {
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
 header nav li {
     box-sizing: border-box;
-    padding: 10px;
     overflow: hidden;
     transition: width, 1s;
+    margin: 0 .5em;
+    border-radius: 5px;
+    
+    height: 80%;
+    line-height: 1em;
 }
 
-header nav a {
+header nav li.nav-section-explainer {
+    background: transparent !important;
+    opacity: .75;
+    margin: 0;
+}
+
+header nav ul > div.projects li {
+    background: white;
+}
+
+header nav ul > div.projects li.codetheweb a, header nav ul > div.projects li.codetheweb:hover {
+    background: linear-gradient(100deg,#ffce69,#fa709a);
+}
+
+header nav ul > div.projects li.kanbanmail a, header nav ul > div.projects li.kanbanmail:hover {
+    background: linear-gradient(90deg,#4784f6,#1A28DA);
+}
+
+header nav ul > div.projects li a {
+    color: white;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+header nav ul > div.projects li:hover a {
+    -webkit-background-clip: none !important;
+    -webkit-text-fill-color: white !important;
+}
+
+header nav ul > div:not(.projects) li:hover {
+    filter: brightness(1.1);
+}
+
+header nav ul > div:first-child li:first-child {
+    margin-left: 2em;
+}
+
+header nav ul > div:last-child li:last-child {
+    margin-right: 2em;
+}
+
+header nav a, header nav li.nav-section-explainer {
     color: inherit;
     text-decoration: none;
+    padding: 0 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-header nav a span {
-    margin-left: 0.5em;
+header nav a i {
+    margin-right: 0.5em;
+}
+
+header nav a span.short-name {
+    display: none;
 }
 
 header nav {
@@ -712,8 +766,20 @@ body.home .header {
         margin-top: 0 !important;
         margin-bottom: 60px;
     }
+    header {
+        overflow-x: scroll;
+    }
+    header nav li {
+        height: 50%;
+    }
+    header nav li.nav-section-explainer {
+        display: none;
+    }
     header nav a span {
         display: none;
+    }
+    header nav a span.short-name {
+        display: block;
     }
     body.home .header {
         margin-top: 0;
