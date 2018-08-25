@@ -1,11 +1,11 @@
 <section class="header">
     <div class=logo>
-            <div class="text">
+            <div class="text" style="transform: perspective(1000px) rotateY(0); transition: transform 1s">
                <h1>{{page.heading}}</h1>
                 {% if page.subheading %}<h2>{{page.subheading}}</h2>{% endif %}
             </div>
             {% if page.rawname == 'home' %}
-            <div class="makerlog-embed">
+            <div class="makerlog-embed" style="transform: perspective(1000px) rotateY(0); transition: transform 1s">
                 <iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://api.getmakerlog.com/users/26/embed/?header_color=%2332424A&title_color=%23FDD835"></iframe>
             </div>
             {% endif %}

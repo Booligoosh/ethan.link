@@ -580,30 +580,30 @@ body.home .header {
 }
 
 body.home .header .text {
-    transform: perspective(1000px) rotateY(-20deg);
+    transform: perspective(1000px) rotateY(-20deg) !important;
     /* animation: home-text-animation 10s infinite ease-in-out alternate; */
 }
 
 body.home .header .makerlog-embed {
-    transform: perspective(1000px) rotateY(10deg);
+    transform: perspective(1000px) rotateY(10deg) !important;
     /* animation: home-makerlog-animation 10s infinite ease-in-out alternate; */
 }
 
 @keyframes home-text-animation {
     0% {
-        transform: perspective(1000px) rotateY(-20deg);
+        transform: perspective(1000px) rotateY(-20deg) !important;
     }
     100%  {
-        transform: perspective(1000px) rotateY(20deg);
+        transform: perspective(1000px) rotateY(20deg) !important;
     }
 }
 
 @keyframes home-makerlog-animation {
     0% {
-        transform: perspective(1000px) rotateY(10deg);
+        transform: perspective(1000px) rotateY(10deg) !important;
     }
     100%  {
-        transform: perspective(1000px) rotateY(-10deg);
+        transform: perspective(1000px) rotateY(-10deg) !important;
     }
 }
 
