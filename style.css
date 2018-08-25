@@ -540,7 +540,8 @@ header:before {
 }
 
 body.home .header {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     margin-top: -60px;
     text-align: left;
 }
@@ -747,6 +748,7 @@ body.home:not([browser='safari']) .header .makerlog-embed:not(:hover) ~ .text {
     .header {
         padding-left: 2rem !important;
         padding-right: 2rem !important;
+        padding-top: 2rem !important;
     }
     header h2 {
         display: none;
@@ -843,7 +845,6 @@ body.home:not([browser='safari']) .header .makerlog-embed:not(:hover) ~ .text {
     }
     body.home .header {
         margin-top: 0;
-        padding-bottom: 240px;
         text-align: center;
     }
     /* MOBILE HEADER OLD CONT.
