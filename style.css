@@ -545,6 +545,11 @@ body.home .header {
     text-align: left;
 }
 
+body.home .header > div {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
 .header h1 {
     margin: 0;
     font-size: 3em;
@@ -576,6 +581,7 @@ body.home .header h1 {
 
 .header .makerlog-embed {
     height: 300px;
+    width: 100%;
     border-radius: 10px;
     overflow: hidden;
     overflow-x: scroll; /* Just in case */
@@ -601,16 +607,20 @@ body.home:not([browser='safari']) .header .text, body.home:not([browser='safari'
     transform-style: preserve-3d;
 }
 
-body.home:not([browser='safari']) .header .text {
-    /* transform: perspective(1000px) rotateY(-20deg) !important; */
-    transform: perspective(700px) rotateY(-20deg) translateZ(50px) scale(0.9) !important;
-    /* animation: home-text-animation 10s infinite ease-in-out alternate; */
-}
-
 body.home:not([browser='safari']) .header .makerlog-embed {
     /* transform: perspective(1000px) rotateY(10deg) !important; */
     transform: perspective(700px) rotateY(10deg) translateZ(70px) scale(0.9) !important;
     /* animation: home-makerlog-animation 10s infinite ease-in-out alternate; */
+}
+
+body.home:not([browser='safari']) .header .makerlog-embed:hover, body.home:not([browser='safari']) .header .text {
+    transform: rotateY(0) scale(1) !important;
+}
+
+body.home:not([browser='safari']) .header .makerlog-embed:not(:hover) ~ .text {
+    /* transform: perspective(1000px) rotateY(-20deg) !important; */
+    transform: perspective(700px) rotateY(-20deg) translateZ(50px) scale(0.9) !important;
+    /* animation: home-text-animation 10s infinite ease-in-out alternate; */
 }
 
 @keyframes home-text-animation {
