@@ -585,7 +585,7 @@ body.home .header h1 {
     border-radius: 10px;
     overflow: hidden;
     overflow-x: scroll; /* Just in case */
-    margin-top: 2.25em;
+    margin-top: 1em;
     position: relative;
     background: linear-gradient(#32424A 50px,#32424A 50px,#ecf0f1 50px, #ecf0f1 50px); /* While loading */
 }
