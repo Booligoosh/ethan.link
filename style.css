@@ -775,6 +775,9 @@ body.home .header {
     header nav li.nav-section-explainer {
         display: none;
     }
+    header nav a i {
+        margin-right: 0;
+    }
     header nav a span {
         display: none;
     }
