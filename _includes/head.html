@@ -5,7 +5,7 @@
 <!-- Icons -->
 {% include icons.html %}
 <!-- Theme color -->
-<meta name="theme-color" content="#CEA9FF">
+<meta name="theme-color" content="#32424A">
 <!-- Google site verification -->
 <meta name="google-site-verification" content="QNVgLo5Lc8fkZEROTJAVdj6OR-HfetxQswuglVfoCi8" />
 <!-- Search Engine Tags -->
@@ -27,10 +27,6 @@
 
 <!-- Google Analytics -->
 <script src="{{site.baseurl}}/ga.js" defer></script>
-
-<!-- Go to www.addthis.com/dashboard to customize your tools -->			
-<!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5818ed9dde33624c" defer></script>
- -->
  
 <!-- classList polyfill -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js" defer></script>
@@ -43,8 +39,5 @@
 <!-- Entypo -->
 <link rel="stylesheet" href="https://cdn.rawgit.com/alicescfernandes/entypo-webfont/57d4968d/style.css">
 
-<!-- Barba.js -->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" type="text/javascript" defer></script>-->
-<!-- Stuff that I do using Barba.js -->
-<!--<script src="{{site.baseurl}}/barba-exec.js" defer></script>-->
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js" defer></script>-->
+<!-- My stylesheet -->
+<link rel="stylesheet" href="{{site.url}}/style.css?{{site.time | date: '%s%N'}}">

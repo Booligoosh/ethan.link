@@ -1,10 +1,17 @@
 <!-- Stylesheets -->
 <script type="text/javascript">
     /* CSS File */
-    var linkElem = document.createElement('link');
+    /*var linkElem = document.createElement('link');
     linkElem.rel = 'stylesheet';
     linkElem.href = '{{site.url}}/style.css?{{site.time | date: '%s%N'}}';
     linkElem.type = 'text/css';
     var godefer = document.getElementsByTagName('link')[0];
-    godefer.parentNode.insertBefore(linkElem, godefer);
+    godefer.parentNode.insertBefore(linkElem, godefer);*/
+    
+    /* Fade out */
+    window.addEventListener('beforeunload', function () {
+        document.body.style.opacity = '0 !important';
+        document.body.style.background = '#32424A !important';
+        //setTimeout(function(){alert('x'),5000})
+    });
 </script>

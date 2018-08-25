@@ -44,7 +44,7 @@ https://css-tricks.com/forums/topic/weird-mobile-safari-font-face-problem-font-d
 body {
     margin-top: 60px !important;
     background-color: white !important;
-    display: block !important;
+    opacity: 1 !important;
     margin: 0;
     color: #32424A;
     font-family: 'Muli', sans-serif;
@@ -132,8 +132,6 @@ header {
     display: flex;
     z-index: 1;
     background-position: center top;
-    transition: all, .2s;
-    transition-timing-function: ease-in-out;
     filter: brightness(1);
 }
 
@@ -158,7 +156,6 @@ header nav ul > div {
 header nav li {
     box-sizing: border-box;
     overflow: hidden;
-    transition: width, 1s;
     margin: 0 .5em;
     border-radius: 5px;
     
@@ -567,6 +564,7 @@ body.home .header h1 {
     overflow: hidden;
     margin-top: 2.25em;
     position: relative;
+    background: linear-gradient(#32424A 50px,#32424A 50px,#ecf0f1 50px, #ecf0f1 50px); /* While loading */
 }
 
 .header .makerlog-embed iframe {
