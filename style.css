@@ -520,7 +520,8 @@ header:before {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 60px;
+    padding: 60px;
+    box-sizing: border-box;
 }
 
 body.home .header {
@@ -710,8 +711,9 @@ body.home .header .makerlog-embed {
     header img {
         display: none;
     }
-    .header { /* No more need for 60px to align with logo in nav */
-        padding: 0 2rem !important;
+    .header {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
     }
     header h2 {
         display: none;
@@ -808,8 +810,7 @@ body.home .header .makerlog-embed {
     }
     body.home .header {
         margin-top: 0;
-    }
-    body.home .header {
+        padding-bottom: 120px;
         text-align: center;
     }
     /* MOBILE HEADER OLD CONT.
