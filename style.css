@@ -833,7 +833,7 @@ body.home:not([browser='safari']) .header .makerlog-embed {
     }
     body.home .header {
         margin-top: 0;
-        padding-bottom: 120px;
+        padding-bottom: 240px;
         text-align: center;
     }
     /* MOBILE HEADER OLD CONT.
