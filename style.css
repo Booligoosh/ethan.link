@@ -173,23 +173,38 @@ header nav ul > div.projects li {
     background: white;
 }
 
+body[browser='safari'] header nav ul > div.projects li a {
+    -webkit-background-clip: none !important;
+}
+
 header nav ul > div.projects li.codetheweb a, header nav ul > div.projects li.codetheweb:hover {
     background: linear-gradient(100deg,#ffce69,#fa709a);
+}
+
+body[browser='safari'] header nav ul > div.projects li.codetheweb a {
+    color: #F0957E;
+    -webkit-text-fill-color: #F0957E;
 }
 
 header nav ul > div.projects li.kanbanmail a, header nav ul > div.projects li.kanbanmail:hover {
     background: linear-gradient(90deg,#4784f6,#1A28DA);
 }
 
+body[browser='safari'] header nav ul > div.projects li.kanbanmail a {
+    color: #4784f6;
+    -webkit-text-fill-color: #4784f6;
+}
+
 header nav ul > div.projects li a {
     color: white;
     -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
+    -webkit-text-fill-color: transparent;
 }
 
 header nav ul > div.projects li:hover a {
     -webkit-background-clip: none !important;
     -webkit-text-fill-color: white !important;
+    color: white !important
 }
 
 header nav ul > div:not(.projects) li:hover {
@@ -582,35 +597,33 @@ body.home .header {
     
 }
 
-@media screen and (min-device-width: 511px) {
-    body.home .header .text {
-        /* transform: perspective(1000px) rotateY(-20deg) !important; */
-        transform: perspective(700px) rotateY(-20deg) translateZ(50px) scale(0.9) !important;
-        /* animation: home-text-animation 10s infinite ease-in-out alternate; */
-    }
+body.home:not([browser='safari']) .header .text {
+    /* transform: perspective(1000px) rotateY(-20deg) !important; */
+    transform: perspective(700px) rotateY(-20deg) translateZ(50px) scale(0.9) !important;
+    /* animation: home-text-animation 10s infinite ease-in-out alternate; */
+}
 
-    body.home .header .makerlog-embed {
-        /* transform: perspective(1000px) rotateY(10deg) !important; */
-        transform: perspective(700px) rotateY(10deg) translateZ(70px) scale(0.9) !important;
-        /* animation: home-makerlog-animation 10s infinite ease-in-out alternate; */
-    }
+body.home:not([browser='safari']) .header .makerlog-embed {
+    /* transform: perspective(1000px) rotateY(10deg) !important; */
+    transform: perspective(700px) rotateY(10deg) translateZ(70px) scale(0.9) !important;
+    /* animation: home-makerlog-animation 10s infinite ease-in-out alternate; */
+}
 
-    @keyframes home-text-animation {
-        0% {
-            transform: perspective(1000px) rotateY(20deg) translateZ(50px) scale(0.9) !important;
-        }
-        100%  {
-            transform: perspective(1000px) rotateY(-20deg) translateZ(50px) scale(0.9) !important;
-        }
+@keyframes home-text-animation {
+    0% {
+        transform: perspective(1000px) rotateY(20deg) translateZ(50px) scale(0.9) !important;
     }
+    100%  {
+        transform: perspective(1000px) rotateY(-20deg) translateZ(50px) scale(0.9) !important;
+    }
+}
 
-    @keyframes home-makerlog-animation {
-        0% {
-            transform: perspective(1000px) rotateY(10deg) translateZ(70px) scale(0.9) !important;
-        }
-        100%  {
-            transform: perspective(1000px) rotateY(-10deg) translateZ(70px) scale(0.9) !important;
-        }
+@keyframes home-makerlog-animation {
+    0% {
+        transform: perspective(1000px) rotateY(10deg) translateZ(70px) scale(0.9) !important;
+    }
+    100%  {
+        transform: perspective(1000px) rotateY(-10deg) translateZ(70px) scale(0.9) !important;
     }
 }
 

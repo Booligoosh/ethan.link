@@ -15,3 +15,24 @@
         //setTimeout(function(){alert('x'),5000})
     });
 </script>
+<script>
+    var browser = 'other';
+    
+    if(!!window.chrome && !(!!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0)){
+        browser = 'chrome';
+    }
+    if(typeof document !== 'undefined' && !!document.documentMode && !isEdge) {
+        browser = 'explorer'
+    }
+    if(typeof window.InstallTrigger !== 'undefined') {
+        browser = 'firefox';
+    }
+    if(/^((?!chrome|android).)*safari/i.test(navigator.userAgent)) {
+        browser = 'safari';
+    }
+    if(!!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0) {
+        browser = 'opera';
+    }
+    
+    document.body.setAttribute('browser',browser);
+</script>
