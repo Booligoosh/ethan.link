@@ -796,6 +796,9 @@ body.home .header h1 {
     .header {
         height: calc(80vh - 60px);
     }
+    body.home .header {
+        text-align: center;
+    }
     /* MOBILE HEADER OLD CONT.
     body.nav-out {
         overflow: hidden;
