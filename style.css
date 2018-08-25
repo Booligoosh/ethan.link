@@ -568,12 +568,17 @@ header:before {
 body.home .header {
     height: 100vh;
     margin-top: -60px;
+    text-align: left;
 }
 
 .header h1 {
+    margin: 0;
     font-size: 3em;
-    font-weight: 900;
     letter-spacing: 1px;
+}
+
+body.home .header h1 {
+    margin-top: 0.83em; /* Default */
 }
 
 .header h1 span {
@@ -582,6 +587,7 @@ body.home .header {
 
 .header h2 {
     color: #57727f;
+    font-weight: normal;
 }
 
 .header h2 a {
