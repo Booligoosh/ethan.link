@@ -1,19 +1,11 @@
 port: 8001
 
-title:            Booligoosh
-tagline:          ''
-description:      ''
+title:            'Ethan &#x1F468;&#x200D;&#x1F3A4;'
+description:      'An Indie Maker creating KanbanMail &amp; Code The Web &#x1F918;&#x1F525;&#x1F680;'
 url:              
 baseurl:          ''
 
 email:            booligoosh@optusnet.com.au
-newsletter:       'https://codetheweb.blog/newsletter/' # old: https://eepurl.com/bz0PTD
-
-author:
-  name:           'Booligoosh'
-  url:            https://booligoosh.github.io/
-
-description:      'The portfolio of Ethan - Graphic Designer, Programmer & Tech Enthusiast.'
 
 paginate:         5
 

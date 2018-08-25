@@ -1,4 +1,5 @@
-<title>{{page.title}}</title>
+<title>{% if page.title and page.rawname != 'home' %}{{page.title}} &mdash; {% endif %}{{site.title}}</title>
+{% if page.rawname == 'home' and page.title %}<script>document.querySelector('title').innerHTML = "{{page.title}}"</script>{% endif %}
 <!-- Viewport meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Icons -->
@@ -11,11 +12,16 @@
 <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}" />
 <meta name="keywords" content="ethan,booligoosh,coding,code,programming,github,scratch,design,logos,behance,amateur">
 <!-- Open Graph Tags -->
-<meta property="og:title" content="{{page.title}}" />
-<meta property="og:type" content="website" />
-<meta property="og:description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}" />
+<meta property="og:title" content="{% unless page.rawname == 'home' %}{% if page.title %}{{page.title}} &mdash; {% endif %}{% endunless %}{{site.title}}">
+<meta name="twitter:title" content="{% unless page.rawname == 'home' %}{% if page.title %}{{page.title}} &mdash; {% endif %}{% endunless %}{{site.title}}">
+<meta property="og:type" content="website">
+<meta property="og:description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
 <meta property="og:url" content="{{page.url}}" />
-<meta property="og:image" content="{% if page.rawname %}{{site.url}}/img/og-screenshots/{{page.rawname}}.png{% else %}{{site.url}}/img/og-screenshots/home.png{% endif %}" />
+<meta property="og:image" content="{{site.url}}/img/logos/logo.png">
+<meta name="twitter:image" content="{{site.url}}/img/logos/logo.png">
+
+<meta name="twitter:card" content="summary">
 
 <!-- SCRIPTS TO LOAD AFTER DOM -->
 
