@@ -24,13 +24,11 @@ gems:
   - jekyll-sitemap # leave at the end
 
 contact:
-  stackoverflow: 'https://stackoverflow.com/users/5374560/booligoosh'
-  github: 'https://github.com/Booligoosh/'
-  behance: 'https://www.behance.net/Booligoosh'
+  stackoverflow: 'https://stackoverflow.com/users/5374560'
+  github: 'https://github.com/Booligoosh'
+  behance: 'https://behance.net/Booligoosh'
   dribbble: 'https://dribbble.com/Booligoosh'
-  scratch: 'https://scratch.mit.edu/users/Booligoosh/'
-  codecademy: 'https://www.codecademy.com/Booligoosh'
-  codingame: 'https://www.codingame.com/profile/1f7c0a954e65b4c68398cdf59a5fb7b56803941'
+  twitter: 'https://twitter.com/Booligoosh'
 
 # To re-generate this array, go to https://unsplash.com/@booligoosh and enter the following command into the console:
 # (function(){var x = document.getElementsByClassName('_2zEKz');var y =[];for(var i = 0; i < x.length; i++){y[i] = '"' + x[i].getAttribute('src') + '"'}return('photographySrcs: [' + y.join(',') + ']')})();

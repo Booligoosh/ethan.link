@@ -289,6 +289,10 @@ body.home .top-anchor {
     letter-spacing: 1px;
 }
 
+body.contact .content {
+    margin-bottom: 20px;
+}
+
 .content a {
     color: inherit;
 }
@@ -386,72 +390,29 @@ td {
     background-color: #cea9ff;
 }*/
 
-.contact-cards-container {
-    width: 72%;
-    margin: auto;
-}
-
-
-/* Pretty much taken from Pine Designs */
-
-.contact-card {
-    width: calc(96%/3/*cards per row*/
-    );
-    display: inline-block;
-    background-color: #b346ff;
-    margin: 0;
-    margin-top: 0.15rem;
-    margin-bottom: 0.15rem;
-    height: 7rem;
-    vertical-align: middle;
-    line-height: 7rem;
+.contact-cards {
+    /* width: max-content; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    /*box-shadow: inset 0 0 21rem black;*/
-    transition: all, 0.5s;
+    grid-gap: 1em;
 }
 
-.contact-card:hover {
-    background-color: #fff;
-    text-decoration: none;
-    box-shadow: none;
-    color: #000;
+.contact-cards a {
+    padding: .5em 1em;
+    font-size: 4em;
+    background: #32424A;
+    color: white;
+    border-radius: 5px;
+    position: relative;
+    bottom: 0;
 }
 
-.contact-card:hover i.fa,
-.contact-card:hover img {
-    display: none;
-}
-
-.contact-card span {
-    display: none;
-}
-
-.contact-card:hover span {
-    display: inherit;
-}
-
-.contact-card img, .contact-card i.fa {
-    max-width: 50%;
-    max-height: 3rem;
-    width: auto;
-    vertical-align: middle;
-    font-size: 3rem;
-}
-
-@media screen and (max-width: 512px) {
-    .contact-card img, .contact-card i.fa {
-        font-size: 2rem;
-    }
-    .contact-cards-container {
-        margin: 0;
-        width: -webkit-fill-available;
-    }
-}
-
-@media screen and (max-width: 412px) {
-    .contact-card .with-hover-content img {
-        display: none !important;
-    }
+.contact-cards a:hover {
+    bottom: 5px;
 }
 
 span.with-hover-content {
