@@ -661,6 +661,9 @@ body.home .header h1 {
     header h2 {
         display: none;
     }
+    .contact-cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* IF ADDING MORE LINKS TO THE NAV THEN CHANGE THE QUERY SIZES!!! */
@@ -783,5 +786,11 @@ body.home .header h1 {
     }
     .quicklinks li {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .contact-cards {
+        grid-template-columns: 1fr;
     }
 }
