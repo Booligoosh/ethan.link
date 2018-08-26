@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   id="svg2"
+   viewBox="0 0 720.00001 720.00001"
+   height="720"
+   width="720">
+  <defs
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4252">
+      <g
+         style="fill:#ffe8e8;fill-opacity:1"
+         id="g4254"
+         transform="matrix(0,-1.500009,1.500009,0,-164.56457,248.75221)">
+        <circle
+           style="fill:#ffe8e8;fill-opacity:1"
+           id="circle4256"
+           cx="467.24295"
+           cy="359.37555"
+           r="30.252323" />
+        <rect
+           style="fill:#ffe8e8;fill-opacity:1"
+           id="rect4258"
+           width="149.54803"
+           height="60.504639"
+           x="317.69562"
+           y="329.12323"
+           rx="0"
+           ry="0" />
+        <rect
+           ry="0"
+           rx="0"
+           y="359.37555"
+           x="467.24365"
+           height="30.252319"
+           width="30.251602"
+           id="rect4260"
+           style="fill:#ffe8e8;fill-opacity:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4269">
+      <rect
+         ry="42.426407"
+         rx="42.426407"
+         y="155.07765"
+         x="227.79422"
+         height="408.59579"
+         width="269.70108"
+         id="rect4271"
+         style="opacity:1;fill:#ffe8e8;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4287">
+      <g
+         transform="matrix(0,-1.500009,1.500009,0,-164.56457,248.75221)"
+         id="g4289"
+         style="fill:#ffe8e8;fill-opacity:1">
+        <circle
+           r="30.252323"
+           cy="359.37555"
+           cx="467.24295"
+           id="circle4291"
+           style="fill:#ffe8e8;fill-opacity:1" />
+        <rect
+           ry="0"
+           rx="0"
+           y="329.12323"
+           x="317.69562"
+           height="60.504639"
+           width="149.54803"
+           id="rect4293"
+           style="fill:#ffe8e8;fill-opacity:1" />
+      </g>
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g4262"
+     clip-path="url(#clipPath4269)">
+    <rect
+       clip-path="url(#clipPath4287)"
+       transform="matrix(0,-1,-1,0,1.373291e-4,574.95837)"
+       y="-497.49518"
+       x="329.12323"
+       height="269.70111"
+       width="90.7575"
+       id="rect4295"
+       style="opacity:1;fill:#cea9ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       clip-path="url(#clipPath4287)"
+       transform="matrix(0,-1,-1,0,1.373291e-4,892.79669)"
+       y="-497.49518"
+       x="329.12323"
+       height="269.70111"
+       width="90.7575"
+       id="rect4297"
+       style="opacity:1;fill:#b346ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       style="opacity:1;fill:#c178ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect4191"
+       width="90.7575"
+       height="269.70111"
+       x="329.12323"
+       y="-497.49518"
+       transform="matrix(0,-1,-1,0,-25.319284,733.87753)"
+       clip-path="url(#clipPath4287)" />
+    <path
+       style="opacity:1;fill:#545454;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 227.7942,155.07764 76.46098,0 c 33.51695,90.7575 33.51695,317.83832 0,408.59579 l -76.46098,0 z"
+       id="rect4414" />
+    <g
+       id="g4166"
+       transform="matrix(0.93024325,0,0,1,-42.835803,-361.40943)" />
+  </g>
+</svg>

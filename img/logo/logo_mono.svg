@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="720"
+   height="720"
+   viewBox="0 0 720.00001 720.00001"
+   id="svg2"
+   version="1.1">
+  <defs
+     id="defs4">
+    <clipPath
+       id="clipPath4252"
+       clipPathUnits="userSpaceOnUse">
+      <g
+         transform="matrix(0,-1.500009,1.500009,0,-164.56457,248.75221)"
+         id="g4254"
+         style="fill:#ffe8e8;fill-opacity:1">
+        <circle
+           r="30.252323"
+           cy="359.37555"
+           cx="467.24295"
+           id="circle4256"
+           style="fill:#ffe8e8;fill-opacity:1" />
+        <rect
+           ry="0"
+           rx="0"
+           y="329.12323"
+           x="317.69562"
+           height="60.504639"
+           width="149.54803"
+           id="rect4258"
+           style="fill:#ffe8e8;fill-opacity:1" />
+        <rect
+           style="fill:#ffe8e8;fill-opacity:1"
+           id="rect4260"
+           width="30.251602"
+           height="30.252319"
+           x="467.24365"
+           y="359.37555"
+           rx="0"
+           ry="0" />
+      </g>
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     id="rect4295"
+     d="M 270.2207 155.07812 C 246.71647 155.07812 227.79492 173.99968 227.79492 197.50391 L 227.79492 245.83594 L 227.79492 313.99609 L 227.79492 404.75391 L 227.79492 472.91602 L 227.79492 521.24609 C 227.79492 544.75032 246.71647 563.67383 270.2207 563.67383 L 304.25586 563.67383 L 452.11719 563.67383 A 45.378757 45.378757 0 0 0 497.49609 518.29492 A 45.378757 45.378757 0 0 0 452.11719 472.91602 L 323.26758 472.91602 C 325.76657 451.41533 327.50168 428.38559 328.4707 404.75391 L 426.79688 404.75391 L 426.79883 404.75391 A 45.378757 45.378757 0 0 0 472.17578 359.375 A 45.378757 45.378757 0 0 0 426.79883 313.99609 L 426.79688 313.99609 L 328.4707 313.99609 C 327.50169 290.36566 325.76641 267.3356 323.26758 245.83594 L 452.11719 245.83594 A 45.378757 45.378757 0 0 0 497.49609 200.45703 A 45.378757 45.378757 0 0 0 452.11719 155.07812 L 304.25586 155.07812 L 270.2207 155.07812 z "
+     clip-path="none"
+     style="opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+  <g
+     id="g4166"
+     transform="matrix(0.93024325,0,0,1,-42.835803,-361.40943)" />
+</svg>
