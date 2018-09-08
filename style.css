@@ -173,7 +173,7 @@ header nav ul > div.projects li {
     background: white;
 }
 
-body[browser='safari'] header nav ul > div.projects li a {
+/*body[browser='safari'] */header nav ul > div.projects li a {
     -webkit-background-clip: none !important;
 }
 
@@ -181,7 +181,7 @@ header nav ul > div.projects li.codetheweb a, header nav ul > div.projects li.co
     background: linear-gradient(100deg,#ffce69,#fa709a);
 }
 
-body[browser='safari'] header nav ul > div.projects li.codetheweb a {
+/*body[browser='safari'] */header nav ul > div.projects li.codetheweb a {
     color: #F0957E;
     -webkit-text-fill-color: #F0957E;
 }
@@ -190,7 +190,7 @@ header nav ul > div.projects li.kanbanmail a, header nav ul > div.projects li.ka
     background: linear-gradient(90deg,#4784f6,#1A28DA);
 }
 
-body[browser='safari'] header nav ul > div.projects li.kanbanmail a {
+/*body[browser='safari'] */header nav ul > div.projects li.kanbanmail a {
     color: #4784f6;
     -webkit-text-fill-color: #4784f6;
 }
