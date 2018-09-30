@@ -10,6 +10,8 @@
 <meta name="theme-color" content="#32424A">
 <!-- Google site verification -->
 <meta name="google-site-verification" content="2irMIng5OrvCyv0CSOSwJj_ui5yLBI0t_lPLdzkYD70" />
+<!-- Canonical -->
+<link rel="canonical" href="{{site.url}}{{page.url | replace: '.html', ''}}">
 <!-- Search Engine Tags -->
 <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}" />
 <meta name="keywords" content="ethan,booligoosh,coding,code,programming,github,scratch,design,logos,behance,amateur">
@@ -19,7 +21,7 @@
 <meta property="og:type" content="website">
 <meta property="og:description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
-<meta property="og:url" content="{{page.url}}" />
+<meta property="og:url" content="{{site.url}}{{page.url | replace: '.html', ''}}" />
 <meta property="og:image" content="{{site.url}}/img/logos/logo.png">
 <meta name="twitter:image" content="{{site.url}}/img/logos/logo.png">
 
