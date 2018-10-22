@@ -39,3 +39,11 @@ defaults:
       type: coding
     values:
       layout: coding-project
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      rawname: post
+      permalink: /blog/:title

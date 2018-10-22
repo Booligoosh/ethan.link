@@ -1,6 +1,14 @@
+{% capture title %}{% if page.draft %}[DRAFT] {% endif %}{% unless page.rawname == 'home' %}{% if page.title %}{{page.title}} &mdash; {% endif %}{% endunless %}{{site.title}}{% endcapture %}
+
+{% capture description %}{% if page.description %}{{page.description}}{% else %}{% if page.layout == 'post' and page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}{% else %}{{site.description}}{% endif %}{% endif %}{% endcapture %}
+
+{% capture canonical %}{{site.url}}{{page.url | replace: '.html', ''}}{% endcapture %}
+
+{% capture image %}{{site.url}}{% if page.image %}{{page.image}}{% else %}/img/logos/logo.png{% endif %}{% endcapture %}
+
 <script>if(window.location.host == 'booligoosh.github.io'){window.location.host = 'ethan.link'}</script>
 
-<title>{% if page.title and page.rawname != 'home' %}{{page.title}} &mdash; {% endif %}{{site.title}}</title>
+<title>{{title}}</title>
 {% if page.rawname == 'home' and page.title %}<script>document.querySelector('title').innerHTML = "{{page.title}}"</script>{% endif %}
 <!-- Viewport meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,21 +19,21 @@
 <!-- Google site verification -->
 <meta name="google-site-verification" content="2irMIng5OrvCyv0CSOSwJj_ui5yLBI0t_lPLdzkYD70" />
 <!-- Canonical -->
-<link rel="canonical" href="{{site.url}}{{page.url | replace: '.html', ''}}">
+<link rel="canonical" href="{{canonical}}">
 <!-- Search Engine Tags -->
-<meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}" />
+<meta name="description" content="{{description}}" />
 <meta name="keywords" content="ethan,booligoosh,coding,code,programming,github,scratch,design,logos,behance,amateur">
 <!-- Open Graph Tags -->
-<meta property="og:title" content="{% unless page.rawname == 'home' %}{% if page.title %}{{page.title}} &mdash; {% endif %}{% endunless %}{{site.title}}">
-<meta name="twitter:title" content="{% unless page.rawname == 'home' %}{% if page.title %}{{page.title}} &mdash; {% endif %}{% endunless %}{{site.title}}">
+<meta property="og:title" content="{{title}}">
+<meta name="twitter:title" content="{{title}}">
 <meta property="og:type" content="website">
-<meta property="og:description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
-<meta name="twitter:description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
-<meta property="og:url" content="{{site.url}}{{page.url | replace: '.html', ''}}" />
-<meta property="og:image" content="{{site.url}}/img/logos/logo.png">
-<meta name="twitter:image" content="{{site.url}}/img/logos/logo.png">
+<meta property="og:description" content="{{description}}">
+<meta name="twitter:description" content="{{description}}">
+<meta property="og:url" content="{{canonical}}" />
+<meta property="og:image" content="{{image}}">
+<meta name="twitter:image" content="{{image}}">
 
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
 
 <!-- SCRIPTS TO LOAD AFTER DOM -->
 

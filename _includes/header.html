@@ -1,3 +1,4 @@
+{% if page.heading %}
 <section class="header">
     <div class=logo>
             {% if page.rawname == 'home' %}
@@ -11,6 +12,7 @@
             </div>
     </div>
 </section>
+{% endif %}
 <header class="tabs">
     <button class="hamburger hamburger--spin" id="toggle-nav" type="button" onclick="document.getElementById('toggle-nav').classList.toggle('is-active'); document.body.classList.toggle('nav-out')">
         <span class="hamburger-box">

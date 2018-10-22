@@ -1,0 +1,58 @@
+---
+layout: basic
+---
+<script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "url": "ethan.link",
+        "datePublished": "{{page.date}}",
+        "dateModified": "{{page.date}}",
+        "author": {
+            "type": "Person",
+            "name": "Ethan",
+            "url": "https://ethan.link/"
+        },
+        "headline": "{% if page.draft %}[DRAFT] {% endif %}{{page.title}}",
+        "image": "{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}/assets/img/icon1.png{% endif %}"
+    }
+</script>
+<div class="post-page-header">
+    <div class="post-page-header-inner">
+    <a href="." class="post-page-blog-home-link"><i class="icon-chevron-left"></i></a>
+    Ethan &#x1F468;&#x200D;&#x1F3A4;
+    </div>
+</div>
+<main class="post-page">
+    <article>
+        <section class="post-info">
+            <img class="post-cover" src="{{page.image}}">
+            <h1 class="post-title">{{page.title}}</h1>
+            <div class="post-date">{{ page.date | date_to_string }}</div>
+            {% if page.draft %}<div class="post-tag draft">Draft</div>{% endif %}
+        </section>
+        <section class="post-body">
+            {{content}}
+        </section>
+    </article>
+    <section class="post-after">
+        <section class="post-author">
+            <img class="post-author-image" src="/img/logos/logo.png">
+            <div class="post-author-text">
+                <h2 class="post-author-name">Ethan</h2>
+                <p class="post-author-bio">Hey! I'm an Indie Maker creating <a href="https://kanbanmail.app" target="_blank">KanbanMail</a> and <a href="https://codetheweb.blog" target="_blank">Code The Web</a>. I'm sharing my journey  to give people like you an insight into what it takes to run an indie bootstrapped business online. If that sounds good to you, you can <a href="https://twitter.com/Booligoosh">follow me on Twitter</a>. Feel free to ask me anything!</p>
+            </div>
+        </section>
+    </section>
+</main>
+<script>
+    // make all external links open in new tab
+    var links = document.getElementsByClassName('post-body')[0].getElementsByTagName('a');
+    for (var i = 0; i < links.length; i++){
+        var parser = document.createElement('a');
+        parser.href = links[i].href;
+        if ((parser.origin != window.location.origin) && links[i].target === ''){
+            links[i].target = '_blank';
+        }
+    }
+</script>
