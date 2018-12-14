@@ -5,9 +5,11 @@ layout: basic
     {% include header.html %}
     {% assign len = page.content | number_of_words %}
     {% if len > 0 %}
-    <section class="content">
-        {{ content }}
-    </section>
+        {% unless page.rawname == 'home' %}
+            <section class="content">
+                {{ content }}
+            </section>
+        {% endunless %}
     {% endif %}
     {% unless page.nobacktotop %}<a href="#top" class="back-to-top">Back to top</a>{% endunless %}
 </div>
