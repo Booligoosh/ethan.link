@@ -8,6 +8,10 @@ description: "I'm sharing my journey to give people like you an insight into wha
 {% include header.html %}
 <main>
     <h1 class="blog-home-title">Some articles I've written &#x270D;&#xFE0F;</h1>
+    <form class="newsletter-form" method="post" action="https://tinyletter.com/booligoosh"> 
+        <input type="email" name="email" value="" placeholder="elonmusk@example.com" required>
+        <button type="submit">Subscribe</button>
+    </form>
     {% for post in site.posts %}
     <a href="{{post.url}}" class="post-info">
         <img class="post-cover" src="{{post.image}}">

@@ -618,6 +618,36 @@ body.home .hero .makerlog-embed iframe {
     box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.5);
 }
 
+body.blog-home .newsletter-form {
+    display: flex;
+    padding-right: 5%;
+}
+
+body.blog-home .newsletter-form input[type="email"], body.blog-home .newsletter-form button[type="submit"] {
+    display: block;
+    padding: 1rem;
+    border-top-right-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    border: none;
+    font-size: 1em;
+    font-family: inherit;
+}
+
+body.blog-home .newsletter-form input[type="email"] {
+    padding-left: 6rem;
+    width: 30em;
+    z-index: 1;
+}
+
+body.blog-home .newsletter-form button[type="submit"] {
+    cursor: pointer;
+    margin-left: -1.5rem;
+    background: #B346FF;
+    color: white;
+    font-weight: 700;
+    padding-left: 2.25rem;
+}
+
 @media screen and (max-width: 950px) {
     .main-content-list.fullwidth-feature-items {
         grid-template-columns: 1fr;
@@ -705,6 +735,12 @@ body.home .hero .makerlog-embed iframe {
     }
     .contact-cards {
         grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body.blog-home .newsletter-form input[type="email"] {
+        padding-left: 2rem;
     }
 }
 
