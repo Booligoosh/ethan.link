@@ -646,6 +646,14 @@ body.blog-home .newsletter-form button[type="submit"] {
     color: white;
     font-weight: 700;
     padding-left: 2.25rem;
+    transition: padding-left .25s;
+}
+
+body.blog-home .newsletter-form button[type="submit"]:hover {
+    padding-left: 4rem;
+}
+body.blog-home .newsletter-form button[type="submit"]:hover:after {
+    content: '!!!';
 }
 
 @media screen and (max-width: 950px) {
