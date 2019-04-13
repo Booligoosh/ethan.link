@@ -15,6 +15,9 @@ gems:
   - jekyll-feed
   - jekyll-sitemap # leave at the end
 
+# Keep _redirects and _headers files in build
+include: ['_redirects', '_headers']
+
 contact:
   stackoverflow: 'https://stackoverflow.com/users/5374560'
   github: 'https://github.com/Booligoosh'
