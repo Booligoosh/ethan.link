@@ -656,6 +656,16 @@ body.blog-home .newsletter-form button[type="submit"]:hover:after {
     content: '!!!';
 }
 
+.home-contact {
+    color: hsl(199, 19%, 42%);
+}
+
+.home-contact a {
+    color: #1976D2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 @media screen and (max-width: 950px) {
     .main-content-list.fullwidth-feature-items {
         grid-template-columns: 1fr;
