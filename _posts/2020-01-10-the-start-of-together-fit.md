@@ -127,7 +127,7 @@ If you're interested in using together.fit, please join the [Telegram group][tg]
 [tg]: https://t.me/TogetherDotFit
 [seb]: https://twitter.com/sebvercammen
 [boutique]: https://blog.lifefitness.com/boutique-gyms-part-I-what-they-are-and-why-they-are-gaining-steam
-[discuss]: #twitter
+[discuss]: https://twitter.com/Booligoosh/status/1215514081794256896
 
 
 [feed]: /img/posts/the-start-of-together-fit/feed.png
