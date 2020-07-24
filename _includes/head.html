@@ -40,8 +40,9 @@
 <!-- Google Analytics -->
 <script src="{{site.baseurl}}/ga.js" defer></script>
 
-{% if page.url != '/' %}
-
+{% if page.url == '/' %}
+  <link rel="stylesheet" href="/index.css?{{site.time | date: '%s%N'}}">
+{% else %}
   <!-- classList polyfill -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js" defer></script>
 
