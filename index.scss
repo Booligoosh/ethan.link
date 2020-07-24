@@ -108,6 +108,10 @@ body {
     color: inherit;
     text-decoration: none;
 
+    &:focus {
+      outline: none;
+    }
+
     &-title {
       margin: 0;
       font-weight: 600;
