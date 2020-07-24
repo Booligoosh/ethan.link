@@ -1,20 +1,26 @@
 ---
 ---
+
 <!--
 View this code on Github instead:
 https://github.com/Booligoosh/booligoosh.github.io
 -->
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     {% include head.html %}
-</head>
+  </head>
 
-<body class="{{page.rawname}}" style="background: #32424A; opacity: 0; transition: opacity 1s, background-color 1s">
+  <body
+    class="{{page.rawname}}"
+    {% if page.url != '/' %}
+    style="background: #32424A; opacity: 0; transition: opacity 1s, background-color 1s"
+    {% endif %}
+  >
     <a name="top"></a>
     {{ content }}
+    {% if page.url != '/' %}
     {% include before-body-end.html %}
-</body>
-
+    {% endif %}
+  </body>
 </html>

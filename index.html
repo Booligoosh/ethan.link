@@ -1,76 +1,98 @@
 ---
-title: "Hi, I'm Ethan &#x1F44B;"
-tabname: Home
+title: "Ethan / @Booligoosh"
 rawname: home
-layout: default
-heading: "Hi, I'm Ethan &#x1F44B;"
-subheading: '<!--&#x1F918;&#x1F525;&#x1F680;&#x1F468;&#x200D;&#x1F3A4;--> An Indie Maker making money online by creating websites and web apps that people love &#x1F60D;'
-nobacktotop: true
+layout: basic
 ---
-<section class="hero">
-    <div class="grid-wrapper">
-        <div class="first-panel">
-            <div class="makerlog-embed" style="transform: perspective(1000px) rotateY(0); transition: transform 1s">
-                <iframe scrolling="no" frameborder="0" allowtransparency="true" src="https://api.getmakerlog.com/users/26/embed/?header_color=%2332424A&title_color=%23FDD835"></iframe>
-            </div>
-            <div class="text" style="transform: perspective(1000px) rotateY(0); transition: transform 1s">
-                <h1>{{page.heading}}</h1>
-                <h2>{{page.subheading}}</h2>
-                <div class="home-contact">Contact me: <a href="mailto:hi@ethan.link">Email</a> or <a href="https://www.linkedin.com/in/booligoosh/" target="_blank">LinkedIn</a></div>
-            </div>
-        </div>
-        <div class="second-panel">
-            <h3>&#x1F6E0; My projects</h3>
-            <div class="cards-container">
-                <a href="https://kanbanmail.app" target="_blank" class="card">
-                    <img src="https://kanbanmail.app/img/icons/logo.png" class="card-logo">
-                    <h4>KanbanMail</h4>
-                    <p>A Kanban board for your emails</p>
-                </a>
-                <a href="https://codetheweb.blog" target="_blank" class="card">
-                    <img src="https://codetheweb.blog/assets/img/icon1.png" class="card-logo">
-                    <h4>Code The Web</h4>
-                    <p>Web development explained for normal people</p>
-                </a>
-                <a href="https://maker.rocks" target="_blank" class="card">
-                    <img src="https://maker.rocks/img/logo-with-padding.png" class="card-logo">
-                    <h4>Maker.rocks</h4>
-                    <p>A shareable profile for other makers</p>
-                </a>
-            </div>
-            <h3>&#x1F4D9; My content</h3>
-            <div class="cards-container">
-                <a href="{{site.baseurl}}/blog" class="card">
-                    <img src="{{site.baseurl}}/img/blog-logo.png" class="card-logo">
-                    <h4>Blog</h4>
-                    <p>Watch me coding, writing, talking and launching live! Don't forget to turn on notifications so you won't miss it.</p>
-                </a>
-                <a href="https://twitter.com/Booligoosh" target="_blank" class="card">
-                    <img src="{{site.baseurl}}/img/twitter-logo.png" class="card-logo">
-                    <h4>Twitter</h4>
-                    <p>Where I post openly about what I'm working on, stats, progress, ponderings and advice!</p>
-                </a>
-                <a href="https://www.youtube.com/channel/UCms6bsRIHFSscZhxK0-K-rQ" target="_blank" class="card">
-                    <img src="{{site.baseurl}}/img/youtube-logo.png" class="card-logo">
-                    <h4>YouTube</h4>
-                    <p>Videos where I share thoughts and advice, chats with other makers and recordings of livestreams I've done in the past.</p>
-                </a>
-                <a href="https://twitch.tv/ethan_the_maker" target="_blank" class="card">
-                    <img src="{{site.baseurl}}/img/twitch-logo.png" class="card-logo">
-                    <h4>Twitch</h4>
-                    <p>Watch me coding, writing, talking and launching live! Don't forget to turn on notifications so you won't miss it.</p>
-                </a>
-                <a href="https://getmakerlog.com/@Booligoosh" target="_blank" class="card">
-                    <img src="{{site.baseurl}}/img/makerlog-logo.png" class="card-logo">
-                    <h4>Makerlog</h4>
-                    <p>See each task I complete every single day on my journey towards earning sustainable income from making products!</p>
-                </a>
-                <a href="https://unsplash.com/@booligoosh" target="_blank" class="card">
-                    <img src="{{site.baseurl}}/img/unsplash-logo.png" class="card-logo">
-                    <h4>Unsplash</h4>
-                    <p>Not related to indie making, but here are some nice photos I've taken. They're all free to use!</p>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+<link rel="stylesheet" href="/index.css?{{site.time | date: '%s%N'}}">
+<main>
+    <div class="rainbow-bar"></div>
+    <div class="rainbow-bar"></div>
+    <section class="hero">
+      <div class="badges">
+        <!-- <img src="https://www.webdesignmuseum.org/uploaded/exhibitions/web-banners-in-the-90s/mac-mall-1998.gif"> -->
+        <img src="/img/800x600.gif">
+        <img src="/img/netscape_now.gif">
+        <img src="/img/best_viewed_with_eyes.gif">
+      </div>
+      <div class="hero-inner">
+        <div class="hero-main-text">Hey, I&rsquo;m Ethan.</div>
+        <div class="hero-secondary-text">I like building beautiful software that helps<br>people be more productive and improve their lives.</div>
+        <section>
+          <h2 class="section-heading">My projects</h2>
+          <div class="grid">
+            <a class="grid-card" href="https://kanbanmail.app" target="_blank">
+              <h3 class="grid-card-title">KanbanMail</h3>
+              <p class="grid-card-text">An email client that helps you get organized.</p>
+            </a>
+            <a class="grid-card" href="https://codetheweb.blog" target="_blank">
+              <h3 class="grid-card-title">Code The Web</h3>
+              <p class="grid-card-text">Web development explained for normal people.</p>
+            </a>
+            <a class="grid-card" href="https://together.fit" target="_blank">
+              <h3 class="grid-card-title">Together.fit</h3>
+              <p class="grid-card-text">A social platform to help you get fit and stay fit.</p>
+            </a>
+            <a class="grid-card" href="https://maker.rocks" target="_blank">
+              <h3 class="grid-card-title">Maker.rocks</h3>
+              <p class="grid-card-text">A shareable profile for other makers.</p>
+            </a>
+          </div>
+        </section>
+        <section>
+          <h2 class="section-heading">Find me on</h2>
+          <div class="grid">
+            <a class="grid-card" href="https://twitter.com/Booligoosh" target="_blank">
+              <h3 class="grid-card-title">Twitter</h3>
+            </a>
+            <a class="grid-card" href="https://www.linkedin.com/in/booligoosh/" target="_blank">
+              <h3 class="grid-card-title">LinkedIn</h3>
+            </a>
+            <a class="grid-card" href="https://www.youtube.com/channel/UCms6bsRIHFSscZhxK0-K-rQ" target="_blank">
+              <h3 class="grid-card-title">YouTube</h3>
+            </a>
+            <a class="grid-card" href="hhttps://twitch.tv/ethan_the_maker" target="_blank">
+              <h3 class="grid-card-title">Twitch</h3>
+            </a>
+            <a class="grid-card" href="https://getmakerlog.com/@Booligoosh" target="_blank">
+              <h3 class="grid-card-title">Makerlog</h3>
+            </a>
+            <a class="grid-card" href="https://www.producthunt.com/@Booligoosh" target="_blank">
+              <h3 class="grid-card-title">Product Hunt</h3>
+            </a>
+            <a class="grid-card" href="https://yourstack.com/@Booligoosh" target="_blank">
+              <h3 class="grid-card-title">YourStack</h3>
+            </a>
+            <a class="grid-card" href="https://unsplash.com/@booligoosh" target="_blank">
+              <h3 class="grid-card-title">Unsplash</h3>
+            </a>
+            <a class="grid-card" href="https://github.com/Booligoosh" target="_blank">
+              <h3 class="grid-card-title">GitHub</h3>
+            </a>
+            <a class="grid-card" href="https://dev.to/Booligoosh" target="_blank">
+              <h3 class="grid-card-title">Dev.to</h3>
+            </a>
+            <a class="grid-card" href="https://open.spotify.com/user/booligoosh" target="_blank">
+              <h3 class="grid-card-title">Spotify</h3>
+            </a>
+            <a class="grid-card" href="https://www.last.fm/user/Booligoosh" target="_blank">
+              <h3 class="grid-card-title">Last.fm</h3>
+            </a>
+          </div>
+        </section>
+        <section>
+          <h2 class="section-heading">Blog / newsletter</h2>
+          <div class="grid">
+            <a class="grid-card" href="/blog">
+              <h3 class="grid-card-title">Blog</h3>
+              <p class="grid-card-text">I have a blog, although I don't write articles that often.</p>
+            </a>
+            <a class="grid-card" href="/newsletter">
+              <h3 class="grid-card-title">Newsletter</h3>
+              <p class="grid-card-text">If you want to be notified about said articles.</p>
+            </a>
+          </div>
+        </section>
+      </div>
+    </section>
+    <div class="my-head"></div>
+  </main>
