@@ -161,7 +161,7 @@ body {
   z-index: 1;
   height: $face-height;
   background-image: url("/img/my-head.png"),
-    linear-gradient(transparent, white 75%);
+    linear-gradient(hsla(0, 0%, 100%, 0), white 75%);
   background-size: contain;
   background-repeat: repeat-x;
 
