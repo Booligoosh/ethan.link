@@ -165,9 +165,9 @@ body {
   background-size: contain;
   background-repeat: repeat-x;
 
-  &:hover {
-    animation: roll 10s infinite linear;
-  }
+  // &:hover {
+  animation: roll 10s infinite linear;
+  // }
 }
 
 @keyframes roll {
