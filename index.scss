@@ -198,3 +198,75 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+.post-page {
+  padding-bottom: 5rem;
+
+  .post {
+    padding: 2rem;
+    margin-left: $rainbow-bar-width;
+
+    &-info,
+    &-body {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    &-info {
+      &-title {
+        font-size: 48px;
+        font-family: $fancy-serif;
+        // letter-spacing: -0.0625em;
+        letter-spacing: -0.03em;
+        font-weight: 500;
+        line-height: 1;
+        margin-top: 2.5rem;
+        margin-bottom: 0.75rem;
+      }
+
+      &-cover {
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      &-date {
+        opacity: 0.5;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &-body {
+      // font-family:  "Computer Modern Serif", serif;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      letter-spacing: 0.2px;
+
+      img {
+        max-width: 100%;
+        max-height: 70vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+      }
+
+      blockquote {
+        border-left: 5px solid hsl(0, 0%, 50%);
+        padding-left: 1rem;
+        margin-left: 0;
+        opacity: 0.8;
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        color: $blue;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

@@ -13,13 +13,13 @@ https://github.com/Booligoosh/booligoosh.github.io
 
   <body
     class="{{page.rawname}}"
-    {% if page.url != '/' %}
+    {% if page.newstyle != true %}
     style="background: #32424A; opacity: 0; transition: opacity 1s, background-color 1s"
     {% endif %}
   >
     <a name="top"></a>
     {{ content }}
-    {% if page.url != '/' %}
+    {% if page.newstyle != true %}
     {% include before-body-end.html %}
     {% endif %}
   </body>

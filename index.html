@@ -2,6 +2,7 @@
 title: "Ethan / @Booligoosh"
 rawname: home
 layout: basic
+newstyle: true
 ---
 <main>
     <div class="rainbow-bar"></div>
@@ -78,7 +79,7 @@ layout: basic
             </a>
           </div>
         </section>
-        <section>
+        <!-- <section>
           <h2 class="section-heading">Blog / newsletter</h2>
           <div class="grid">
             <a class="grid-card" href="/blog">
@@ -89,6 +90,19 @@ layout: basic
               <h3 class="grid-card-title">Newsletter</h3>
               <p class="grid-card-text">If you want to be notified about said articles.</p>
             </a>
+          </div>
+        </section> -->
+        <section>
+          <h2 class="section-heading">Blog posts</h2>
+          <div class="grid">
+            {% for post in site.posts %}
+            {% if post.draft != true %}
+            <a class="grid-card" href="{{post.url}}">
+              <h3 class="grid-card-title">{{post.title}}</h3>
+              <p class="grid-card-text">{{ post.date | date_to_string }}</p>
+            </a>
+            {% endif %}
+            {% endfor %}
           </div>
         </section>
       </div>

@@ -2,6 +2,7 @@
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
+    { "source": "/blog/", "destination": "/", "permanent": false },
     {
       "source": "/spacex-arabsat-6a/",
       "destination": "https://youtu.be/TXMGu2d8c8g?t=1185",
