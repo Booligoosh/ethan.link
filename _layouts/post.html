@@ -65,6 +65,27 @@ layout: basic
   }
 </script>
 <script>
+  function formatDate(dateString) {
+    const date = new Date(dateString);
+    return [
+      date.getDate(),
+      [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ][date.getMonth()],
+      date.getFullYear(),
+    ].join(" ");
+  }
   // Load webmentions
   async function loadWebmentions() {
     // Hard-code origin so it works locally too
@@ -110,16 +131,10 @@ layout: basic
             <span class="post-page-comments-feed-comment-right-attribution-author-name">
               ${wm.author.name}
             </span>
-            says:
+           on ${formatDate(wm.published)}:
           </a>
           <div class="post-page-comments-feed-comment-right-content">
             ${wm.content.html}
-          </div>
-          <div class="post-page-comments-feed-comment-right-date">
-            ${new Date(wm.published).toLocaleString(undefined, {
-              dateStyle: "short",
-              timeStyle: "short",
-            })}
           </div>
         </div>
       </div>

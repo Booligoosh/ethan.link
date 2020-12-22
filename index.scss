@@ -322,7 +322,7 @@ body {
 
           &-attribution {
             text-decoration: none;
-            color: hsl(0, 0%, 40%);
+            color: hsl(0, 0%, 60%);
             display: block;
             width: max-content;
             margin-bottom: 0.2rem;
@@ -331,13 +331,6 @@ body {
               font-weight: 500;
               color: black;
             }
-          }
-
-          &-date {
-            color: hsl(0, 0%, 65%);
-            margin-top: 0.3rem;
-            // Maybe enable later
-            display: none;
           }
         }
       }
