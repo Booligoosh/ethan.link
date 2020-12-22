@@ -86,6 +86,15 @@ layout: basic
       date.getFullYear(),
     ].join(" ");
   }
+  function sanitize(text) {
+    // https://stackoverflow.com/a/23498348
+    return text
+      .replace(/&/g, "&amp;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;");
+  }
   // Load webmentions
   async function loadWebmentions() {
     // Hard-code origin so it works locally too
@@ -114,27 +123,27 @@ layout: basic
       .map(
         (wm) => `
       <div class="post-page-comments-feed-comment">
-        <a href="${
+        <a href="${sanitize(
           wm.author.url
-        }" target="_blank" rel="noopener noreferrer nofollow">
-          <img class="post-page-comments-feed-comment-avatar" src="${
+        )}" target="_blank" rel="noopener noreferrer nofollow">
+          <img class="post-page-comments-feed-comment-avatar" src="${sanitize(
             wm.author.photo
-          }" alt="${wm.author.name}">
+          )}" alt="${sanitize(wm.author.name)}">
         </a>
         <div class="post-page-comments-feed-comment-right">
           <a
-            href="${wm.url}"
+            href="${sanitize(wm.url)}"
             target="_blank"
             rel="noopener noreferrer nofollow"
             class="post-page-comments-feed-comment-right-attribution"
           >
             <span class="post-page-comments-feed-comment-right-attribution-author-name">
-              ${wm.author.name}
+              ${sanitize(wm.author.name)}
             </span>
-           on ${formatDate(wm.published)}:
+           on ${sanitize(formatDate(wm.published))}:
           </a>
           <div class="post-page-comments-feed-comment-right-content">
-            ${wm.content.html}
+            ${sanitize(wm.content.text)}
           </div>
         </div>
       </div>
