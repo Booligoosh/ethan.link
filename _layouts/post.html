@@ -32,6 +32,10 @@ layout: basic
     </section>
     <section class="post-body">{{content}}</section>
   </article>
+  <section class="post-page-comments">
+    <h2 class="post-page-comments-title">Replies</h2>
+    <div class="post-page-comments-feed"></div>
+  </section>
   <!-- <section class="post-after">
         <section class="post-author">
             <img class="post-author-image" src="/img/logos/logo.png">
@@ -55,4 +59,71 @@ layout: basic
       links[i].target = "_blank";
     }
   }
+</script>
+<script>
+  // Load webmentions
+  async function loadWebmentions() {
+    // Hard-code origin so it works locally too
+    const postUrl = `https://ethan.link${window.location.pathname}`;
+    console.log(postUrl);
+    const webmentions = await fetch(
+      `https://webmention.io/api/mentions.jf2?target=${encodeURIComponent(
+        postUrl
+      )}&wm-property=in-reply-to`
+    )
+      .then((r) => r.json())
+      .then(({ children }) => children);
+
+    const html = webmentions
+      // Sort by date/time
+      .sort(
+        (wm1, wm2) =>
+          new Date(wm2.published).getTime() - new Date(wm1.published).getTime()
+      )
+      // Filter out replies that aren't to the original tweet (replies to replies)
+      .filter((wm) =>
+        wm.content.html.includes(
+          '<a class="u-mention" href="https://ethan.link/"></a>'
+        )
+      )
+      .map(
+        (wm) => `
+      <div class="post-page-comments-feed-comment">
+        <a href="${
+          wm.author.url
+        }" target="_blank" rel="noopener noreferrer nofollow">
+          <img class="post-page-comments-feed-comment-avatar" src="${
+            wm.author.photo
+          }" alt="${wm.author.name}">
+        </a>
+        <div class="post-page-comments-feed-comment-right">
+          <a
+            href="${wm.url}"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            class="post-page-comments-feed-comment-right-attribution"
+          >
+            <span class="post-page-comments-feed-comment-right-attribution-author-name">
+              ${wm.author.name}
+            </span>
+            says:
+          </a>
+          <div class="post-page-comments-feed-comment-right-content">
+            ${wm.content.html}
+          </div>
+          <div class="post-page-comments-feed-comment-right-date">
+            ${new Date(wm.published).toLocaleString(undefined, {
+              dateStyle: "short",
+              timeStyle: "short",
+            })}
+          </div>
+        </div>
+      </div>
+      `
+      )
+      .join("");
+
+    document.querySelector(".post-page-comments-feed").innerHTML = html;
+  }
+  loadWebmentions();
 </script>
