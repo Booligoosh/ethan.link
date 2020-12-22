@@ -35,7 +35,11 @@
 <meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
 <!-- RSS Feed-->
 <link rel="alternate" type="application/atom+xml" title="RSS Feed for ethan.link" href="https://ethan.link/feed.xml">
-
+<!-- Webmention.io support -->
+{% if page.layout == 'post' %}
+<link rel="webmention" href="https://webmention.io/ethan.link/webmention" />
+<link rel="pingback" href="https://webmention.io/ethan.link/xmlrpc" />
+{% endif %}
 <!-- SCRIPTS TO LOAD AFTER DOM -->
 
 <!-- Google Analytics -->
