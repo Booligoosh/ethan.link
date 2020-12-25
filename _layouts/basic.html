@@ -11,16 +11,8 @@ https://github.com/Booligoosh/booligoosh.github.io
     {% include head.html %}
   </head>
 
-  <body
-    class="{{page.rawname}}"
-    {% if page.newstyle != true %}
-    style="background: #32424A; opacity: 0; transition: opacity 1s, background-color 1s"
-    {% endif %}
-  >
+  <body class="{{page.rawname}}">
     <a name="top"></a>
     {{ content }}
-    {% if page.newstyle != true %}
-    {% include before-body-end.html %}
-    {% endif %}
   </body>
 </html>

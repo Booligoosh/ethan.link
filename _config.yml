@@ -50,4 +50,3 @@ defaults:
       layout: post
       rawname: post
       permalink: /blog/:title
-      newstyle: true

@@ -1,8 +1,0 @@
-<ul class="quicklinks">
-    <!--BEGIN AUTO CONTENT-->
-    {% assign ql_posts = site[page.rawname] | reverse %}
-    {% for post in ql_posts %}
-    <li style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('{{site.baseurl}}/img/content/coding/{{post.image}}');"><a href="#{{post.rawname}}">{{post.title}}</a></li>
-    {% endfor %}
-    <!--END AUTO CONTENT-->
-</ul>
