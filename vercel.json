@@ -43,5 +43,11 @@
       "destination": "https://covid19nsw.netlify.com/",
       "permanent": false
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/favicon.ico",
+      "destination": "/img/icons/favicon.ico"
+    }
   ]
 }
