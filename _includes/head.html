@@ -1,4 +1,4 @@
-{% capture title %}{% if page.draft %}[DRAFT] {% endif %}{% unless page.rawname == 'home' %}{% if page.title %}{{page.title}} &mdash; {% endif %}{% endunless %}{{site.title}}{% endcapture %}
+{% capture title %}{% if page.draft %}[DRAFT] {% endif %}{{page.title}}{% endcapture %}
 
 {% capture description %}{% if page.description %}{{page.description}}{% else %}{% if page.layout == 'post' and page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}{% else %}{{site.description}}{% endif %}{% endif %}{% endcapture %}
 
