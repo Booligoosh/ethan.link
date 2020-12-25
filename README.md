@@ -1,3 +1,3 @@
-![screenshot](http://booligoosh.github.io/img/content/coding/booligoosh.png)
-# booligoosh.github.io
-My Portfolio / Website
+# [ethan.link](https://ethan.link/)
+
+The code for my personal site!
