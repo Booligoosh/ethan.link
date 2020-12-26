@@ -5,7 +5,7 @@ date: 2020-12-21T09:04:38.170Z
 
 Hey everyone! I've been a bit less active in the online maker community for the last few months, so I just wanted to share what I've been working on, what I've been thinking about, and some general reflection on 2020.
 
-You've probably noticed that I'm writing this a blog post, rather than a Twitter thread as I'd normally do. This is because I feel like a blog post is a better format to express myself &mdash; more on that later.
+You've probably noticed that I'm writing this as a blog post, rather than a Twitter thread as I'd normally do. This is because I feel like a blog post is a better format to express myself &mdash; more on that later.
 
 This post will probably be pretty long, but if you've been wondering what I've been up to lately and what's coming next, go grab a coffee or something and read on!
 
