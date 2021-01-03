@@ -1,5 +1,7 @@
 {
-  "github": false,
+  "github": {
+    "silent": true
+  },
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
