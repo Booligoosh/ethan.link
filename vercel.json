@@ -1,4 +1,5 @@
 {
+  "github": false,
   "cleanUrls": true,
   "trailingSlash": true,
   "redirects": [
