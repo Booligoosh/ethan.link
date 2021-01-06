@@ -124,7 +124,6 @@ body {
 .my-head {
   position: fixed;
   bottom: 0;
-  width: 100%;
   z-index: 1;
   height: $face-height;
   // No WebP fallback, people using bad browsers like Safari don't deserve my-head-compressed-300px.webp anyway
@@ -132,17 +131,24 @@ body {
       top/$face-height,
     linear-gradient(hsla(0, 0%, 100%, 0), white 75%);
 
+  // Show 1 extra image-width on the far left (starting into the left side of the page offscreen) so by the end
+  // of the animation sequence (after moving 1 image-width), it's still visible.
+  left: $face-height * -1;
+  width: calc(100% + #{$face-height});
+
   // &:hover {
   animation: roll 10s infinite linear;
   // }
 }
 
+// Using this animation method (transforming) rather than background-position to take advantage of the GPU.
 @keyframes roll {
-  0% {
-    background-position: 0px;
-  }
+  // No need to include this manually, it's assumed:
+  // 0% {
+  //   transform: translate(0);
+  // }
   100% {
-    background-position: $face-height;
+    transform: translate($face-height);
   }
 }
 
