@@ -1,47 +1,13 @@
 port: 8001
 
-title:            'Ethan &#x1F468;&#x200D;&#x1F3A4;'
 description:      'Hey, I’m Ethan. I like building beautiful software that helps people be more productive and improve their lives.'
 url:              'https://ethan.link'
-baseurl:          ''
-
-email:            hi@ethan.link
-
-paginate:         5
-
-img: '/' # always end in /
 
 gems:
   - jekyll-feed
   - jekyll-sitemap # leave at the end
 
-# Keep _redirects and _headers files in build
-include: ['_redirects', '_headers']
-
-contact:
-  stackoverflow: 'https://stackoverflow.com/users/5374560'
-  github: 'https://github.com/Booligoosh'
-  behance: 'https://behance.net/Booligoosh'
-  dribbble: 'https://dribbble.com/Booligoosh'
-  twitter: 'https://twitter.com/Booligoosh'
-
-# To re-generate this array, go to https://unsplash.com/@booligoosh and enter the following command into the console:
-# (function(){var x = document.getElementsByClassName('_2zEKz');var y =[];for(var i = 0; i < x.length; i++){y[i] = '"' + x[i].getAttribute('src') + '"'}return('photographySrcs: [' + y.join(',') + ']')})();
-# ONLY RUN WHEN ALL THREE COLUMNS ARE VISIBLE!!!
-
-photographySrcs: ["https://images.unsplash.com/photo-1527681592500-6b617497e250?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=f8c4f270770758f9b015ef49f8cd4bf8&w=1000&q=80","https://images.unsplash.com/photo-1524028074966-430925690dba?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=318765c1dce0a38ac91913613850cc34&w=1000&q=80","https://images.unsplash.com/photo-1524026877848-a3d710b69cbf?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2f952083427519af3aca23230bfe37dc&w=1000&q=80","https://images.unsplash.com/photo-1524026367096-4e335e478a35?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c5776c6ce22cbfcfd24a9173cf414041&w=1000&q=80","https://images.unsplash.com/photo-1521954318259-a560cb31b53d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=72bf3a461fbfd9541e85e8613107ed9a&w=1000&q=80","https://images.unsplash.com/photo-1519617598913-b189b0e02f55?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4ad690d48c91dd108cb55e7997bb5896&w=1000&q=80","https://images.unsplash.com/photo-1519611012177-e4aac14046d8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ac9590053b4143e6736094404a314dc8&w=1000&q=80","https://images.unsplash.com/photo-1519293524305-58dc05c8cd81?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cb73cdd510b49fd29d14a31e119f7e7d&w=1000&q=80","https://images.unsplash.com/photo-1527681367576-c81d089d69ac?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7d6d1265e06268469bc7095873db6cc9&w=1000&q=80","https://images.unsplash.com/photo-1524027034897-c091e8e87682?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6ef03bca0c4aa9c54a69dd80f3cc72fa&w=1000&q=80","https://images.unsplash.com/photo-1524026574779-f285226ad577?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fc6afba85f62c6801627b316f44ba781&w=1000&q=80","https://images.unsplash.com/photo-1521955048675-d1c1118c4e3c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=43fec960c4db6ee9715b6f1b33987005&w=1000&q=80","https://images.unsplash.com/photo-1521954595202-5355e4daa7ec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=fb7f57e50bd6dbfc6d1fe622522a6cd5&w=1000&q=80","https://images.unsplash.com/photo-1519617744975-b14cb9d5f07d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e4d51ed1998f9c85ddb719ac53d28001&w=1000&q=80","https://images.unsplash.com/photo-1519617439119-2149226ccb50?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1d1d5a4005f0b2617ea20075715c67b2&w=1000&q=80","https://images.unsplash.com/photo-1519338445515-24becc2d78ec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2510190b34dcedc13e94c692c9ba5fcf&w=1000&q=80","https://images.unsplash.com/photo-1519290812349-339b9741ad19?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ac1da2d1122294996dbd2c01f33b4ec7&w=1000&q=80","https://images.unsplash.com/photo-1519290312055-a05f7f5baf18?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2e45df531993ca2c8a85d0f8909a8c81&w=1000&q=80","https://images.unsplash.com/photo-1519289783204-cefc9b07fe70?ixlib=rb-0.3.5&s=95c6d8bc4b396c3b32e014dd75e49ce1&w=1000&q=80","https://images.unsplash.com/photo-1524028180522-3df85a4b97d4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=70323b1aeca791530217a6b7856d52c8&w=1000&q=80","https://images.unsplash.com/photo-1524026718938-0ed0f3f1cda6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2176ef684bc8b1079d011ddcf12c381f&w=1000&q=80","https://images.unsplash.com/photo-1524026206207-004c079062a4?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eaf4ff2938da68a83727fd0bceed2683&w=1000&q=80","https://images.unsplash.com/photo-1519617847971-f37789f9e71f?ixlib=rb-0.3.5&s=a45e94fa1f10cf029333c25f8da24476&w=1000&q=80","https://images.unsplash.com/photo-1519617528731-a3270d239b99?ixlib=rb-0.3.5&s=9f297467b635925b7a3539381cb251e3&w=1000&q=80","https://images.unsplash.com/photo-1519339404311-b9ceff5ca06c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bc6ebe5d2df33480aa6bc5f1e0c0b047&w=1000&q=80","https://images.unsplash.com/photo-1519294849704-ccc288873861?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=79a402b89e26079c865d53d0971c4008&w=1000&q=80","https://images.unsplash.com/photo-1519290552164-7f1154936a5b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6cfda48f78f2546c7dbd1d9ef70e0664&w=1000&q=80","https://images.unsplash.com/photo-1519289061766-d748a852249f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=900e1540c7a5ceed895b0afea3e4873e&w=1000&q=80"]
-
-collections:
-  coding:
-    output: true
-    permalink: /coding/:title
-
 defaults:
-  - scope:
-      path: ""
-      type: coding
-    values:
-      layout: coding-project
   -
     scope:
       path: ""
