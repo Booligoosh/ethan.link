@@ -7,6 +7,14 @@
   "redirects": [
     { "source": "/blog/", "destination": "/", "permanent": false },
     {
+      "source": "/youtube/",
+      "destination": "https://www.youtube.com/Booligoosh"
+    },
+    {
+      "source": "/newsletter/",
+      "destination": "https://booligoosh.substack.com/subscribe"
+    },
+    {
       "source": "/spacex-arabsat-6a/",
       "destination": "https://youtu.be/TXMGu2d8c8g?t=1185",
       "permanent": false
