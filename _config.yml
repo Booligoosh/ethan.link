@@ -1,15 +1,15 @@
 port: 8001
 
-description:      'Hey, I’m Ethan. I like building beautiful software that helps people be more productive and improve their lives.'
-url:              'https://ethan.link'
+description: "Hey, I’m Ethan. I like building beautiful software that helps people be more productive and improve their lives."
+
+url: "https://ethan.link"
 
 gems:
   - jekyll-feed
   - jekyll-sitemap # leave at the end
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: posts
     values:
