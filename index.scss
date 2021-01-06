@@ -162,7 +162,8 @@ body {
   right: 0;
   z-index: 1;
   height: $face-height;
-  background-image: url("/img/my-head.png"),
+  // No WebP fallback, people using bad browsers like Safari don't deserve my-head-compressed.webp anyway
+  background-image: url("/img/my-head-compressed.webp"),
     linear-gradient(hsla(0, 0%, 100%, 0), white 75%);
   background-size: contain;
   background-repeat: repeat-x;
