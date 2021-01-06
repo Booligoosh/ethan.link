@@ -39,18 +39,17 @@ body {
     position: relative;
 
     // Rainbow blur
-    &:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: $rainbow-gradient-horizontal;
-      z-index: -1;
-      filter: blur(100px);
-      display: NONE;
-    }
+    // &:before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   bottom: 0;
+    //   left: 0;
+    //   right: 0;
+    //   background: $rainbow-gradient-horizontal;
+    //   z-index: -1;
+    //   filter: blur(100px);
+    // }
   }
 
   &-secondary-text {
