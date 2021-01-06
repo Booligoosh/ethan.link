@@ -45,5 +45,5 @@
 <!-- Plausible Analytics -->
 <script async defer data-domain="ethan.link" src="https://pl.ethan.link/js/index.outbound-links.js"></script>
 
-<!-- My stylesheet -->
-<link rel="stylesheet" href="/index.css?{{site.time | date: '%s%N'}}">
+<!-- My stylesheet - https://kevinsweet.com/inline-scss-jekyll-github-pages -->
+<style>{% capture include_to_scssify %}{% include index.scss %}{% endcapture %}{{ include_to_scssify | scssify }}</style>
