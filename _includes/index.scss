@@ -71,7 +71,8 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-gap: 12px;
 
-  &-card {
+  // Formerly &-card
+  a {
     padding: 10px;
     border-radius: 8px;
     border: 1px dashed hsl(0, 0%, 85%);
@@ -79,11 +80,13 @@ body {
     text-decoration: none;
     outline: none !important;
 
-    &-title {
+    // Formerly &-title
+    h3 {
       margin: 0;
       font-weight: 600;
     }
-    &-text {
+    // Formerly &-text
+    p {
       margin: 4px 0 0 0;
       opacity: 0.75;
       font-size: 15px;
