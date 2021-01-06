@@ -18,6 +18,7 @@ gem "jekyll", ">= 3.6.3"
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
    gem "octopress-minify-html", "~> 1.3"
+   gem "jekyll_image_encode", "~> 0.0.4"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
