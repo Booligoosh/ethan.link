@@ -32,4 +32,4 @@
 <!-- Plausible Analytics -->
 <script async defer data-domain="ethan.link" src="https://pl.ethan.link/js/index.outbound-links.js"></script>
 <!-- My stylesheet - https://kevinsweet.com/inline-scss-jekyll-github-pages -->
-<style>{% capture include_to_scssify %}{% include index.scss %}{% endcapture %}{{ include_to_scssify | scssify }}</style>
+<style>{% capture include_to_scssify %}{% include index.scss %}{% if page.layout == 'post' %}{% include post-page.scss %}{% endif %}{% endcapture %}{{ include_to_scssify | scssify }}</style>

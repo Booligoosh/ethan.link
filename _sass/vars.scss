@@ -1,0 +1,28 @@
+$fancy-serif: "EB Garamond", serif;
+$green: #5ebd3e;
+$yellow: #ffb900;
+$orange: #f78200;
+$red: #e23838;
+$purple: #973999;
+$blue: #009cdf;
+$rainbow-gradient-vertical: linear-gradient(
+  $green,
+  $yellow,
+  $orange,
+  $red,
+  $purple,
+  $blue
+);
+$rainbow-gradient-horizontal: linear-gradient(
+  90deg,
+  $green,
+  $yellow,
+  $orange,
+  $red,
+  $purple,
+  $blue
+);
+$rainbow-bar-width: 30px;
+$max-width: 535px;
+$face-height: 100px;
+$post-max-width: 700px;
