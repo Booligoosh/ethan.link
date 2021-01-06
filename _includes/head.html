@@ -2,6 +2,7 @@
 {% capture description %}{% if page.description %}{{page.description}}{% else %}{% if page.layout == 'post' and page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}{% else %}{{site.description}}{% endif %}{% endif %}{% endcapture %}
 {% capture canonical %}{{site.url}}{{page.url | replace: '.html', ''}}{% endcapture %}
 {% capture image %}{{site.url}}{% if page.image %}{{page.image}}{% else %}/img/logos/logo.png{% endif %}{% endcapture %}
+<link rel="preconnect" href="https://pl.ethan.link">
 <title>{{title}}</title>
 <!-- Viewport meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
