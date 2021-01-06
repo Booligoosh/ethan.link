@@ -50,3 +50,6 @@ defaults:
       layout: post
       rawname: post
       permalink: /blog/:title
+
+sass:
+  style: compressed
