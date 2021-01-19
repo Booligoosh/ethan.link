@@ -39,6 +39,8 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.15.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-json-feed (1.0.1)
+      jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
     jekyll-sitemap (1.4.0)
@@ -88,6 +90,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (>= 3.6.3)
   jekyll-feed (~> 0.6)
+  jekyll-json-feed (>= 1.0.1)
   jekyll-sitemap
   jekyll_image_encode (~> 0.0.4)
   octopress-minify-html (~> 1.3)

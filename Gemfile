@@ -17,6 +17,7 @@ gem "jekyll", ">= 3.6.3"
 # If you have any plugins, put them here!
 group :jekyll_plugins do
    gem "jekyll-feed", "~> 0.6"
+   gem "jekyll-json-feed", ">= 1.0.1"
    gem "octopress-minify-html", "~> 1.3"
    gem "jekyll_image_encode", "~> 0.0.4"
 end
