@@ -63,6 +63,12 @@
   ],
   "headers": [
     {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Referrer-Policy", "value": "no-referrer-when-downgrade" }
+      ]
+    },
+    {
       "source": "/fonts/(.*)",
       "headers": [
         {
