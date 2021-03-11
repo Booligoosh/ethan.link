@@ -94,6 +94,23 @@ body {
   }
 }
 
+.find-me-on {
+  color: hsl(0, 0%, 40%);
+  line-height: 1.5;
+
+  a {
+    color: inherit;
+    font-weight: 500;
+    text-decoration-color: hsl(0, 0%, 90%);
+    text-decoration-thickness: 2px;
+
+    &:hover {
+      color: hsl(0, 0%, 30%);
+      text-decoration-color: hsl(0, 0%, 85%);
+    }
+  }
+}
+
 .rainbow-bar {
   position: fixed;
   height: 100%;
