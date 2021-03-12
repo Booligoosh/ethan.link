@@ -117,7 +117,7 @@ layout: basic
       // Filter out replies that aren't to the original tweet (replies to replies)
       .filter((wm) =>
         wm.content.html.includes(
-          '<a class="u-mention" href="https://ethan.link/"></a>'
+          '<a class="u-mention" href="https://ethan.link/'
         )
       )
       .map(
