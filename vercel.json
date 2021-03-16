@@ -58,7 +58,7 @@
   "rewrites": [
     {
       "source": "/favicon.ico",
-      "destination": "/img/icons/favicon.ico"
+      "destination": "/img/icons/favicon.png"
     }
   ],
   "headers": [
