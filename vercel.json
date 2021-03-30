@@ -15,6 +15,10 @@
       "destination": "https://www.twitch.tv/ethan_the_maker"
     },
     {
+      "source": "/TWITCH/",
+      "destination": "https://www.twitch.tv/ethan_the_maker"
+    },
+    {
       "source": "/newsletter/",
       "destination": "https://booligoosh.substack.com/subscribe"
     },
