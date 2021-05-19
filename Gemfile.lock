@@ -64,12 +64,12 @@ GEM
     mimemagic (0.4.3)
       nokogiri (~> 1)
       rake
-    mini_portile2 (2.5.0)
+    mini_portile2 (2.5.1)
     multi_css (0.1.0)
       css_press
     multi_js (0.1.0)
       uglifier (~> 2)
-    nokogiri (1.11.2)
+    nokogiri (1.11.4)
       mini_portile2 (~> 2.5.0)
       racc (~> 1.4)
     octopress-hooks (2.6.2)
