@@ -1,4 +1,3 @@
-@import "webfonts/inter.scss";
 @import "webfonts/eb-garamond.scss";
 
 @import "vars.scss";
@@ -10,7 +9,7 @@
 body {
   margin: 0;
   color: hsl(0, 0%, 20%);
-  font-family: -apple-system, BlinkMacSystemFont, Inter, Arial, sans-serif;
+  font-family: Arial, "Helvetica Neue", sans-serif;
 }
 
 .hero {
