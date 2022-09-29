@@ -73,7 +73,7 @@
       "destination": "https://plausible.io/js/script.outbound-links.js"
     },
     {
-      "source": "/api/event",
+      "source": "/api/event/",
       "destination": "https://plausible.io/api/event"
     }
   ],
