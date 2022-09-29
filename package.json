@@ -4,6 +4,8 @@
   "description": "The code for my personal site!",
   "main": "index.js",
   "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve --port 8001",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
