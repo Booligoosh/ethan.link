@@ -12,6 +12,11 @@ module.exports = function (eleventyConfig) {
   markdownLib.use(markdownItAnchor);
   eleventyConfig.setLibrary("md", markdownLib);
 
+  // Configure excerpts - returns full Markdown
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+  });
+
   // PLUGINS
   eleventyConfig.addPlugin(pluginRss);
 

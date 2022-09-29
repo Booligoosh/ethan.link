@@ -1,4 +1,4 @@
-{% capture final_description %}{% if description %}{{description}}{% else %}{% if layout == 'post' and excerpt %}{{ excerpt | strip_html | strip_newlines | truncate: 156 }}{% else %}{{site.description}}{% endif %}{% endif %}{% endcapture %}
+{% capture final_description %}{% if description %}{{description}}{% else %}{% if layout == 'post' and page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}{% else %}{{site.description}}{% endif %}{% endif %}{% endcapture %}
 <title>{{final_title}}</title>
 <!-- Viewport meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
