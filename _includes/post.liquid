@@ -7,15 +7,15 @@ layout: basic
     "@context": "http://schema.org",
     "@type": "BlogPosting",
     "url": "ethan.link",
-    "datePublished": "{{page.date}}",
-    "dateModified": "{{page.date}}",
+    "datePublished": "{{date}}",
+    "dateModified": "{{date}}",
     "author": {
       "type": "Person",
       "name": "Ethan",
       "url": "https://ethan.link/"
     },
-    "headline": "{% if page.draft %}[DRAFT] {% endif %}{{page.title}}",
-    "image": "{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}/assets/img/icon1.png{% endif %}"
+    "headline": "{% if draft %}[DRAFT] {% endif %}{{title}}",
+    "image": "{% if image %}{{ site.url }}{{ image }}{% else %}{{ site.url }}/assets/img/icon1.png{% endif %}"
   }
 </script>
 <main class="post-page">
@@ -23,11 +23,11 @@ layout: basic
   <div class="rainbow-bar"></div>
   <article class="post">
     <section class="post-info">
-      <img class="post-info-cover" src="{{page.image}}" />
-      <h1 class="post-info-title">{{page.title}}</h1>
+      <img class="post-info-cover" src="{{image}}" />
+      <h1 class="post-info-title">{{title}}</h1>
       <div class="post-info-date">
-        {{ page.date | date_to_string }}, written by
-        <a href="/" class="post-info-author">Ethan</a>{% if page.draft %}.
+        {{ date | date_to_string }}, written by
+        <a href="/" class="post-info-author">Ethan</a>{% if draft %}.
         <em>This post is a draft.</em>{% endif %}
       </div>
     </section>
