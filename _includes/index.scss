@@ -50,9 +50,25 @@ body {
     // }
   }
 
-  &-secondary-text {
+  &-secondary-text,
+  &-status {
     margin-top: 15px;
     line-height: 1.4;
+  }
+
+  &-status {
+    font-size: 0.9em;
+    max-width: 33em;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px dashed #d9d9d9;
+    margin-left: -11px;
+    margin-right: -11px;
+
+    @media screen and (max-width: $breakpoint-50px-padding) {
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
 
@@ -181,7 +197,7 @@ body {
   }
 }
 
-@media screen and (max-width: 535px) {
+@media screen and (max-width: $breakpoint-50px-padding) {
   .hero {
     padding-left: 50px;
     padding-right: 50px - $rainbow-bar-width;
