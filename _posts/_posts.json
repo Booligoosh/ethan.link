@@ -1,5 +1,5 @@
 {
   "layout": "post",
   "rawname": "post",
-  "permalink": "/blog/{{page.fileSlug}}/"
+  "permalink": "/blog/{{page.fileSlug}}"
 }

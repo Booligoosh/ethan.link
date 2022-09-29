@@ -12,6 +12,18 @@ module.exports = function (eleventyConfig) {
   markdownLib.use(markdownItAnchor);
   eleventyConfig.setLibrary("md", markdownLib);
 
+  // See https://github.com/11ty/eleventy/issues/1599#issuecomment-778863150
+  eleventyConfig.setBrowserSyncConfig({
+    middleware: [
+      function (req, res, next) {
+        if (/^[^.]+$/.test(req.url)) {
+          res.setHeader("Content-Type", "text/html; charset=utf-8");
+        }
+        next();
+      },
+    ],
+  });
+
   // PLUGINS
   eleventyConfig.addPlugin(pluginRss);
 
