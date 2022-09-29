@@ -70,7 +70,7 @@ layout: basic
         </section> -->
         <section>
           <h2 class="section-heading">Blog posts</h2>
-          <div class="grid">
+          <div class="grid single">
             {% for post in site.posts %}
             {% if post.draft != true %}
             <a href="{{post.url}}">

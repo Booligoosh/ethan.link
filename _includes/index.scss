@@ -70,6 +70,10 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-gap: 12px;
 
+  &.single {
+    grid-template-columns: 1fr;
+  }
+
   // Formerly &-card
   a {
     padding: 10px;
