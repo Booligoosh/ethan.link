@@ -1,0 +1,5 @@
+{
+  "layout": "post",
+  "rawname": "post",
+  "permalink": "/blog/{{page.fileSlug}}/"
+}

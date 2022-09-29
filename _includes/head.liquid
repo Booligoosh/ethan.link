@@ -1,0 +1,35 @@
+{% capture final_title %}{% if draft %}[DRAFT] {% endif %}{{title}}{% endcapture %}
+{% capture final_description %}{% if description %}{{description}}{% else %}{% if layout == 'post' and excerpt %}{{ excerpt | strip_html | strip_newlines | truncate: 156 }}{% else %}{{site.description}}{% endif %}{% endif %}{% endcapture %}
+{% capture final_canonical %}{{site.url}}{{page.url}}{% endcapture %}
+{% capture final_image %}{{site.url}}{% if image %}{{image}}{% else %}img/logos/logo.png{% endif %}{% endcapture %}
+<title>{{final_title}}</title>
+<!-- Viewport meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Icons -->
+{% include 'icons.html' %}
+<!-- Canonical -->
+<link rel="canonical" href="{{final_canonical}}">
+<!-- Search Engine Tags -->
+<meta name="description" content="{{final_description}}" />
+<!-- Open Graph Tags -->
+<meta property="og:title" content="{{final_title}}">
+<meta name="twitter:title" content="{{final_title}}">
+<meta property="og:type" content="website">
+<meta property="og:description" content="{{final_description}}">
+<meta name="twitter:description" content="{{final_description}}">
+<meta property="og:url" content="{{final_canonical}}" />
+<meta property="og:image" content="{{final_image}}">
+<meta name="twitter:image" content="{{final_image}}">
+<meta name="twitter:card" content="{% if image %}summary_large_image{% else %}summary{% endif %}">
+<!-- Atom/JSON Feeds-->
+<link rel="alternate" type="application/atom+xml" href="/feed.xml">
+<link rel="alternate" type="application/feed+json" href="/feed.json">
+<!-- Webmention.io support -->
+{% if layout == 'post' %}
+<link rel="webmention" href="//webmention.io/ethan.link/webmention" />
+<link rel="pingback" href="//webmention.io/ethan.link/xmlrpc" />
+{% endif %}
+<!-- Plausible Analytics -->
+<script async defer data-domain="ethan.link" src="/js/script.js"></script>
+<!-- My stylesheet - https://kevinsweet.com/inline-scss-jekyll-github-pages -->
+<style>{% capture include_to_scssify %}{% include 'index.scss' %}{% if layout == 'post' %}{% include 'post-page.scss' %}{% endif %}{% endcapture %}{{ include_to_scssify | scssify }}</style>

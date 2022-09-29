@@ -1,13 +1,10 @@
----
----
-
 <!DOCTYPE html>
 <html>
   <head>
-    {% include head.html %}
+    {% include 'head' %}
   </head>
 
-  <body class="{{page.rawname}}">
+  <body class="{{rawname}}">
     <a name="top"></a>
     {{ content }}
   </body>

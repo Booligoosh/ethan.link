@@ -165,7 +165,7 @@ body {
   z-index: 1;
   height: $face-height;
   // No WebP fallback, people using bad browsers like Safari don't deserve my-head-compressed-300px.webp anyway
-  background: url("{% base64 ./img/my-head-compressed-300px.webp %}") repeat-x
+  background: url("{% base64 './img/my-head-compressed-300px.webp' %}") repeat-x
       top/$face-height,
     linear-gradient(hsla(0, 0%, 100%, 0), white 75%);
 

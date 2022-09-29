@@ -9,9 +9,9 @@ layout: basic
     <section class="hero">
       <div class="badges">
         <!-- <img src="//www.webdesignmuseum.org/uploaded/exhibitions/web-banners-in-the-90s/mac-mall-1998.gif"> -->
-        <img src="{% base64 ./img/badges/800x600.png %}">
-        <img src="{% base64 ./img/badges/netscape_now.png %}">
-        <img src="{% base64 ./img/badges/best_viewed_with_eyes.png %}">
+        <img src="{% base64 './img/badges/800x600.png' %}">
+        <img src="{% base64 './img/badges/netscape_now.png' %}">
+        <img src="{% base64 './img/badges/best_viewed_with_eyes.png' %}">
       </div>
       <div class="hero-inner">
         <div class="hero-main-text">Hey, I&rsquo;m Ethan.</div>
@@ -72,13 +72,11 @@ layout: basic
         <section>
           <h2 class="section-heading">Blog posts</h2>
           <div class="grid single">
-            {% for post in site.posts %}
-            {% if post.draft != true %}
+            {% for post in collections.posts reversed %}
             <a href="{{post.url}}">
-              <h3>{{post.title}}</h3>
+              <h3>{{post.data.title}}</h3>
               <p>{{ post.date | date_to_string }}</p>
             </a>
-            {% endif %}
             {% endfor %}
           </div>
         </section>
