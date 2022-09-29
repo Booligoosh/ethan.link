@@ -62,4 +62,10 @@ module.exports = function (eleventyConfig) {
 
     return content;
   });
+
+  return {
+    dir: {
+      layouts: "_layouts",
+    },
+  };
 };
