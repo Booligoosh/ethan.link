@@ -3,8 +3,15 @@ const fs = require("fs");
 const sass = require("sass");
 const htmlmin = require("html-minifier");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 
 module.exports = function (eleventyConfig) {
+  // Add header anchor plugin to Markdown renderer
+  const markdownLib = markdownIt({ html: true, typographer: true });
+  markdownLib.use(markdownItAnchor);
+  eleventyConfig.setLibrary("md", markdownLib);
+
   // PLUGINS
   eleventyConfig.addPlugin(pluginRss);
 
