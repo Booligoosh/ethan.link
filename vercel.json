@@ -7,7 +7,7 @@
   "redirects": [
     { "source": "/blog", "destination": "/", "permanent": false },
     {
-      "source": "/mastodon",
+      "source": "/m",
       "destination": "https://fosstodon.org/@booligoosh",
       "permanent": false
     },
