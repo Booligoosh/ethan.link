@@ -7,6 +7,11 @@
   "redirects": [
     { "source": "/blog", "destination": "/", "permanent": false },
     {
+      "source": "/mastodon",
+      "destination": "https://fosstodon.org/@booligoosh",
+      "permanent": false
+    },
+    {
       "source": "/youtube",
       "destination": "https://www.youtube.com/Booligoosh"
     },
