@@ -60,7 +60,7 @@ body {
       height: auto;
     }
 
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: $breakpoint-smaller-feature-text) {
       font-size: 0.9em;
     }
 
