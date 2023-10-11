@@ -276,6 +276,22 @@ body {
   bottom: 30px;
   right: 82px;
   z-index: 1;
+
+  &:hover {
+    animation: bop 300ms;
+  }
+}
+
+@keyframes bop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 // Using this animation method (transforming) rather than background-position to take advantage of the GPU.
