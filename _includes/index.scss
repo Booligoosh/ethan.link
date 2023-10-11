@@ -58,8 +58,12 @@ body {
       height: auto;
     }
 
-    @media screen and (max-width: $breakpoint-smaller-feature-text) {
+    @media screen and (max-width: $breakpoint-small-feature-text) {
       font-size: 0.9em;
+    }
+
+    @media screen and (max-width: $breakpoint-extra-small-feature-text) {
+      font-size: 0.8em;
     }
 
     .badges {
