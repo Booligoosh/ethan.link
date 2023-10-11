@@ -48,8 +48,6 @@ body {
     bottom: $face-height;
     left: var(--hero-horizontal-padding);
     height: calc(100vh - 122px - $face-height);
-    overflow-x: hidden;
-    overflow-y: visible;
 
     display: flex;
     flex-direction: column;
@@ -80,12 +78,13 @@ body {
       letter-spacing: -0.0625em;
       font-weight: 500;
       line-height: 1;
-
+      
       transform: scaleY(2.5) scaleX(1.1) rotate(-4deg);
       transform-origin: bottom left;
       font-weight: bold;
       font-style: italic;
       padding-top: 2em; // To make up for all the weird transforms so it takes up the space it actually shows as
+      width: max-content;
 
       // width: max-content;
       // max-width: 100%;
@@ -114,6 +113,7 @@ body {
       font-style: italic;
       margin-bottom: 0.7em;
       max-width: 450px;
+      width: max-content;
     }
   }
 
