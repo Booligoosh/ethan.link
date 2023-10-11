@@ -8,6 +8,7 @@
 
 body {
   margin: 0;
+  background: hsl(39, 77%, 83%); // wheat
   color: hsl(0, 0%, 20%);
   font-family: Arial, "Helvetica Neue", sans-serif;
 }
@@ -17,14 +18,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 200px;
+  --hero-horizontal-padding: 200px;
+  padding: 0 var(--hero-horizontal-padding);
   padding-top: 122px;
   padding-bottom: $face-height;
+
+  @media screen and (max-width: $breakpoint-100px-padding) {
+    --hero-horizontal-padding: 100px;
+  }
+
+  @media screen and (max-width: $breakpoint-50px-padding) {
+    --hero-horizontal-padding: 50px;
+  }
 
   &-content {
     width: 100%;
     max-width: 535px;
-    margin-left: calc((100vw - 2 * 200px)/2);
+    margin-left: calc((100vw - 2 * var(--hero-horizontal-padding)) / 2);
 
     @media screen and (max-width: $breakpoint-two-col) {
       margin-left: 0;
@@ -35,19 +45,34 @@ body {
     position: fixed;
     top: 122px;
     bottom: $face-height;
-    left: 200px;
+    left: var(--hero-horizontal-padding);
     height: calc(100vh - 122px - $face-height);
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     @media screen and (max-width: $breakpoint-two-col) {
       position: static;
       height: auto;
     }
 
+    @media screen and (max-width: 420px) {
+      font-size: 0.9em;
+    }
+
+    .badges {
+      display: flex;
+      filter: grayscale(1);
+      margin-bottom: 30px;
+
+      img {
+        margin-right: 5px;
+      }
+    }
+
     &-main-text {
-      font-size: 48px;
+      font-size: 3em;
       font-family: $fancy-serif;
       letter-spacing: -0.0625em;
       font-weight: 500;
@@ -57,7 +82,7 @@ body {
       transform-origin: bottom left;
       font-weight: bold;
       font-style: italic;
-      margin-top: auto;
+      padding-top: 2em; // To make up for all the weird transforms so it takes up the space it actually shows as
 
       // width: max-content;
       // max-width: 100%;
@@ -78,13 +103,14 @@ body {
     }
 
     &-secondary-text {
-      margin-top: 15px;
+      font-size: 1.25em;
       line-height: 1.4;
 
       transform-origin: top left;
       transform: rotate(-8.5deg);
       font-style: italic;
-      margin-bottom: auto;
+      margin-bottom: 0.7em;
+      max-width: 450px;
     }
   }
 
@@ -92,17 +118,9 @@ body {
     margin-top: 15px;
     line-height: 1.4;
     font-size: 0.9em;
-    max-width: 33em;
     padding: 10px;
     border-radius: 8px;
-    border: 1px dashed #d9d9d9;
-    margin-left: -11px;
-    margin-right: -11px;
-
-    @media screen and (max-width: $breakpoint-50px-padding) {
-      margin-left: 0;
-      margin-right: 0;
-    }
+    border: 1px solid;
   }
 }
 
@@ -111,7 +129,7 @@ body {
   font-weight: 600;
   letter-spacing: -1px;
   padding-bottom: 5px;
-  border-bottom: 1px solid hsl(0, 0%, 95%);
+  border-bottom: 1px dashed;
   margin-top: 40px;
 }
 
@@ -128,10 +146,18 @@ body {
   a {
     padding: 10px;
     border-radius: 8px;
-    border: 1px dashed hsl(0, 0%, 85%);
+    background: hsla(0, 0%, 20%, 0.1);
     color: inherit;
     text-decoration: none;
     outline: none !important;
+
+    &:hover {
+      background: hsla(0, 0%, 20%, 0.15);
+    }
+
+    &:active {
+      background: hsla(0, 0%, 20%, 0.2);
+    }
 
     // Formerly &-title
     h3 {
@@ -149,23 +175,23 @@ body {
 }
 
 .find-me-on {
-  color: hsl(0, 0%, 40%);
   line-height: 1.5;
 
   a {
     color: inherit;
     font-weight: 600;
     letter-spacing: -0.1px;
-    text-decoration-color: hsl(0, 0%, 90%);
     text-decoration-thickness: 2px;
+    display: inline-block;
 
     &:hover {
-      color: hsl(0, 0%, 30%);
-      text-decoration-color: hsl(0, 0%, 85%);
+      text-decoration-style: dotted;
+      background-color: hsla(0, 0%, 20%, 0.1);
     }
   }
 }
 
+/*
 .rainbow-bar {
   position: fixed;
   height: 100%;
@@ -182,17 +208,9 @@ body {
     filter: blur(100px);
   }
 }
+*/
 
-.badges {
-  position: absolute;
-  top: $rainbow-bar-width;
-  display: flex;
-
-  img {
-    margin-right: 5px;
-  }
-}
-
+/*
 .my-head {
   position: fixed;
   bottom: 0;
@@ -212,6 +230,22 @@ body {
   animation: roll 10s infinite linear;
   // }
 }
+*/
+
+.frame {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  width: 100dvw;
+  height: 100vh;
+  height: 100dvh;
+  border: $rainbow-bar-width solid;
+  pointer-events: none;
+  z-index: 999;
+}
 
 // Using this animation method (transforming) rather than background-position to take advantage of the GPU.
 @keyframes roll {
@@ -221,20 +255,6 @@ body {
   // }
   100% {
     transform: translate($face-height);
-  }
-}
-
-@media screen and (max-width: 934px) {
-  .hero {
-    padding-left: 100px;
-    padding-right: 100px - $rainbow-bar-width;
-  }
-}
-
-@media screen and (max-width: $breakpoint-50px-padding) {
-  .hero {
-    padding-left: 50px;
-    padding-right: 50px - $rainbow-bar-width;
   }
 }
 
