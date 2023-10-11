@@ -21,42 +21,76 @@ body {
   padding-top: 122px;
   padding-bottom: $face-height;
 
-  &-inner {
+  &-content {
     width: 100%;
     max-width: 535px;
+    margin-left: calc((100vw - 2 * 200px)/2);
+
+    @media screen and (max-width: $breakpoint-two-col) {
+      margin-left: 0;
+    }
   }
 
-  &-main-text {
-    font-size: 48px;
-    font-family: $fancy-serif;
-    letter-spacing: -0.0625em;
-    font-weight: 500;
-    line-height: 1;
-    // width: max-content;
-    // max-width: 100%;
-    // position: relative;
+  &-feature {
+    position: fixed;
+    top: 122px;
+    bottom: $face-height;
+    left: 200px;
+    height: calc(100vh - 122px - $face-height);
 
-    // Rainbow blur
-    // &:before {
-    //   content: "";
-    //   position: absolute;
-    //   top: 0;
-    //   bottom: 0;
-    //   left: 0;
-    //   right: 0;
-    //   background: $rainbow-gradient-horizontal;
-    //   z-index: -1;
-    //   filter: blur(100px);
-    // }
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: $breakpoint-two-col) {
+      position: static;
+      height: auto;
+    }
+
+    &-main-text {
+      font-size: 48px;
+      font-family: $fancy-serif;
+      letter-spacing: -0.0625em;
+      font-weight: 500;
+      line-height: 1;
+
+      transform: scaleY(2.5) scaleX(1.1) rotate(-4deg);
+      transform-origin: bottom left;
+      font-weight: bold;
+      font-style: italic;
+      margin-top: auto;
+
+      // width: max-content;
+      // max-width: 100%;
+      // position: relative;
+
+      // Rainbow blur
+      // &:before {
+      //   content: "";
+      //   position: absolute;
+      //   top: 0;
+      //   bottom: 0;
+      //   left: 0;
+      //   right: 0;
+      //   background: $rainbow-gradient-horizontal;
+      //   z-index: -1;
+      //   filter: blur(100px);
+      // }
+    }
+
+    &-secondary-text {
+      margin-top: 15px;
+      line-height: 1.4;
+
+      transform-origin: top left;
+      transform: rotate(-8.5deg);
+      font-style: italic;
+      margin-bottom: auto;
+    }
   }
 
-  &-secondary-text,
   &-status {
     margin-top: 15px;
     line-height: 1.4;
-  }
-
-  &-status {
     font-size: 0.9em;
     max-width: 33em;
     padding: 10px;
