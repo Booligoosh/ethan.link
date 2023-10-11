@@ -47,6 +47,8 @@ body {
     bottom: $face-height;
     left: var(--hero-horizontal-padding);
     height: calc(100vh - 122px - $face-height);
+    overflow-x: hidden;
+    overflow-y: visible;
 
     display: flex;
     flex-direction: column;
