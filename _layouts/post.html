@@ -101,7 +101,8 @@ layout: basic
   // Load webmentions
   async function loadWebmentions() {
     // Hard-code origin so it works locally too
-    const postUrl = `https://ethan.link${window.location.pathname}/`; // Add "/" at the end as the blog used to use trailing slashes
+    // Add "/" at the end as you need a trailing slash even if the page doesn't have one - https://www.swyx.io/clientside-webmentions#simple-count
+    const postUrl = `https://ethan.link${window.location.pathname}/`;
     console.log(postUrl);
     const webmentions = await fetch(
       `https://webmention.io/api/mentions.jf2?target=${encodeURIComponent(
