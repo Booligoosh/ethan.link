@@ -18,16 +18,18 @@ layout: basic
     "image": "{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}/assets/img/icon1.png{% endif %}"
   }
 </script>
+<div class="frame"></div>
 <main class="post-page">
-  <div class="rainbow-bar"></div>
-  <div class="rainbow-bar"></div>
+  <!-- <div class="rainbow-bar"></div>
+  <div class="rainbow-bar"></div> -->
   <article class="post">
     <section class="post-info">
+      <a href="/" class="post-info-back-btn">☜ Back to Home</a>
       <img class="post-info-cover" src="{{page.image}}" />
       <h1 class="post-info-title">{{page.title}}</h1>
       <div class="post-info-date">
         {{ page.date | date_to_string }}, written by
-        <a href="/" class="post-info-author">Ethan</a>{% if page.draft %}.
+        Ethan{% if page.draft %}.
         <em>This post is a draft.</em>{% endif %}
       </div>
     </section>
@@ -50,7 +52,7 @@ layout: basic
             </div>
         </section>
     </section> -->
-  <div class="my-head"></div>
+  <!-- <div class="my-head"></div> -->
 </main>
 <script>
   // make all external links open in new tab

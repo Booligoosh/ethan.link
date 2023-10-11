@@ -1,12 +1,12 @@
 @import "vars.scss";
 
 .post-page {
+  margin: $rainbow-bar-width;
   padding-bottom: 5rem;
 
   .post,
   &-comments {
     padding: 2rem;
-    margin-left: $rainbow-bar-width;
   }
 
   .post {
@@ -20,6 +20,13 @@
     }
 
     &-info {
+      &-back-btn {
+        margin-bottom: 1em;
+        color: inherit;
+        text-decoration-style: wavy;
+        text-decoration-thickness: 1px;
+      }
+
       &-title {
         font-size: 48px;
         font-family: $fancy-serif;
@@ -39,10 +46,6 @@
       &-date {
         opacity: 0.5;
         margin-bottom: 1rem;
-      }
-
-      &-author {
-        color: inherit;
       }
     }
 

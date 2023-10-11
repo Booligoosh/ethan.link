@@ -138,12 +138,32 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-gap: 12px;
 
+  @media screen and (max-width: $breakpoint-cards-single-col) {
+    grid-template-columns: 1fr;
+  }
+
   &.single {
     grid-template-columns: 1fr;
+
+    // Note min-width not max-width
+    @media screen and (min-width: $breakpoint-cards-single-col) {
+      a {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        > :last-child {
+          white-space: nowrap;
+        }
+      }
+    }
   }
 
   // Formerly &-card
   a {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
     padding: 10px;
     border-radius: 8px;
     background: hsla(0, 0%, 20%, 0.1);
@@ -167,7 +187,7 @@ body {
     }
     // Formerly &-text
     p {
-      margin: 4px 0 0 0;
+      margin: 0;
       opacity: 0.75;
       font-size: 15px;
     }
@@ -255,11 +275,5 @@ body {
   // }
   100% {
     transform: translate($face-height);
-  }
-}
-
-@media screen and (max-width: 435px) {
-  .grid {
-    grid-template-columns: 1fr;
   }
 }
