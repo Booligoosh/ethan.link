@@ -260,10 +260,8 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 100vw;
-  width: 100dvw;
-  height: 100vh;
-  height: 100dvh;
+  width: 100%;
+  height: 100%;
   border: $rainbow-bar-width solid;
   pointer-events: none;
   z-index: 999;
