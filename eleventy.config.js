@@ -4,6 +4,8 @@ import { imageSize } from "image-size";
 import sass from "sass";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
+import markdownItAttrs from "markdown-it-attrs"
+import markdownItBracketedSpans from "markdown-it-bracketed-spans"
 import htmlmin from "html-minifier-terser";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import siteData from "./_data/site.js";
@@ -18,7 +20,7 @@ export default function (eleventyConfig) {
   // Custom Markdown config
   eleventyConfig.setLibrary(
     "md",
-    markdownIt({ html: true, typographer: true }).use(markdownItAnchor, {
+    markdownIt({ html: true, typographer: true }).use(markdownItAttrs).use(markdownItBracketedSpans).use(markdownItAnchor, {
       slugify: (s) =>
         String(s)
           .trim()
