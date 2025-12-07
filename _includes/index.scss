@@ -86,7 +86,7 @@ body {
       transform-origin: bottom left;
       font-weight: bold;
       font-style: italic;
-      padding-top: 2em; // To make up for all the weird transforms so it takes up the space it actually shows as
+      margin-top: 2em; // To make up for all the weird transforms so it takes up the space it actually shows as
       width: max-content;
     }
 
