@@ -2,7 +2,10 @@
 {% capture finalDescription %}{% if description %}{{description}}{% else %}{% if layout == 'post' and content %}{{ page.rawInput | strip_html | strip_newlines | truncate: 156 }}{% else %}{{site.description}}{% endif %}{% endif %}{% endcapture %}
 {% capture finalCanonical %}{{site.url}}{{page.url | replace: '.html', ''}}{% endcapture %}
 {% capture finalImage %}{{site.url}}{% if image %}{{image}}{% else %}/img/logos/logo.png{% endif %}{% endcapture %}
+<!-- Title -->
 <title>{{finalTitle}}</title>
+<!-- Charset meta-->
+<meta charset="UTF-8">
 <!-- Viewport meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Icons -->
