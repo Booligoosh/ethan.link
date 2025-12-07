@@ -1,0 +1,8 @@
+{
+  "name": "personal-site",
+  "compatibility_date": "2025-11-17",
+  "assets": {
+    "directory": "./_site/",
+    "not_found_handling": "404-page"
+  }
+}
