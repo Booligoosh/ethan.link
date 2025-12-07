@@ -14,8 +14,8 @@ layout: basic
       "name": "Ethan",
       "url": "https://ethan.link/"
     },
-    "headline": "{% if page.draft %}[DRAFT] {% endif %}{{page.title}}",
-    "image": "{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.url }}/assets/img/icon1.png{% endif %}"
+    "headline": "{% if draft %}[DRAFT] {% endif %}{{title}}",
+    "image": "{% if image %}{{ site.url }}{{ image }}{% else %}{{ site.url }}/assets/img/icon1.png{% endif %}"
   }
 </script>
 <div class="frame"></div>
@@ -25,11 +25,11 @@ layout: basic
   <article class="post">
     <section class="post-info">
       <a href="/" class="post-info-back-btn">☜ Back to Home</a>
-      <img class="post-info-cover" src="{{page.image}}" />
-      <h1 class="post-info-title">{{page.title}}</h1>
+      <img class="post-info-cover" src="{{image}}" />
+      <h1 class="post-info-title">{{title}}</h1>
       <div class="post-info-date">
         {{ page.date | date_to_string }}, written by
-        Ethan{% if page.draft %}.
+        Ethan{% if draft %}.
         <em>This post is a draft.</em>{% endif %}
       </div>
     </section>

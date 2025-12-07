@@ -2,7 +2,7 @@
 title: 'The story of KanbanMail — Part 1'
 image: '/img/posts/the-story-of-kanbanmail-part-1/cover.png'
 draft: true
-sitemap: false
+eleventyExcludeFromCollections: true
 ---
 
 > &#x1F6A7; This article is just an outline. [Follow me on Twitch](https://twitch.tv/ethan_the_maker) and turn on notifications so you'll be notified when I write it live!

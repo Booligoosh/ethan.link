@@ -1,0 +1,6 @@
+export default {
+  title: "Ethan",
+  author: "Ethan",
+  url: "https://ethan.link",
+  description: "Hey, I’m Ethan. I like building beautiful software that helps people be more productive and improve their lives."
+};

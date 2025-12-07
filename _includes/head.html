@@ -1,35 +1,44 @@
-{% capture title %}{% if page.draft %}[DRAFT] {% endif %}{{page.title}}{% endcapture %}
-{% capture description %}{% if page.description %}{{page.description}}{% else %}{% if page.layout == 'post' and page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}{% else %}{{site.description}}{% endif %}{% endif %}{% endcapture %}
-{% capture canonical %}{{site.url}}{{page.url | replace: '.html', ''}}{% endcapture %}
-{% capture image %}{{site.url}}{% if page.image %}{{page.image}}{% else %}/img/logos/logo.png{% endif %}{% endcapture %}
-<title>{{title}}</title>
+{% capture finalTitle %}{% if draft %}[DRAFT] {% endif %}{{title}}{% endcapture %}
+{% capture finalDescription %}{% if description %}{{description}}{% else %}{% if layout == 'post' and content %}{{ page.rawInput | strip_html | strip_newlines | truncate: 156 }}{% else %}{{site.description}}{% endif %}{% endif %}{% endcapture %}
+{% capture finalCanonical %}{{site.url}}{{page.url | replace: '.html', ''}}{% endcapture %}
+{% capture finalImage %}{{site.url}}{% if image %}{{image}}{% else %}/img/logos/logo.png{% endif %}{% endcapture %}
+<title>{{finalTitle}}</title>
 <!-- Viewport meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Icons -->
-{% include icons.html %}
+{% include "icons.html" %}
 <!-- Canonical -->
-<link rel="canonical" href="{{canonical}}">
+<link rel="canonical" href="{{finalCanonical}}">
 <!-- Search Engine Tags -->
-<meta name="description" content="{{description}}" />
+<meta name="description" content="{{finalDescription}}" />
 <!-- Open Graph Tags -->
-<meta property="og:title" content="{{title}}">
-<meta name="twitter:title" content="{{title}}">
+<meta property="og:title" content="{{finalTitle}}">
+<meta name="twitter:title" content="{{finalTitle}}">
 <meta property="og:type" content="website">
-<meta property="og:description" content="{{description}}">
-<meta name="twitter:description" content="{{description}}">
-<meta property="og:url" content="{{canonical}}" />
-<meta property="og:image" content="{{image}}">
-<meta name="twitter:image" content="{{image}}">
-<meta name="twitter:card" content="{% if page.image %}summary_large_image{% else %}summary{% endif %}">
+<meta property="og:description" content="{{finalDescription}}">
+<meta name="twitter:description" content="{{finalDescription}}">
+<meta property="og:url" content="{{finalCanonical}}" />
+<meta property="og:image" content="{{finalImage}}">
+<meta name="twitter:image" content="{{finalImage}}">
+<meta name="twitter:card" content="{% if image %}summary_large_image{% else %}summary{% endif %}">
 <!-- Atom/JSON Feeds-->
 <link rel="alternate" type="application/atom+xml" href="/feed.xml">
 <link rel="alternate" type="application/feed+json" href="/feed.json">
 <!-- Webmention.io support -->
-{% if page.layout == 'post' %}
+{% if layout == 'post' %}
 <link rel="webmention" href="//webmention.io/ethan.link/webmention" />
 <link rel="pingback" href="//webmention.io/ethan.link/xmlrpc" />
 {% endif %}
 <!-- Plausible Analytics -->
 <script async defer data-domain="ethan.link" src="/js/script.js"></script>
-<!-- My stylesheet - https://kevinsweet.com/inline-scss-jekyll-github-pages -->
-<style>{% capture include_to_scssify %}{% include index.scss %}{% if page.layout == 'post' %}{% include post-page.scss %}{% endif %}{% endcapture %}{{ include_to_scssify | scssify }}</style>
+<!-- Generator meta tag-->
+<meta name="generator" content="{{ eleventy.generator }}">
+<!-- My stylesheet -->
+<style>
+{% scss %}
+  @import "index.scss";
+  {% if layout == 'post' %}
+    @import "post-page.scss";
+  {% endif %}
+{% endscss %}
+</style>

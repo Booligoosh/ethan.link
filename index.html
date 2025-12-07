@@ -2,19 +2,21 @@
 title: "Ethan / @Booligoosh"
 rawname: home
 layout: basic
+eleventyImport:
+  collections: ["post"]
 ---
 <main>
     <!-- <div class="rainbow-bar"></div>
     <div class="rainbow-bar"></div> -->
     <div class="frame"></div>
-    <img class="ethan" alt="Photo of Ethan" title="Look I made this cool website. Wait why am I on it??" src="{% base64 ./img/chillin-ethan-removebg-trimmed-compressordie-30.webp %}">
+    <img class="ethan" alt="Photo of Ethan" title="Look I made this cool website. Wait why am I on it??" src="{{ './img/chillin-ethan-removebg-trimmed-compressordie-30.webp' | base64 }}">
     <section class="hero">
       <div class="hero-feature">
         <div class="badges">
           <!-- <img src="//www.webdesignmuseum.org/uploaded/exhibitions/web-banners-in-the-90s/mac-mall-1998.gif"> -->
-          <img alt="Retro internet badge: Best Viewed 800x600" src="{% base64 ./img/badges/800x600.png %}">
-          <img alt="Retro internet badge: Netscape NOW!" src="{% base64 ./img/badges/netscape_now.png %}">
-          <img alt="Retro internet badge: BEST viewed with EYES" src="{% base64 ./img/badges/best_viewed_with_eyes.png %}">
+          <img alt="Retro internet badge: Best Viewed 800x600" src="{{ './img/badges/800x600.png' | base64 }}">
+          <img alt="Retro internet badge: Netscape NOW!" src="{{ './img/badges/netscape_now.png' | base64 }}">
+          <img alt="Retro internet badge: BEST viewed with EYES" src="{{ './img/badges/best_viewed_with_eyes.png' | base64 }}">
         </div>
         <div class="hero-feature-main-text">Hey, I&rsquo;m Ethan.</div>
         <div class="hero-feature-secondary-text">a.k.a. @booligoosh</div>
@@ -76,13 +78,11 @@ layout: basic
         <section>
           <h2 class="section-heading">And sometimes I remember to write blog posts:</h2>
           <div class="grid single">
-            {% for post in site.posts %}
-            {% if post.draft != true %}
+            {% for post in collections.post reversed %}
             <a href="{{post.url}}">
-              <h3>{{post.title}}</h3>
+              <h3>{{post.data.title}}</h3>
               <p>{{ post.date | date_to_string }}</p>
             </a>
-            {% endif %}
             {% endfor %}
           </div>
         </section>
