@@ -10,6 +10,8 @@ import siteData from "./_data/site.js";
 
 export default function (eleventyConfig) {
   // Passthrough copy for static assets
+  eleventyConfig.addPassthroughCopy("_headers");
+  eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("fonts");
 
@@ -75,7 +77,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(feedPlugin, {
     type: "rss", // or "rss", "json"
     outputPath: "/feed.xml",
-    inputPath: "feeds/feed.xml", // by giving it a virtual path, lets us control settings for these pages in feeds/feeds.json
+    // inputPath: "feeds/feed.xml", // by giving it a virtual path, lets us control settings for these pages in feeds/feeds.json
     collection: {
       name: "post", // iterate over `collections.posts`
       limit: 0, // 0 means no limit
@@ -85,7 +87,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(feedPlugin, {
     type: "json", // or "rss", "json"
     outputPath: "/feed.json",
-    inputPath: "feeds/feed.json", // by giving it a virtual path, lets us control settings for these pages in feeds/feeds.json
+    // inputPath: "feeds/feed.json", // by giving it a virtual path, lets us control settings for these pages in feeds/feeds.json
     collection: {
       name: "post", // iterate over `collections.posts`
       limit: 0, // 0 means no limit
