@@ -1,7 +1,7 @@
 @import "vars.scss";
 
 .post-page {
-  margin: $rainbow-bar-width;
+  margin: var(--page-border-width);
   padding-bottom: 5rem;
 
   .post,
