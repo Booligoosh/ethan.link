@@ -1,6 +1,5 @@
 ---
 title: Sunsetting 1Feed
-eleventyExcludeFromCollections: true
 ---
 
 After over 5 years, 1Feed will be shutting down on 15th May, 2026.
