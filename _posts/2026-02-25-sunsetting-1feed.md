@@ -1,6 +1,5 @@
 ---
 title: Sunsetting 1Feed
-draft: true
 eleventyExcludeFromCollections: true
 ---
 
